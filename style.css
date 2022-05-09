@@ -8,6 +8,7 @@
 html{
  }
 body{
+    text-align: justify;
     font-family: Georgia, Arial, Times;
     font-size: 12pt;
 }
