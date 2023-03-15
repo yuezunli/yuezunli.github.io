@@ -6,3 +6,14 @@
 hr {
     border-top: 1px solid grey;
 }
+
+table.pub_table,td.pub_td1,td.pub_td2
+	{
+		border-collapse: collapse;
+		border-bottom: 0px solid #9B9B9B;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 10px;
+        margin-top: 5px;
+		width: 100%;
+	}
