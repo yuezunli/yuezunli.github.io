@@ -19,6 +19,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/jpg" href="images/ouc_icon.jpg">
+
+    <style>
+        .collapsible {
+            background-color: #ffffff;
+            color: #1772d0;
+            cursor: pointer;
+            padding: 5px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .content {
+            padding: 10px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 
 <!-- <body onload="startPetCursor();"> -->
@@ -37,7 +59,7 @@
                 <p style="text-align:justify">
                     I am an assistant professor/lecturer in the <a href="https://ai-ouc.cn/">institute of Artificial Intelligence</a>, at <a href="https://www.ouc.edu.cn/main.htm">Ocean University of China</a>. 
                     My research interest lies at computer vision, machine learning and multimedia forensics.
-                    <img src="https://img.shields.io/badge/Google Scholar-6200-blue?style=social&logo=google-scholar" style="vertical-align: middle;" />
+                    <img src="https://img.shields.io/badge/Google Scholar-6400-blue?style=social&logo=google-scholar" style="vertical-align: middle;" />
                 </p>
                     
                 <p style="text-align:justify">
@@ -48,6 +70,15 @@
                     I received M.S. degree in Computer Science in 2015 and B.S. degree in Software Engineering in 2012 at Shandong University. 
                     
                 </p>
+
+                <button class="collapsible">>> 中文简介</button>
+                <div class="content">
+                    <p style="text-align:justify">
+                        本硕毕业于山东大学，博士毕业于美国纽约州立大学奥尔巴尼分校。曾任纽约州立大学布法罗分校高级研究科学家。研究方向主要包括多媒体取证、深度模型安全和计算机视觉，研究成果发表于NeurIPS, ICCV, CVPR, ECCV, TIFS, TCSVT, PR等国际顶级会议和期刊，谷歌学术引用6400余次，多篇论文的单篇学术引用超过1000次（CVPR20, CVPRW19, ICASSP19, WIFS18）, 其中WIFS18曾被CCTV13《世界周刊深度伪造专题》报道 [7:43]。此外，从事水下视觉信息处理相关研究，致力于海洋浮游植物智能观测技术及相应理论研究。担任TPAMI, TIP, IJCV, TIFS, ICCV, CVPR, AAAI, NeurIPS, ICLR等多个国际顶级期刊和会议的审稿人。主持国家自然科学青年基金、山东省自然科学青年基金、博士后面上项目和站前特别资助项目、中央高校基本科研业务费、青岛市博士后项目等多个项目。入选2024全球前2%顶尖科学家榜单。
+                    </p>
+                </div>
+                
+                
                 <p style="text-align:center">
                     </br>
                     <a href="mailto:liyuezun@ouc.edu.cn"><i class="fa fa-envelope" style='font-size:30px'></i>&nbsp; &nbsp; &nbsp;
@@ -839,6 +870,15 @@
   ga('send', 'pageview');
 </script> -->
 <!-- End Google Analytics -->
+
+<script>
+    const coll = document.querySelector(".collapsible");
+    const content = document.querySelector(".content");
+
+    coll.addEventListener("click", function() {
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+</script>
 
 </body>
 
