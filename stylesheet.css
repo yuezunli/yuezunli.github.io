@@ -81,28 +81,28 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: "Segoe UI", "San Francisco", 'Lato', Helvetica, sans-serif;
   font-size: 14px
 }
 
 strong {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: "Segoe UI", "San Francisco", 'Lato', Helvetica, sans-serif;
   font-size: 14px;
 }
 
 heading {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: "Segoe UI", "San Francisco", 'Lato', Helvetica, sans-serif;
   font-size: 22px;
 }
 
 papertitle {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: "Segoe UI", "San Francisco", 'Lato', Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700
 }
 
 name {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: "Segoe UI", "San Francisco", 'Lato', Helvetica, sans-serif;
   font-size: 32px;
 }
 
