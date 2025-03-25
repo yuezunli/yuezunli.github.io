@@ -925,7 +925,9 @@
                 parts = parts.filter(part => part.trim() !== '');
                 parts.forEach((part, index) => {
                     let trimmedPart = part.trim();
+                    console.log(trimmedPart);
                     var numCitations = data['publications'][paperId]['num_citations']
+                    console.log(numCitations);
                     if (numCitations <= min_numCitations) {
                         min_numCitations = numCitations;
                     }
