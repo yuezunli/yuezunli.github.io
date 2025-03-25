@@ -71,7 +71,7 @@ a {
 a:focus,
 a:hover {
   color: #2857f0;
-  text-decoration:underline;
+  /* text-decoration:underline; */
   /* font-weight: bold; */
 }
 
