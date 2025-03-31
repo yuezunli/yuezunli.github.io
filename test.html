@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Scholar Badge</title>
+    <style>
+        .scholar-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #0666ff;
+            color: white;
+            /* font-family: Arial, sans-serif; */
+            /* font-size: 14px; */
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .scholar-badge:hover {
+            background: #3367D6;
+            box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .scholar-badge img {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        /* .citation-count {
+            background: white;
+            color: #4285F4;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-left: 6px;
+            min-width: 40px;
+            text-align: center;
+            display: inline-block;
+        } */
+    </style>
+</head>
+<body>
+
+    <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" class="scholar-badge" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar">
+        <span class="total_citations">1234</span>
+    </a>
+
+</body>
+</html>
