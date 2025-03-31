@@ -923,6 +923,7 @@
             Array.prototype.forEach.call(citationEles, element => {
                 var numCitations = data['citedby']
                 element.innerHTML = numCitations;
+                console.log(numCitations)
             });
         });
     })
