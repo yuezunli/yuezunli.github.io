@@ -34,501 +34,589 @@
     </style>
 
     <script type="text/javascript">
-      // Toggle Display of BibTeX
-      function toggleBibtex(articleid) {
-        var bib = document.getElementById('bib_' + articleid);
-        if (bib) {
-          if (bib.className.indexOf('bibtex') != -1) {
-            bib.className.indexOf('noshow') == -1 ? bib.className = 'bibtex noshow' : bib.className = 'bibtex';
-          }
-        } else {
-          return;
+        // Toggle Display of BibTeX
+        function toggleBibtex(articleid) {
+            var bib = document.getElementById('bib_' + articleid);
+            if (bib) {
+                if (bib.className.indexOf('bibtex') != -1) {
+                    bib.className.indexOf('noshow') == -1 ? bib.className = 'bibtex noshow' : bib.className = 'bibtex';
+                }
+            } else {
+                return;
+            }
         }
-      }
     </script>
 </head>
 
 <body>
-<div class="container">
-    <header class="jumbotron" id="overview">
-        <table style="width:100%;border:0px;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-                <td style="vertical-align:middle;width:auto;">
-                    <img src="src_img/ouc.jpg" width="270" />
-                        
-                </td>
-                <td style="vertical-align:middle;width:auto;"> 
-                    <!-- <img src="src_img/earth.gif" width="80" alt="" />        -->
-                    <img id="dailyImage" src="" alt="" width="80">
-                </td>
-                <td style="vertical-align:middle;width:auto;text-align: right;padding-right: 15px;">
-                    <p class="lead">
-                        视觉分析与安全课题组<br>
-                        <b><span style="font-size:28px;color:rgb(68, 114, 196)">V</span>ision 
-                            <span style="font-size:28px;color:rgb(237, 125, 49)">A</span>nalysis & 
-                            <span style="font-size:28px;color:rgb(112, 173, 71)">S</span>ecurity Lab</b>                        
-                    </p>
-                </td>
-                <td style="vertical-align:middle;width:auto;"> 
-                    <!-- <img src="src_img/earth.gif" width="100" alt="" />       -->
-                    <img src="src_img/logo.png" width="60" alt="research-lab-logo" />   
-                </td>
-          </tr>
-        </tbody></table>
-    </header>
+    <div class="container">
+        <header class="lab-header">
+            <div class="logo">
+                <img src="src_img/logo.png" alt="Lab Logo">
+                <span class="lab-name">Vision Analysis & Security Lab</span> &nbsp;
+                <img id="dailyImage">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">首页</a>
+                <a href="people.html">成员</a>
+                <a href="research.html">研究方向</a>
+                <a href="publications.html">学术论文</a>
+                <a href="downloads.html">学术资源</a>
+                <a href="entertainment.html">娱乐活动</a>
+            </nav>
+        </header>
 
-    <div class="masthead">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <ul class="nav">
-                        <li><a href="index.html">首页</a></li>
-                        <li><a href="news.html">新闻资讯</a></li>
-                        <li><a href="research.html">研究方向</a></li>
-                        <li><a href="publications.html">学术论文</a></li>
-                        <li><a href="downloads.html">学术资源</a></li>
-                        <li><a href="people.html">成员</a></li>
-                        <li><a href="entertainment.html">休闲娱乐</a></li>
-                        <li><a href="contact.html">联系我们</a></li>
-                    </ul>
-                </div>
+        <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200"
+                    data-offset-bottom="260">
+                    <li><a href="#DMF">多媒体取证</a></li>
+                    <li><a href="#ML">深度模型安全</a></li>
+                    <li><a href="#CV">计算机视觉</a></li>
+                </ul>
+            </div>
+            <div class="span8 offset1">
+                <section id="DMF">
+                    <div class="page-header">
+                        <h3 class="subhead">多媒体取证</h3>
+                        <ul class="paper-list">
+                            <li>
+                                <span class="paper-title-text">HRGR: Enhancing Image Manipulation Detection via
+                                    Hierarchical Region-aware Graph Reasoning.</span>
+                                <span class="paper-authors">Xudong Wang, Jiaran Zhou, Huiyu Zhou, Junyu Dong, Yuezun
+                                    Li<sup>✉️</sup>.
+                                    <span class="paper-conference">IEEE International Conference on Multimedia & Expo
+                                        (ICME), 2025.</span>
+                                    <span class="paper-level">[CCF B]</span>
+                                    <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Forensics Adapter: Adapting CLIP for Generalizable Face
+                                    Forgery Detection.</span>
+                                <span class="paper-authors">Xinjie Cui, Yuezun Li<sup>✉️</sup>, Ao Luo, Jiaran Zhou,
+                                    Junyu Dong.
+                                    <span class="paper-conference">IEEE Conference on Computer Vision and Pattern
+                                        Recognition (CVPR), 2025. </span>
+                                    <span class="paper-highlight">[CCF A][计算机视觉顶会]</span>
+                                    <span class="badge badge-conference">会议</span>
+                            </li>
+                            <li>
+                                <span class="paper-title-text">Where the Devil Hides: Deepfake Detectors Can No Longer
+                                    Be Trusted.</span>
+                                <span class="paper-authors">Shuaiwei Yuan, Junyu Dong, Yuezun Li<sup>✉️</sup>.</span>
+                                <span class="paper-conference">IEEE Conference on Computer Vision and Pattern
+                                    Recognition (CVPR), 2025.</span>
+                                <span class="paper-highlight">[CCF A][计算机视觉顶会]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Texture, Shape and Order Matter: A New Transformer Design
+                                    for Sequential DeepFake Detection.</span>
+                                <span class="paper-authors">Yunfei Li, Yuezun Li<sup>✉️</sup>, Xin Wang, Baoyuan Wu,
+                                    Jiaran Zhou, Junyu Dong.</span>
+                                <span class="paper-conference">IEEE/CVF Winter Conference on Applications of Computer
+                                    Vision (WACV), 2025.</span>
+                                <span class="paper-level">[CVF之一][Oral]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">FreqBlender: Enhancing DeepFake Detection by Blending
+                                    Frequency Knowledge.</span>
+                                <span class="paper-authors">Hanzhe Li, Jiaran Zhou, Yuezun Li<sup>✉️</sup>, Baoyuan Wu,
+                                    Bin Li, Junyu Dong.</span>
+                                <span class="paper-conference">Neural Information Processing Systems (NeurIPS),
+                                    2024.</span>
+                                <span class="paper-highlight">[CCF A][机器学习顶会]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">DPL: Cross-quality DeepFake Detection via Dual
+                                    Progressive Learning.</span>
+                                <span class="paper-authors">Dongliang Zhang, Yunfei Li, Jiaran Zhou, Yuezun
+                                    Li<sup>✉️</sup>.</span>
+                                <span class="paper-conference">Asian Conference on Computer Vision (ACCV), 2024.</span>
+                                <span class="paper-level">[CCF C, acceptance rate: 32%]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Enhancing Deepfake Detection via Adversarial Generative
+                                    Learning.</span>
+                                <span class="paper-authors">Zengqiang Chen, Xudong Wang, Yuezun Li<sup>✉️</sup>.</span>
+                                <span class="paper-conference">Chinese Conference on Biometric Recognition (CCBR),
+                                    2024.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">FastForensics: Efficient Two-Stream Design for Real-Time
+                                    Image Manipulation Detection.</span>
+                                <span class="paper-authors">Yangxiang Zhang, Yuezun Li<sup>✉️</sup>, Ao Luo, Jiaran
+                                    Zhou, Junyu Dong.</span>
+                                <span class="paper-conference">British Machine Vision Conference (BMVC), 2024.</span>
+                                <span class="paper-level">[CCF C, TH-CPL B, acceptance rate: 25.8%]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Mumpy: Multilateral Temporal-view Pyramid Transformer for
+                                    Video Inpainting Detection.</span>
+                                <span class="paper-authors">Ying Zhang, Yuezun Li<sup>✉️</sup>, Bo Peng, Jiaran Zhou,
+                                    Huiyu Zhou, Junyu Dong.</span>
+                                <span class="paper-conference">British Machine Vision Conference (BMVC), 2024.</span>
+                                <span class="paper-level">[CCF C, TH-CPL B, acceptance rate: 25.8%]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">DomainForensics: Exposing Face Forgery across Domains via
+                                    Bi-directional Adaptation.</span>
+                                <span class="paper-authors">Qingxuan Lv, Yuezun Li<sup>✉️</sup>, Junyu
+                                    Dong<sup>✉️</sup>, Sheng Chen, Hui Yu, Huiyu Zhou, Shu Zhang.</span>
+                                <span class="paper-conference">IEEE Transactions on Information Forensics and Security
+                                    (TIFS), 2024.</span>
+                                <span class="paper-highlight">[CCF A][信息安全顶刊][中科院一区]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Fake It till You Make It: Curricular Dynamic Forgery
+                                    Augmentations towards General Deepfake Detection.</span>
+                                <span class="paper-authors">Yuzhen Lin, Wentang Song, Bin Li, Yuezun Li, Jiangqun Ni,
+                                    Han Chen, Qiushi Li.</span>
+                                <span class="paper-conference">European Conference on Computer Vision (ECCV),
+                                    2024.</span>
+                                <span class="paper-highlight">[CCF B][计算机视觉顶会]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">COMICS: End-to-end Bi-grained Contrastive Learning for
+                                    Multi-face Forgery Detection.</span>
+                                <span class="paper-authors">Cong Zhang, Honggang Qi, Shuhui Wang, Yuezun
+                                    Li<sup>✉️</sup>, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video
+                                    Technology (TCSVT), 2024.</span>
+                                <span class="paper-highlight">[CCF B] [中科院一区]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Forensics Forest Family: A Series of Multi-scale
+                                    Hierarchical Cascade Forests for Detecting GAN-generated Faces.</span>
+                                <span class="paper-authors">Jiucui Lu, Jiaran Zhou, Junyu Dong, Bin Li, Siwei Lyu,
+                                    Yuezun Li<sup>✉️</sup>.</span>
+                                <span class="paper-conference">IEEE Transactions on Information Forensics and Security
+                                    (TIFS), 2024.</span>
+                                <span class="paper-highlight">[CCF A][信息安全顶刊][中科院一区]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">FakeTracer: Catching Face-swap DeepFakes via Implanting
+                                    Traces in Training.</span>
+                                <span class="paper-authors">Pu Sun, Honggang Qi, Yuezun Li<sup>✉️</sup>, Siwei
+                                    Lyu.</span>
+                                <span class="paper-conference">IEEE Transactions on Emerging Topics in Computing (TETC),
+                                    2024.</span>
+                                <span class="paper-highlight">[中科院二区]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Forensics Forest: Multi-scale Hierarchical Cascade Forest
+                                    for Detecting GAN-generated Faces.</span>
+                                <span class="paper-authors">Jiucui Lu, Yuezun Li<sup>✉️</sup>, Jiaran Zhou, Bin Li,
+                                    Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Multimedia and Expo
+                                    (ICME), 2023.</span>
+                                <span class="paper-level">[CCF B][Oral]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Face Poison: Obstructing DeepFakes by Disrupting Face
+                                    Detection.</span>
+                                <span class="paper-authors">Yuezun Li, Jiaran Zhou, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Multimedia and Expo
+                                    (ICME), 2023.</span>
+                                <span class="paper-highlight">[CCF B]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Watching the BiG Artifacts: Exposing DeepFake Videos via
+                                    Bi-Granularity Artifacts.</span>
+                                <span class="paper-authors">Han Chen<sup>*</sup>, Yuezun Li<sup>*</sup>, Dongdong Lin,
+                                    Bin Li, Junqiang Wu.</span>
+                                <span class="paper-conference">Pattern Recognition (PR), 2023.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">DeepFake-o-meter: An Open Platform for DeepFake
+                                    Detection.</span>
+                                <span class="paper-authors">Yuezun Li, Cong Zhang, Pu Sun, Lipeng Ke, Yan Ju, Honggang
+                                    Qi, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE Security and Privacy Symposium (S&P), 2021.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Exposing GAN-generated Faces Using Inconsistent Corneal
+                                    Specular Highlights.</span>
+                                <span class="paper-authors">Shu Hu, Yuezun Li, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Acoustics, Speech, and
+                                    Signal Processing (ICASSP), 2021.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Landmark Breaker: Obstructing DeepFake By Disturbing
+                                    Landmark Extraction.</span>
+                                <span class="paper-authors">Pu Sun<sup>*</sup>, Yuezun Li<sup>*</sup>, Honggang Qi,
+                                    Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Workshop on Information Forensics and
+                                    Security (WIFS), 2020.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Celeb-DF: A Large-scale Challenging Dataset for DeepFake
+                                    Forensics.</span>
+                                <span class="paper-authors">Yuezun Li, Xin Yang, Pu Sun, Honggang Qi, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE Conference on Computer Vision and Pattern
+                                    Recognition (CVPR), 2020.</span>
+                                <span class="paper-highlight">[CCF A][计算机视觉顶会]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Exposing DeepFake Videos By Detecting Face Warping
+                                    Artifacts.</span>
+                                <span class="paper-authors">Yuezun Li, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Computer Vision and
+                                    Pattern Recognition Workshop (CVPRW), 2019.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">De-identification Without Losing Faces.</span>
+                                <span class="paper-authors">Yuezun Li, Siwei Lyu.</span>
+                                <span class="paper-conference">ACM Workshop on Information Hiding and Multimedia
+                                    Security (IHMMSec), 2019.</span>
+                                <span class="paper-level">[CCF C]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Exposing GAN-synthesized Faces Using Landmark
+                                    Locations.</span>
+                                <span class="paper-authors">Xin Yang, Yuezun Li, Honggang Qi, Siwei Lyu.</span>
+                                <span class="paper-conference">ACM Workshop on Information Hiding and Multimedia
+                                    Security (IHMMSec), 2019.</span>
+                                <span class="paper-level">[CCF C]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Exposing Deep Fakes Using Inconsistent Head Poses.</span>
+                                <span class="paper-authors">Xin Yang<sup>*</sup>, Yuezun Li<sup>*</sup>, Siwei
+                                    Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Acoustics, Speech, and
+                                    Signal Processing (ICASSP), 2019.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">In Ictu Oculi: Exposing AI Generated Fake Face Videos by
+                                    Detecting Eye Blinking.</span>
+                                <span class="paper-authors">Yuezun Li, Ming-Ching Chang, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Workshop on Information Forensics and
+                                    Security (WIFS), 2018.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="ML">
+                    <div class="page-header">
+                        <h3 class="subhead">深度模型安全</h3>
+                        <ul class="paper-list">
+                            <li>
+                                <span class="paper-title-text">TPAM: Transferable Perceptual-constrained Adversarial
+                                    Meshes.</span>
+                                <span class="paper-authors">Tengjia Kang, Yuezun Li, Jiaran Zhou, Shiqing Xin, Junyu
+                                    Dong, Changhe Tu.</span>
+                                <span class="paper-conference">Pacific Graphics (PG), 2024.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Enhancing Adversarial Robustness of DNNs via Weight
+                                    Decorrelation in Training.</span>
+                                <span class="paper-authors">Cong Zhang, Yuezun Li, Honggang Qi, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Acoustics, Speech and
+                                    Signal Processing (ICASSP), 2024.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">AdaNI: Adaptive Noise Injection to Improve Adversarial
+                                    Robustness.</span>
+                                <span class="paper-authors">Yuezun Li, Cong Zhang, Honggang Qi, Siwei Lyu.</span>
+                                <span class="paper-conference">Computer Vision and Image Understanding (CVIU),
+                                    2023.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Improving Transferable Adversarial Attack via
+                                    Feature-Momentum.</span>
+                                <span class="paper-authors">Xianglong He, Yuezun Li<sup>✉️</sup>, Haipeng Qu, Junyu
+                                    Dong.</span>
+                                <span class="paper-conference">Computers & Security (COSE), 2023.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">TransRPN: Towards the Transferable Adversarial
+                                    Perturbations Using Region Proposal Networks and Beyond.</span>
+                                <span class="paper-authors">Yuezun Li, Ming-Ching Chang, Pu Sun, Honggang Qi, Junyu
+                                    Dong, Siwei Lyu.</span>
+                                <span class="paper-conference">International Journal on Computer Vision and Image
+                                    Understanding (CVIU), 2021.</span>
+                                <span class="paper-level">[CCF B]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Invisible Backdoor Attack with Sample-Specific
+                                    Triggers.</span>
+                                <span class="paper-authors">Yuezun Li, Yiming Li, Baoyuan Wu, Longkang Li, Ran He, Siwei
+                                    Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Computer Vision (ICCV),
+                                    2021.</span>
+                                <span class="paper-highlight">[CCF A][计算机视觉顶会]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Exploring the Vulnerability of Single Shot Module in
+                                    Object Detectors via Imperceptible Background Patches.</span>
+                                <span class="paper-authors">Yuezun Li, Xiao Bian, Ming-Ching Chang, Siwei Lyu.</span>
+                                <span class="paper-conference">The British Machine Vision Conference (BMVC),
+                                    2019.</span>
+                                <span class="paper-level">[CCF C]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Robust Adversarial Perturbation on Deep Proposal-based
+                                    Models.</span>
+                                <span class="paper-authors">Yuezun Li, Daniel Tian, Ming-Ching Chang, Xiao Bian, Siwei
+                                    Lyu.</span>
+                                <span class="paper-conference">The British Machine Vision Conference (BMVC),
+                                    2018.</span>
+                                <span class="paper-level">[CCF C]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </section>
+
+                <section id="CV">
+                    <div class="page-header">
+                        <h3 class="subhead">计算机视觉</h3>
+                        <ul class="paper-list">
+                            <li>
+                                <span class="paper-title-text">UWStereo: A Large Synthetic Dataset for Underwater Stereo
+                                    Matching.</span>
+                                <span class="paper-authors">Qingxuan Lv, Junyu Dong<sup>✉️</sup>, Yuezun
+                                    Li<sup>✉️</sup>, Sheng Chen, Hui Yu, Shu Zhang, Wenhan Wang.
+                                    <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video
+                                        Technology (TCSVT), 2025.</span>
+                                    <span class="paper-highlight">[CCF B][中科院一区]</span>
+                                    <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">PhyTracker: An Online Tracker for Phytoplankton.</span>
+                                <span class="paper-authors">Yang Yu, Qingxuan Lv, Yuezun Li<sup>✉️</sup>, Zhiqiang Wei,
+                                    Junyu Dong<sup>✉️</sup>.</span>
+                                <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video
+                                    Technology (TCSVT), 2024.</span>
+                                <span class="paper-highlight">[CCF B][中科院一区]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Dynamic Soft Labeling for Visual Semantic
+                                    Embedding.</span>
+                                <span class="paper-authors">Jiaao Yua, Yunlai Ding, Junyu Dong, Yuezun Li.</span>
+                                <span class="paper-conference">ACM International Conference on Multimedia Retrieval
+                                    (ICMR), 2024.</span>
+                                <span class="paper-highlight">[CCF B]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Multiview Adaptive Attention Pooling for Image-Text
+                                    Retrieval.</span>
+                                <span class="paper-authors">Yunlai Ding, Jiaao Yua, Qingxuan Lv, Haoran Zhao, Junyu
+                                    Dong, Yuezun Li.</span>
+                                <span class="paper-conference">Knowledge-Based Systems (KBS), 2024.</span>
+                                <span class="paper-level">[CCF C][中科院一区]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">PMOT2023: A large-scale multi-object tracking (MOT)
+                                    dataset with application to phytoplankton observation.</span>
+                                <span class="paper-authors">Jiaao Yu, Qingxuan Lv, Yuezun Li<sup>✉️</sup>, Junyu
+                                    Dong<sup>✉️</sup>, Haoran Zhao, Qiong Li.</span>
+                                <span class="paper-conference">Journal of Marine Science and Engineering (JMSE),
+                                    2023.</span>
+                                <span class="paper-highlight">(Interdiscipline)</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">LaFea: Learning Latent Representation beyond Feature for
+                                    Universal Domain Adaptation.</span>
+                                <span class="paper-authors">Qingxuan Lyu, Yuezun Li<sup>✉️</sup>, Junyu
+                                    Dong<sup>✉️</sup>, Ziqian Guo.</span>
+                                <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video
+                                    Technology (TCSVT), 2023.</span>
+                                <span class="paper-highlight">[CCF B][中科院一区]</span>
+                                <span class="badge badge-journal">期刊</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Fast Portrait Segmentation with Highly Light-weight
+                                    Network.</span>
+                                <span class="paper-authors">Yuezun Li<sup>*</sup>, Ao Luo<sup>*</sup>, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Image Processing (ICIP),
+                                    2020.</span>
+                                <span class="paper-highlight">[CCF C]</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Graph-to-Graph Energy Minimization for Video Object
+                                    Segmentation.</span>
+                                <span class="paper-authors">Yuezun Li<sup>*</sup>, Longyin Wen<sup>*</sup>, Ming-Ching
+                                    Chang, Siwei Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Advanced Video and
+                                    Signal-based Surveillance (AVSS), 2019.</span>
+                                <span class="paper-level">(Oral)</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">Pixel Offset Regression (POR) for Single-shot Instance
+                                    Segmentation.</span>
+                                <span class="paper-authors">Yuezun Li, Xiao Bian, Ming-Ching Chang, Longyin Wen, Siwei
+                                    Lyu.</span>
+                                <span class="paper-conference">IEEE International Conference on Advanced Video and
+                                    Signal-based Surveillance (AVSS), 2018.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">UA-DETRAC 2017: Report of AVSS2017 & IWT4S Challenge on
+                                    Advanced Traffic Monitoring.</span>
+                                <span class="paper-authors">Siwei Lyu, Ming-Ching Chang, Dawei Du, Longyin Wen, Honggang
+                                    Qi, Yuezun Li, Yi Wei, and et al.</span>
+                                <span class="paper-conference">IEEE International Conference on Advanced Video and
+                                    Signal-based Surveillance (AVSS), 2017.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">The Visual Object Tracking VOT2015 Challenge
+                                    Results.</span>
+                                <span class="paper-authors">(As participating team).</span>
+                                <span class="paper-conference">IEEE International Conference on Computer Vision (ICCV)
+                                    Workshops, 2015.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+
+                            <li>
+                                <span class="paper-title-text">The Thermal Infrared Visual Object Tracking VOT-TIR2015
+                                    Challenge Results.</span>
+                                <span class="paper-authors">(As participating team).</span>
+                                <span class="paper-conference">IEEE International Conference on Computer Vision (ICCV)
+                                    Workshops, 2015.</span>
+                                <span class="badge badge-conference">会议</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+                <hr>
             </div>
         </div>
-    </div>
-    
-    <div class="row-fluid">
-        <div class="span3 bs-docs-sidebar" id="navparent">
-            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200"
-                data-offset-bottom="260">
-                <li><a href="#DMF">多媒体取证</a></li>
-                <li><a href="#ML">深度模型安全</a></li>
-                <li><a href="#CV">计算机视觉</a></li>
-            </ul>
-        </div>
-        <div class="span8 offset1">
-            <section id="DMF">
-                <div class="page-header">
-                    <h3 class="subhead">多媒体取证</h3>
-                    <ul class="paper-list">
-                        <li>                        	
-                            <span class="paper-title-text">HRGR: Enhancing Image Manipulation Detection via Hierarchical Region-aware Graph Reasoning.</span>
-                            <span class="paper-authors">Xudong Wang, Jiaran Zhou, Huiyu Zhou, Junyu Dong, Yuezun Li<sup>✉️</sup>.
-                            <span class="paper-conference">IEEE International Conference on Multimedia & Expo (ICME), 2025.</span>
-                            <span class="paper-highlight">[<b>CCF B</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-
-                        <li>                        	
-                            <span class="paper-title-text">Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection.</span>
-                            <span class="paper-authors">Xinjie Cui, Yuezun Li<sup>✉️</sup>, Ao Luo, Jiaran Zhou, Junyu Dong.
-                            <span class="paper-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025. </span>
-                            <span class="paper-highlight">[<b>CCF A][计算机视觉顶会</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                        <li>
-                            <span class="paper-title-text">Where the Devil Hides: Deepfake Detectors Can No Longer Be Trusted.</span>
-                            <span class="paper-authors">Shuaiwei Yuan, Junyu Dong, Yuezun Li<sup>✉️</sup>.</span>
-                            <span class="paper-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025.</span>
-                            <span class="paper-highlight">[<b>CCF A][计算机视觉顶会</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Texture, Shape and Order Matter: A New Transformer Design for Sequential DeepFake Detection.</span>
-                            <span class="paper-authors">Yunfei Li, Yuezun Li<sup>✉️</sup>, Xin Wang, Baoyuan Wu, Jiaran Zhou, Junyu Dong.</span>
-                            <span class="paper-conference">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2025.</span>
-                            <span class="paper-highlight">[CVF之一][Oral]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">FreqBlender: Enhancing DeepFake Detection by Blending Frequency Knowledge.</span>
-                            <span class="paper-authors">Hanzhe Li, Jiaran Zhou, Yuezun Li<sup>✉️</sup>, Baoyuan Wu, Bin Li, Junyu Dong.</span>
-                            <span class="paper-conference">Neural Information Processing Systems (NeurIPS), 2024.</span>
-                            <span class="paper-highlight">[<b>CCF A][机器学习顶会</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">DPL: Cross-quality DeepFake Detection via Dual Progressive Learning.</span>
-                            <span class="paper-authors">Dongliang Zhang, Yunfei Li, Jiaran Zhou, Yuezun Li<sup>✉️</sup>.</span>
-                            <span class="paper-conference">Asian Conference on Computer Vision (ACCV), 2024.</span>
-                            <span class="paper-highlight">[CCF C, <b>acceptance rate: 32%</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Enhancing Deepfake Detection via Adversarial Generative Learning.</span>
-                            <span class="paper-authors">Zengqiang Chen, Xudong Wang, Yuezun Li<sup>✉️</sup>.</span>
-                            <span class="paper-conference">Chinese Conference on Biometric Recognition (CCBR), 2024.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">FastForensics: Efficient Two-Stream Design for Real-Time Image Manipulation Detection.</span>
-                            <span class="paper-authors">Yangxiang Zhang, Yuezun Li<sup>✉️</sup>, Ao Luo, Jiaran Zhou, Junyu Dong.</span>
-                            <span class="paper-conference">British Machine Vision Conference (BMVC), 2024.</span>
-                            <span class="paper-highlight">[CCF C, TH-CPL B, <b>acceptance rate: 25.8%</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Mumpy: Multilateral Temporal-view Pyramid Transformer for Video Inpainting Detection.</span>
-                            <span class="paper-authors">Ying Zhang, Yuezun Li<sup>✉️</sup>, Bo Peng, Jiaran Zhou, Huiyu Zhou, Junyu Dong.</span>
-                            <span class="paper-conference">British Machine Vision Conference (BMVC), 2024.</span>
-                            <span class="paper-highlight">[CCF C, TH-CPL B, <b>acceptance rate: 25.8%</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">DomainForensics: Exposing Face Forgery across Domains via Bi-directional Adaptation.</span>
-                            <span class="paper-authors">Qingxuan Lv, Yuezun Li<sup>✉️</sup>, Junyu Dong<sup>✉️</sup>, Sheng Chen, Hui Yu, Huiyu Zhou, Shu Zhang.</span>
-                            <span class="paper-conference">IEEE Transactions on Information Forensics and Security (TIFS), 2024.</span>
-                            <span class="paper-highlight">[<b>CCF A</b>][信息安全顶刊][<b>中科院一区</b>]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Fake It till You Make It: Curricular Dynamic Forgery Augmentations towards General Deepfake Detection.</span>
-                            <span class="paper-authors">Yuzhen Lin, Wentang Song, Bin Li, Yuezun Li, Jiangqun Ni, Han Chen, Qiushi Li.</span>
-                            <span class="paper-conference">European Conference on Computer Vision (ECCV), 2024.</span>
-                            <span class="paper-highlight">[CCF B] [<b>计算机视觉顶会</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">COMICS: End-to-end Bi-grained Contrastive Learning for Multi-face Forgery Detection.</span>
-                            <span class="paper-authors">Cong Zhang, Honggang Qi, Shuhui Wang, Yuezun Li<sup>✉️</sup>, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.</span>
-                            <span class="paper-highlight">[CCF B] [<b>中科院一区</b>]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Forensics Forest Family: A Series of Multi-scale Hierarchical Cascade Forests for Detecting GAN-generated Faces.</span>
-                            <span class="paper-authors">Jiucui Lu, Jiaran Zhou, Junyu Dong, Bin Li, Siwei Lyu, Yuezun Li<sup>✉️</sup>.</span>
-                            <span class="paper-conference">IEEE Transactions on Information Forensics and Security (TIFS), 2024.</span>
-                            <span class="paper-highlight">[<b>CCF A</b>][信息安全顶刊] [<b>中科院一区</b>]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">FakeTracer: Catching Face-swap DeepFakes via Implanting Traces in Training.</span>
-                            <span class="paper-authors">Pu Sun, Honggang Qi, Yuezun Li<sup>✉️</sup>, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE Transactions on Emerging Topics in Computing (TETC), 2024.</span>
-                            <span class="paper-highlight">[中科院二区]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Forensics Forest: Multi-scale Hierarchical Cascade Forest for Detecting GAN-generated Faces.</span>
-                            <span class="paper-authors">Jiucui Lu, Yuezun Li<sup>✉️</sup>, Jiaran Zhou, Bin Li, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Multimedia and Expo (ICME), 2023.</span>
-                            <span class="paper-highlight">[CCF B] [<b>Oral</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Face Poison: Obstructing DeepFakes by Disrupting Face Detection.</span>
-                            <span class="paper-authors">Yuezun Li, Jiaran Zhou, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Multimedia and Expo (ICME), 2023.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Watching the BiG Artifacts: Exposing DeepFake Videos via Bi-Granularity Artifacts.</span>
-                            <span class="paper-authors">Han Chen<sup>*</sup>, Yuezun Li<sup>*</sup>, Dongdong Lin, Bin Li, Junqiang Wu.</span>
-                            <span class="paper-conference">Pattern Recognition (PR), 2023.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">DeepFake-o-meter: An Open Platform for DeepFake Detection.</span>
-                            <span class="paper-authors">Yuezun Li, Cong Zhang, Pu Sun, Lipeng Ke, Yan Ju, Honggang Qi, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE Security and Privacy Symposium (S&P), 2021.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-
-                        <li>                        	
-                            <span class="paper-title-text">Exposing GAN-generated Faces Using Inconsistent Corneal Specular Highlights.</span>
-                            <span class="paper-authors">Shu Hu, Yuezun Li, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2021.</span>
-                            <span class="paper-highlight">[<b>CCF B</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>                        	
-                            <span class="paper-title-text">Landmark Breaker: Obstructing DeepFake By Disturbing Landmark Extraction.</span>
-                            <span class="paper-authors">Pu Sun<sup>*</sup>, Yuezun Li<sup>*</sup>, Honggang Qi, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Workshop on Information Forensics and Security (WIFS), 2020.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>                        	
-                            <span class="paper-title-text">Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics.</span>
-                            <span class="paper-authors">Yuezun Li, Xin Yang, Pu Sun, Honggang Qi, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.</span>
-                            <span class="paper-highlight">[<b>CCF A</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>                        	
-                            <span class="paper-title-text">Exposing DeepFake Videos By Detecting Face Warping Artifacts.</span>
-                            <span class="paper-authors">Yuezun Li, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Computer Vision and Pattern Recognition Workshop (CVPRW), 2019.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>                        	
-                            <span class="paper-title-text">De-identification Without Losing Faces.</span>
-                            <span class="paper-authors">Yuezun Li, Siwei Lyu.</span>
-                            <span class="paper-conference">ACM Workshop on Information Hiding and Multimedia Security (IHMMSec), 2019.</span>
-                            <span class="paper-highlight">[<b>CCF C</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>                        	
-                            <span class="paper-title-text">Exposing GAN-synthesized Faces Using Landmark Locations.</span>
-                            <span class="paper-authors">Xin Yang, Yuezun Li, Honggang Qi, Siwei Lyu.</span>
-                            <span class="paper-conference">ACM Workshop on Information Hiding and Multimedia Security (IHMMSec), 2019.</span>
-                            <span class="paper-highlight">[<b>CCF C</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>                        	
-                            <span class="paper-title-text">Exposing Deep Fakes Using Inconsistent Head Poses.</span>
-                            <span class="paper-authors">Xin Yang<sup>*</sup>, Yuezun Li<sup>*</sup>, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2019.</span>
-                            <span class="paper-highlight">[<b>CCF B</b>]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>                        	
-                            <span class="paper-title-text">In Ictu Oculi: Exposing AI Generated Fake Face Videos by Detecting Eye Blinking.</span>
-                            <span class="paper-authors">Yuezun Li, Ming-Ching Chang, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Workshop on Information Forensics and Security (WIFS), 2018.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </section>
-
-            <section id="ML">
-                <div class="page-header">
-                    <h3 class="subhead">深度模型安全</h3>
-                    <ul class="paper-list">
-                        <li>
-                            <span class="paper-title-text">TPAM: Transferable Perceptual-constrained Adversarial Meshes.</span>
-                            <span class="paper-authors">Tengjia Kang, Yuezun Li, Jiaran Zhou, Shiqing Xin, Junyu Dong, Changhe Tu.</span>
-                            <span class="paper-conference">Pacific Graphics (PG), 2024.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Enhancing Adversarial Robustness of DNNs via Weight Decorrelation in Training.</span>
-                            <span class="paper-authors">Cong Zhang, Yuezun Li, Honggang Qi, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">AdaNI: Adaptive Noise Injection to Improve Adversarial Robustness.</span>
-                            <span class="paper-authors">Yuezun Li, Cong Zhang, Honggang Qi, Siwei Lyu.</span>
-                            <span class="paper-conference">Computer Vision and Image Understanding (CVIU), 2023.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Improving Transferable Adversarial Attack via Feature-Momentum.</span>
-                            <span class="paper-authors">Xianglong He, Yuezun Li<sup>✉️</sup>, Haipeng Qu, Junyu Dong.</span>
-                            <span class="paper-conference">Computers & Security (COSE), 2023.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">TransRPN: Towards the Transferable Adversarial Perturbations Using Region Proposal Networks and Beyond.</span>
-                            <span class="paper-authors">Yuezun Li, Ming-Ching Chang, Pu Sun, Honggang Qi, Junyu Dong, Siwei Lyu.</span>
-                            <span class="paper-conference">International Journal on Computer Vision and Image Understanding (CVIU), 2021.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Invisible Backdoor Attack with Sample-Specific Triggers.</span>
-                            <span class="paper-authors">Yuezun Li, Yiming Li, Baoyuan Wu, Longkang Li, Ran He, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Computer Vision (ICCV), 2021.</span>
-                            <span class="paper-highlight">[CCF A][计算机视觉顶会]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Exploring the Vulnerability of Single Shot Module in Object Detectors via Imperceptible Background Patches.</span>
-                            <span class="paper-authors">Yuezun Li, Xiao Bian, Ming-Ching Chang, Siwei Lyu.</span>
-                            <span class="paper-conference">The British Machine Vision Conference (BMVC), 2019.</span>
-                            <span class="paper-highlight">[CCF C]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Robust Adversarial Perturbation on Deep Proposal-based Models.</span>
-                            <span class="paper-authors">Yuezun Li, Daniel Tian, Ming-Ching Chang, Xiao Bian, Siwei Lyu.</span>
-                            <span class="paper-conference">The British Machine Vision Conference (BMVC), 2018.</span>
-                            <span class="paper-highlight">[CCF C]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    </ul>
-                    
-
-                </div>
-            </section>
-
-            <section id="CV">
-                <div class="page-header">
-                    <h3 class="subhead">计算机视觉</h3>
-                    <ul class="paper-list">
-                        <li>                        	
-                            <span class="paper-title-text">UWStereo: A Large Synthetic Dataset for Underwater Stereo Matching.</span>
-                            <span class="paper-authors">Qingxuan Lv, Junyu Dong<sup>✉️</sup>, Yuezun Li<sup>✉️</sup>, Sheng Chen, Hui Yu, Shu Zhang, Wenhan Wang.
-                            <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2025.</span>
-                            <span class="paper-highlight">[<b>CCF B</b>][<b>中科院一区</b>]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                        
-                        <li>
-                            <span class="paper-title-text">PhyTracker: An Online Tracker for Phytoplankton.</span>
-                            <span class="paper-authors">Yang Yu, Qingxuan Lv, Yuezun Li<sup>✉️</sup>, Zhiqiang Wei, Junyu Dong<sup>✉️</sup>.</span>
-                            <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.</span>
-                            <span class="paper-highlight">[CCF B] [<b>中科院一区</b>]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Dynamic Soft Labeling for Visual Semantic Embedding.</span>
-                            <span class="paper-authors">Jiaao Yua, Yunlai Ding, Junyu Dong, Yuezun Li.</span>
-                            <span class="paper-conference">ACM International Conference on Multimedia Retrieval (ICMR), 2024.</span>
-                            <span class="paper-highlight">[CCF B]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Multiview Adaptive Attention Pooling for Image-Text Retrieval.</span>
-                            <span class="paper-authors">Yunlai Ding, Jiaao Yua, Qingxuan Lv, Haoran Zhao, Junyu Dong, Yuezun Li.</span>
-                            <span class="paper-conference">Knowledge-Based Systems (KBS), 2024.</span>
-                            <span class="paper-highlight">[CCF C] [<b>中科院一区</b>]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">PMOT2023: A large-scale multi-object tracking (MOT) dataset with application to phytoplankton observation.</span>
-                            <span class="paper-authors">Jiaao Yu, Qingxuan Lv, Yuezun Li<sup>✉️</sup>, Junyu Dong<sup>✉️</sup>, Haoran Zhao, Qiong Li.</span>
-                            <span class="paper-conference">Journal of Marine Science and Engineering (JMSE), 2023.</span>
-                            <span class="paper-highlight">(Interdiscipline)</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">LaFea: Learning Latent Representation beyond Feature for Universal Domain Adaptation.</span>
-                            <span class="paper-authors">Qingxuan Lyu, Yuezun Li<sup>✉️</sup>, Junyu Dong<sup>✉️</sup>, Ziqian Guo.</span>
-                            <span class="paper-conference">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2023.</span>
-                            <span class="paper-highlight">[CCF B] [<b>中科院一区</b>]</span>
-                            <span class="badge badge-journal">期刊</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Fast Portrait Segmentation with Highly Light-weight Network.</span>
-                            <span class="paper-authors">Yuezun Li<sup>*</sup>, Ao Luo<sup>*</sup>, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Image Processing (ICIP), 2020.</span>
-                            <span class="paper-highlight">[CCF C]</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Graph-to-Graph Energy Minimization for Video Object Segmentation.</span>
-                            <span class="paper-authors">Yuezun Li<sup>*</sup>, Longyin Wen<sup>*</sup>, Ming-Ching Chang, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2019.</span>
-                            <span class="paper-highlight">(Oral)</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">Pixel Offset Regression (POR) for Single-shot Instance Segmentation.</span>
-                            <span class="paper-authors">Yuezun Li, Xiao Bian, Ming-Ching Chang, Longyin Wen, Siwei Lyu.</span>
-                            <span class="paper-conference">IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2018.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">UA-DETRAC 2017: Report of AVSS2017 & IWT4S Challenge on Advanced Traffic Monitoring.</span>
-                            <span class="paper-authors">Siwei Lyu, Ming-Ching Chang, Dawei Du, Longyin Wen, Honggang Qi, Yuezun Li, Yi Wei, and et al.</span>
-                            <span class="paper-conference">IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2017.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">The Visual Object Tracking VOT2015 Challenge Results.</span>
-                            <span class="paper-authors">(As participating team).</span>
-                            <span class="paper-conference">IEEE International Conference on Computer Vision (ICCV) Workshops, 2015.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    
-                        <li>
-                            <span class="paper-title-text">The Thermal Infrared Visual Object Tracking VOT-TIR2015 Challenge Results.</span>
-                            <span class="paper-authors">(As participating team).</span>
-                            <span class="paper-conference">IEEE International Conference on Computer Vision (ICCV) Workshops, 2015.</span>
-                            <span class="badge badge-conference">会议</span>
-                        </li>
-                    </ul>
-                    
-                </div>
-            </section>
-            <hr>
-        </div>
-    </div>
-    <!-- <div class="row-fluid">
+        <!-- <div class="row-fluid">
  <p style="text-align:center;"><img src="research_img/research.png" /></p>
 </div> -->
-</div>
-<div class="container-fluid">
-    <div class="row-fluid">
-        <p style="text-align:center;">&copy; Vision Analysis and Security (VAS) Lab @ OUC</p>
     </div>
-</div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <p style="text-align:center;">&copy; Vision Analysis and Security (VAS) Lab @ OUC</p>
+        </div>
+    </div>
 
 
-<!-- Javascript files -->
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script> $('#main-carousel').carousel(); </script>
+    <!-- Javascript files -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script> $('#main-carousel').carousel(); </script>
 
-<!-- Le javascript
+    <!-- Le javascript
    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function () {
-    $(document.body).scrollspy({
-      target: "#navparent"
-    });
-  });
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document.body).scrollspy({
+                target: "#navparent"
+            });
+        });
 
-</script>
-
-<script>
-    const images = ["src_img/earth.gif", "src_img/ai1.gif", "src_img/ai2.gif", "src_img/ai3.gif", "src_img/ai4.gif"]; // 7张图片
-    const date = new Date();
-    const index = date.getDate() % images.length; // 以日期计算索引
-    document.getElementById("dailyImage").src = images[index];
     </script>
 
-    
+    <script>
+        const images = ["src_img/earth.gif", "src_img/ai1.gif", "src_img/ai2.gif", "src_img/ai3.gif", "src_img/ai4.gif"]; // 7张图片
+        const date = new Date();
+        const index = date.getDate() % images.length; // 以日期计算索引
+        document.getElementById("dailyImage").src = images[index];
+    </script>
+    <script>
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>

@@ -16,61 +16,24 @@
 
 <body>
 <div class="container">
-    <header class="jumbotron" id="overview">
-        <table style="width:100%;border:0px;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-                <td style="vertical-align:middle;width:auto;">
-                    <img src="src_img/ouc.jpg" width="270" />
-                        
-                </td>
-                <td style="vertical-align:middle;width:auto;"> 
-                    <!-- <img src="src_img/earth.gif" width="80" alt="" />        -->
-                    <img id="dailyImage" src="" alt="" width="80">
-                </td>
-                <td style="vertical-align:middle;width:auto;text-align: right;padding-right: 15px;">
-                    <p class="lead">
-                        视觉分析与安全课题组<br>
-                        <b><span style="font-size:28px;color:rgb(68, 114, 196)">V</span>ision 
-                            <span style="font-size:28px;color:rgb(237, 125, 49)">A</span>nalysis & 
-                            <span style="font-size:28px;color:rgb(112, 173, 71)">S</span>ecurity Lab</b>                        
-                    </p>
-                </td>
-                <td style="vertical-align:middle;width:auto;"> 
-                    <!-- <img src="src_img/earth.gif" width="100" alt="" />       -->
-                    <img src="src_img/logo.png" width="60" alt="research-lab-logo" />   
-                </td>
-          </tr>
-        </tbody></table>
-    </header>
-    <div class="masthead">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <ul class="nav">
-                        <li><a href="index.html">首页</a></li>
-                        <li><a href="news.html">新闻资讯</a></li>
-                        <li><a href="research.html">研究方向</a></li>
-                        <li><a href="publications.html">学术论文</a></li>
-                        <li><a href="downloads.html">学术资源</a></li>
-                        <li><a href="people.html">成员</a></li>
-                        <li><a href="entertainment.html">休闲娱乐</a></li>
-                        <li><a href="contact.html">联系我们</a></li>
-                    </ul>
-                </div>
-            </div>
+    <header class="lab-header">
+        <div class="logo">
+            <img src="src_img/logo.png" alt="Lab Logo">
+            <span class="lab-name"><b>Vision Analysis & Security Lab</b></span>
         </div>
-    </div>
+        <nav class="nav-menu">
+            <a href="index.html">首页</a>
+            <a href="people.html">成员</a>
+            <a href="research.html">研究方向</a>
+            <a href="publications.html">学术论文</a>
+            <a href="downloads.html">学术资源</a>
+            <a href="entertainment.html">娱乐活动</a>
+        </nav>
+    </header>
 
     <div class="col-md-12">
         <!-- <div class="span8 offset1">   -->
             <h3 class="subhead"> <i class="fa fa-github"></i> 代码 <a href="https://github.com/OUC-VAS">[Lab github]</a></h3>  
-            <h3 class="subhead">💎 科研经验</h3>                
-            <div>
-                <ul  class="paper-list"  style="list-style: none">
-                    
-                </ul>   
-            </div>    
-            </br>
 
             <h3 class="subhead">📀 学术资料 & 工具</h3>                
             <div>
@@ -127,6 +90,14 @@
   });
 
 </script>
+<script>
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+    </script>
 </body>
 
 </html>

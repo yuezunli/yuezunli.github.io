@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>实验室主页</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+    }
+
+    /* 左侧导航栏 */
+    .toc {
+      width: 200px;
+      background-color: #f9f9f9;
+      border-right: 1px solid #ddd;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+
+    .toc h3 {
+      margin-top: 0;
+      font-size: 1.2em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .toc ul li {
+      margin: 10px 0;
+    }
+
+    .toc a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .toc a:hover {
+      color: #0077cc;
+    }
+
+    /* 主体内容区域 */
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .content section {
+      margin-bottom: 60px;
+    }
+
+    .content h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 内容导航 -->
+  <nav class="toc">
+    <h3>导航</h3>
+    <ul>
+      <li><a href="#intro">实验室简介</a></li>
+      <li><a href="#research">研究方向</a></li>
+      <li><a href="#publications">代表论文</a></li>
+      <li><a href="#members">团队成员</a></li>
+      <li><a href="#contact">联系方式</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主体内容 -->
+  <main class="content">
+    <section id="intro">
+      <h2>实验室简介</h2>
+      <p>VAS Lab 是中国海洋大学人工智能研究院下设的研究小组，致力于多媒体取证与深度模型安全。</p>
+    </section>
+
+    <section id="research">
+      <h2>研究方向</h2>
+      <p>包括生成模型检测、人脸鉴伪、计算机视觉与深度模型攻击防御等。</p>
+    </section>
+
+    <section id="publications">
+      <h2>代表论文</h2>
+      <p>研究成果发表于 NeurIPS、CVPR、ICCV、TIFS 等国际顶级会议与期刊。</p>
+    </section>
+
+    <section id="members">
+      <h2>团队成员</h2>
+      <p>目前由李岳尊博士负责，包含多名研究生与实习学生。</p>
+    </section>
+
+    <section id="contact">
+      <h2>联系方式</h2>
+      <p>邮箱：example@ouc.edu.cn；GitHub：<a href="https://github.com/OUC-VAS">OUC-VAS</a></p>
+    </section>
+  </main>
+
+</body>
+</html>
