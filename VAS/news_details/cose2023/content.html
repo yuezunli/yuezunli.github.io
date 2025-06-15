@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="research lab" content="UBMDFL">
+    <meta name="author" content="credit: https://github.com/photonlines/Research-Lab-Website">
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="container">
+   
+
+    <div class="container-fluid">
+        <div class="col-md-6">
+            <p class="lead jumbotron" style="text-align:center">
+                <b>Improving Transferable Adversarial Attack via Feature-Momentum</b>
+            </p>
+            <br><br>
+            <p style="text-align:justify">
+                <b>简介</b>：迁移性对抗样本攻击是指通过在已知模型上产生的对抗样本来攻击未知模型，实现攻击的泛化性。
+                现有方法通常采用迭代的方式对模型的特征层进行攻击，每次迭代攻击时都通过一个固定的引导图来决定特征中各个元素的重要程度。
+                由于迭代攻击会不断的改变图像内容，固定的引导图将无法准确的描述各个元素的重要程度。
+                因此本文提出了一种基于特征动量的动态引导迁移性对抗样本攻击方法。
+                该方法通过一种类似动量的形式来动态更新引导图，即在考虑上一次迭代所得引导图的同时计算当前引导图，使其更为准确的描述特征中各个元素的重要程度。
+                实验表明该方法显著地提升了迁移性对抗样本攻击的性能，证明了方法的有效性。
+            </p>
+            <p style="text-align:justify">
+                本文第一作者为2020级本科生何相龙，指导老师李岳尊。
+            </p>
+            <p style="text-align:center">
+                <img src="fmaa2023cose.png" width="300" />
+            </p>
+            <p style="text-align:justify">
+               <b>作者</b>: Xianglong He, Yuezun Li<sup>#</sup>, Haipeng Qu, Junyu Dong.
+            </p>
+            <p style="text-align:justify">
+                <b>期刊名称</b>: Computers & Security. CCF B. 影响因子5.105.
+            </p>
+            
+        </div>    
+    </div>
+
+</div>
+<hr>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <p style="text-align:center;">&copy; AI Security Group (AISec) @ OUC </p>
+    </div>
+</div>
+
+
+<!-- Javascript files
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script> $('#main-carousel').carousel(); </script> -->
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UBMDFL">
+  <meta name="author" content="">
+  <!-- Le styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+  <link href="css/social-buttons.css" rel="stylesheet">
+  <!--引用百度地图API-->
+  <script type="text/javascript"
+    src="https://api.map.baidu.com/api?v=2.0&ak=0RY1lK9jzTtRaQXxxbKIM4smELDF62Kh&s=1"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="jumbotron" id="overview">
+      <table style="width:100%;border:0px;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+              <td style="vertical-align:middle;width:auto;">
+                  <img src="src_img/ouc.jpg" width="270" />
+                      
+              </td>
+              <td style="vertical-align:middle;width:auto;"> 
+                  <!-- <img src="src_img/earth.gif" width="80" alt="" />        -->
+                  <img id="dailyImage" src="" alt="" width="80">
+              </td>
+              <td style="vertical-align:middle;width:auto;text-align: right;padding-right: 15px;">
+                  <p class="lead">
+                      视觉分析与安全课题组<br>
+                      <b><span style="font-size:28px;color:rgb(68, 114, 196)">V</span>ision 
+                          <span style="font-size:28px;color:rgb(237, 125, 49)">A</span>nalysis & 
+                          <span style="font-size:28px;color:rgb(112, 173, 71)">S</span>ecurity Lab</b>                        
+                  </p>
+              </td>
+              <td style="vertical-align:middle;width:auto;"> 
+                  <!-- <img src="src_img/earth.gif" width="100" alt="" />       -->
+                  <img src="src_img/logo.png" width="60" alt="research-lab-logo" />   
+              </td>
+        </tr>
+      </tbody></table>
+  </header>
+    <div class="masthead">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <ul class="nav">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="news.html">新闻资讯</a></li>
+              <li><a href="research.html">研究方向</a></li>
+              <li><a href="publications.html">学术论文</a></li>
+              <li><a href="downloads.html">学术资源</a></li>
+              <li><a href="people.html">成员</a></li>
+              <li><a href="entertainment.html">休闲娱乐</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span8">
+        <!--百度地图容器-->
+        <div style="width:550px;height:450px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+      </div>
+      <div class="span4">
+        <div class="box_cont">
+          <h4>办公室</h4>
+          <p>中国海洋大学(西海岸校区)信息南楼<br>
+
+          </p>
+          <a href="https://j.map.baidu.com/43/nNQ">打开地图</a>
+          <hr>
+          <h4>联系我们</h4>
+          <p>Email : liyuezun AT ouc.edu.cn<br>
+            <hr>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <p style="text-align:center;">&copy; Vision Analysis and Security (VAS) Lab @ OUC</p>
+    </div>
+  </div>
+
+  <!-- Le javascript
+   ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    const images = ["src_img/earth.gif", "src_img/ai1.gif", "src_img/ai2.gif", "src_img/ai3.gif", "src_img/ai4.gif"]; // 7张图片
+    const date = new Date();
+    const index = date.getDate() % images.length; // 以日期计算索引
+    document.getElementById("dailyImage").src = images[index];
+  </script>
+
+</body>
+
+<script type="text/javascript">
+  //创建和初始化地图函数：
+  function initMap() {
+    createMap();//创建地图
+    setMapEvent();//设置地图事件
+    addMapControl();//向地图添加控件
+    addMapOverlay();//向地图添加覆盖物
+  }
+  function createMap() {
+    map = new BMap.Map("map");
+    map.centerAndZoom(new BMap.Point(120.040343, 35.780399), 16);
+  }
+  function setMapEvent() {
+    map.enableScrollWheelZoom();
+    map.enableKeyboard();
+    map.enableDragging();
+    map.enableDoubleClickZoom()
+  }
+  function addClickHandler(target, window) {
+    target.addEventListener("click", function () {
+      target.openInfoWindow(window);
+    });
+  }
+  // function addMapOverlay() {
+  //   var markers = [
+  //     { content: "山东省青岛市黄岛区三沙路1299号", title: "信息南楼", imageOffset: { width: -46, height: -21 }, position: { lat: 35.778642, lng: 120.038043 } }
+  //   ];
+  //   for (var index = 0; index < markers.length; index++) {
+  //     var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+  //     var marker = new BMap.Marker(point, {
+  //       icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+  //         imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+  //       })
+  //     });
+  //     var label = new BMap.Label(markers[index].title, { offset: new BMap.Size(25, 5) });
+  //     var opts = {
+  //       width: 200,
+  //       title: markers[index].title,
+  //       enableMessage: false
+  //     };
+  //     var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+  //     // marker.setLabel(label);
+  //     addClickHandler(marker, infoWindow);
+  //     map.addOverlay(marker);
+  //   };
+  // }
+  // //向地图添加控件
+  // function addMapControl() {
+  //   var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+  //   scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+  //   map.addControl(scaleControl);
+  //   var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+  //   map.addControl(navControl);
+  //   var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true });
+  //   map.addControl(overviewControl);
+  // }
+  // 添加红色标记点
+  function addCustomMarkers() {
+      var markers = [
+          {
+              content: "山东省青岛市黄岛区三沙路1299号",
+              title: "信息南楼",
+              position: { lat: 35.778642, lng: 120.038043 }
+          }
+      ];
+
+      markers.forEach(function (markerInfo) {
+          var point = new BMap.Point(markerInfo.position.lng, markerInfo.position.lat);
+          var marker = new BMap.Marker(point); // 默认红色标记
+          var infoWindow = new BMap.InfoWindow(markerInfo.content, {
+              width: 200,
+              title: markerInfo.title,
+              enableMessage: false
+          });
+
+          marker.addEventListener("click", function () {
+              this.openInfoWindow(infoWindow);
+          });
+
+          map.addOverlay(marker); // 添加到地图上
+      });
+  }
+
+  // 向地图添加控件
+  function addMapControl() {
+      map.addControl(new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT }));
+      map.addControl(new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE }));
+      map.addControl(new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true }));
+  }
+
+  var map;
+  initMap();
+</script>
+
+</html>
