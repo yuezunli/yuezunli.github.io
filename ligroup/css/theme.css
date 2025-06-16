@@ -1093,7 +1093,7 @@ table{table-layout:fixed;word-break:break-all;} */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin-bottom: 15px;
   background-color: white;       
   border-bottom: 2px solid #eee; 
@@ -1110,7 +1110,7 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 .logo img {
-  height: 40px;
+  height: 50px;
 }
 
 .logo span {
@@ -1135,11 +1135,29 @@ table{table-layout:fixed;word-break:break-all;} */
   color: #0077cc; 
 } */
 
-.lab-name {
-  /* text-shadow: 1px 1px 3px rgba(0,0,0,0.3); */
+/* .lab-name {
+ text-shadow: 1px 1px 3px rgba(0,0,0,0.3); 
   letter-spacing: 0px;
+} */
+
+.lab-title {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
 }
 
+.lab-name {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #0b5394;
+	letter-spacing: 0.5px;
+	/* text-shadow: 1px 1px 3px rgba(14, 106, 255, 0.581); */
+}
+
+.lab-subtitle {
+	font-size: 0.9rem;
+	color: #666;
+}
 .nav-menu {
   display: flex;
   gap: 20px;
