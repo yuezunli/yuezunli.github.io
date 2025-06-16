@@ -1167,12 +1167,6 @@ table{table-layout:fixed;word-break:break-all;} */
   transition: width 0.3s ease;
 }
 
-/* 添加竖线，除了第一个链接 */
-/* .nav-menu a + a {
-  border-left: 1px solid #aaa;
-  /* padding-left: 5px; 
-  margin-left: 5px; */
-} */
 
 .nav-menu a:hover {
   color: #0077cc;
