@@ -2,105 +2,192 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>实验室页面</title>
+  <title>VAS Lab 实验室主页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
     }
 
-    /* Quote 上方标语 */
+    /* 顶部引用 */
     .header-quote {
-      margin: 0;
-      padding: 8px 24px;
-      background-color: #eef6fc;
+      background: #eef6fc;
       color: #0077cc;
+      text-align: center;
+      padding: 6px 16px;
       font-size: 0.95rem;
       font-style: italic;
       border-bottom: 1px solid #d0e7f8;
-      text-align: center;
     }
 
-    .header-quote cite {
-      font-style: normal;
-      color: #555;
-      margin-left: 8px;
-    }
-
+    /* Header */
     .header {
-      background-color: #f5f5f5;
+      background: #f5f5f5;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-
     .top-bar {
-      height: 6px;
+      height: 5px;
       background-color: #0077cc;
     }
-
     .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 16px 32px;
     }
-
     .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
+      font-size: 24px;
+      font-weight: 700;
+      color: #0077cc;
     }
-
+    .logo span {
+      color: #222;
+      font-weight: 400;
+    }
     .nav-menu {
       display: flex;
-      gap: 30px;
     }
-
     .nav-menu a {
-      position: relative;
-      padding: 5px 0;
+      padding: 8px 20px;
       font-size: 1rem;
-      color: #333;
       text-decoration: none;
+      color: #444;
       font-weight: 500;
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
+      border-left: 1px solid #ddd;
     }
-
-    .nav-menu a + a {
-      border-left: 1px solid #aaa;
-      padding-left: 16px;
-      margin-left: 16px;
+    .nav-menu a:first-child {
+      border-left: none;
     }
-
-    .nav-menu a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 0;
-      height: 2px;
-      background-color: #0077cc;
-      transition: width 0.3s ease;
-    }
-
     .nav-menu a:hover {
+      background: #e6f2fb;
       color: #0077cc;
     }
-
-    .nav-menu a:hover::after,
-    .nav-menu a.active::after {
-      width: 100%;
-    }
-
     .nav-menu a.active {
+      background: #d9ecfb;
       color: #0077cc;
       font-weight: 600;
+      border-radius: 4px;
+    }
+
+    /* 欢迎语 */
+    #welcome-banner {
+      padding: 16px;
+      text-align: center;
+      font-size: 1.1rem;
+      background: #fafafa;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* 简介 */
+    .intro {
+      padding: 40px 24px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .intro h2 {
+      color: #0077cc;
+      margin-bottom: 16px;
+    }
+
+    /* 关键词云 */
+    .keyword-cloud span {
+      display: inline-block;
+      margin: 8px;
+      font-size: 18px;
+      color: #0077cc;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .keyword-cloud span:hover {
+      transform: scale(1.2);
+      color: #005fa3;
+    }
+
+    /* 项目卡片 */
+    .project-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+    .project-card {
+      background: #f9f9f9;
+      border-left: 4px solid #0077cc;
+      padding: 16px;
+      margin-bottom: 16px;
+      transition: 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* 成员头像彩蛋 */
+    .team-section {
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    .team-member {
+      display: inline-block;
+      position: relative;
+      margin: 10px;
+    }
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+    .team-member:hover img {
+      transform: scale(1.1);
+    }
+    .tooltip {
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0077cc;
+      color: white;
+      padding: 5px 10px;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      opacity: 0;
+      transition: 0.2s ease;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    .team-member:hover .tooltip {
+      opacity: 1;
+    }
+
+    /* 数据统计 */
+    .stats {
+      text-align: center;
+      background: #f3faff;
+      padding: 32px 16px;
+      margin-top: 40px;
+    }
+    .stats div {
+      font-size: 1.1rem;
+      margin: 8px 0;
+      color: #333;
+    }
+    .stats strong {
+      color: #0077cc;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- 引用（标语） -->
+  <!-- 顶部引用 -->
   <blockquote class="header-quote">
     “推动人工智能向海洋科学应用融合发展” <cite>— VAS Lab</cite>
   </blockquote>
@@ -109,14 +196,79 @@
   <header class="header">
     <div class="top-bar"></div>
     <div class="header-content">
-      <div class="logo">VAS Lab</div>
+      <div class="logo">VAS <span>Lab</span></div>
       <nav class="nav-menu">
-        <a href="#home" class="active">主页</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系</a>
+        <a href="#" class="active">主页</a>
+        <a href="#">项目</a>
+        <a href="#">团队</a>
+        <a href="#">成果</a>
+        <a href="#">联系</a>
       </nav>
     </div>
   </header>
+
+  <!-- 欢迎语 -->
+  <div id="welcome-banner">欢迎来到 VAS Lab！</div>
+
+  <!-- 简介 -->
+  <section class="intro">
+    <h2>关于我们</h2>
+    <p>VAS Lab 隶属于中国海洋大学人工智能研究院，聚焦人工智能与海洋科学交叉研究，致力于深度伪造检测、视频安全、数据智能分析等领域的科研与应用探索。</p>
+    <div class="keyword-cloud">
+      <span>AI</span>
+      <span>深度学习</span>
+      <span>伪造检测</span>
+      <span>对抗样本</span>
+      <span>视频理解</span>
+      <span>自监督</span>
+      <span>跨模态</span>
+      <span>海洋数据</span>
+    </div>
+  </section>
+
+  <!-- 项目展示 -->
+  <section class="project-section">
+    <div class="project-card">
+      <h3>DeepFake Shield</h3>
+      <p>一种轻量化的伪造视频检测模型，具备跨源鲁棒性。</p>
+    </div>
+    <div class="project-card">
+      <h3>VideoFacePoison</h3>
+      <p>面向人脸鉴伪模型的高隐匿性数据投毒攻击研究。</p>
+    </div>
+  </section>
+
+  <!-- 团队成员 -->
+  <section class="team-section">
+    <h2>团队成员</h2>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/80" alt="董军宇">
+      <div class="tooltip">董军宇 教授</div>
+    </div>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/80" alt="李岳尊">
+      <div class="tooltip">李岳尊 博士</div>
+    </div>
+  </section>
+
+  <!-- 数据统计 -->
+  <section class="stats">
+    <div>📄 论文发表：<strong>38</strong></div>
+    <div>🤝 合作单位：<strong>12</strong></div>
+    <div>⭐ 总引用数：<strong>1250+</strong></div>
+  </section>
+
+  <!-- 欢迎语脚本 -->
+  <script>
+    const messages = [
+      "欢迎来到 VAS Lab！🧠",
+      "探索人工智能与海洋的交汇点 🌊🤖",
+      "让模型思考，为科学导航 📡",
+      "深度学习，我们正在深潜中……🐬"
+    ];
+    document.getElementById("welcome-banner").innerText =
+      messages[Math.floor(Math.random() * messages.length)];
+  </script>
 
 </body>
 </html>

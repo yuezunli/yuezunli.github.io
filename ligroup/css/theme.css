@@ -880,12 +880,13 @@ table{table-layout:fixed;word-break:break-all;} */
 	font-size: 14px;
 	/* font-weight: bold; */
 	/* color: #007bff; */
-	font-style: italic
+	/* font-style: italic */
 }
 .paper-highlight {
 	font-size: 14px;
 	color: #d9534f;
 	font-weight: bold;
+	animation: colorChange 1s infinite;
 }
 .paper-level {
 	font-size: 14px;
@@ -896,11 +897,11 @@ table{table-layout:fixed;word-break:break-all;} */
 .badge {
 	display: inline-block;
 	color: white;
-	font-size: 8px;
-	font-weight: bold;
+	/* font-size: 8px; */
+	font-weight: normal;
 	padding: 3px 5px;
-	border-radius: 0px;
-	margin-left: 0px;
+	border-radius: 3px;
+	margin-left: 5px;
 }
 
 .badge-conference {
