@@ -379,6 +379,8 @@ body>.navbar .brand:hover {
 	box-shadow: 2px 2px 10px rgba(142, 141, 141, 0.3);
 }
 
+
+
 img.no-style {
     all: unset;
 }
@@ -767,6 +769,12 @@ ul {
 	background-color: #f2f2f2;
 }
 
+.alumini img {
+      width: 30px;   /* 控制图片大小 */
+      height: auto;
+      border-radius: 8px;  /* 圆角，可选 */
+}
+
 /* table,table td,table th{border:1px solid #eceaea;border-collapse:collapse;text-align: center;padding: 5px;}
 table{table-layout:fixed;word-break:break-all;} */
 
@@ -909,6 +917,9 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 .badge-journal {
 	background-color: #007bff; /* 蓝色 - 期刊 */
+}
+.badge-award {
+	background-color: #698d9c; /* 蓝色 - 期刊 */
 }
 
 /*  */
