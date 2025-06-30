@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alumni Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #003366;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #ddd;
+      }
+
+      td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+
+      .avatar {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Alumni Table</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>头像</th>
+        <th>姓名</th>
+        <th>成果</th>
+        <th>研究方向</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="头像">
+          <img class="avatar" src="https://via.placeholder.com/80?text=A1" alt="Alumni 1">
+        </td>
+        <td data-label="姓名">Jane Doe</td>
+        <td data-label="成果">ICCV 2022 Best Paper, Google Research</td>
+        <td data-label="研究方向">计算机视觉、深度伪造检测</td>
+      </tr>
+      <tr>
+        <td data-label="头像">
+          <img class="avatar" src="https://via.placeholder.com/80?text=A2" alt="Alumni 2">
+        </td>
+        <td data-label="姓名">John Smith</td>
+        <td data-label="成果">AAAI 2023 Oral, Meta AI Intern</td>
+        <td data-label="研究方向">图神经网络、推荐系统</td>
+      </tr>
+      <tr>
+        <td data-label="头像">
+          <img class="avatar" src="https://via.placeholder.com/80?text=A3" alt="Alumni 3">
+        </td>
+        <td data-label="姓名">Alice Zhang</td>
+        <td data-label="成果">MIT PhD, Nature Communications</td>
+        <td data-label="研究方向">多模态学习、医学影像分析</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

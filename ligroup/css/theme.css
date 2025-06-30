@@ -770,9 +770,11 @@ ul {
 }
 
 .alumini img {
-      width: 30px;   /* 控制图片大小 */
-      height: auto;
-      border-radius: 8px;  /* 圆角，可选 */
+      width: 50px;   /* 控制图片大小 */
+      height: 50px;
+      border-radius: 5px;  /* 圆角，可选 */
+	  margin-left: -5px;
+	  margin-right: 10px;
 }
 
 /* table,table td,table th{border:1px solid #eceaea;border-collapse:collapse;text-align: center;padding: 5px;}
