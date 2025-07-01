@@ -24,10 +24,11 @@
         <!-- <p class="quote">Optimism is a happiness magnet &nbsp; —Mary Lou Retton</p> -->
         <header class="lab-header">
             <div class="logo">
-                <img src="src_img/logo.png" alt="Lab Logo">
+                <img class="logo-img" src="src_img/logo.png" alt="Lab Logo">
                 <!-- <span class="lab-name"><b>Vision Analysis & Security Lab</b></span> &nbsp; -->
                  <div class="lab-title">
-                    <div class="lab-name">VAS Lab</div>
+                    <img class="lab-img" src="src_img/VAS.png" alt="vas">
+                    <!-- <div class="lab-name">VAS Lab</div> -->
                     <div class="lab-subtitle">Vision Analysis & Security Lab</div>
                 </div>
                 <!-- <img id="dailyImage"> -->
@@ -350,12 +351,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script> $('#main-carousel').carousel(); </script>
 
-    <script>
+    <!-- <script>
         const images = ["src_img/earth.gif", "src_img/ai1.gif", "src_img/ai2.gif", "src_img/ai3.gif", "src_img/ai4.gif"]; // 7张图片
         const date = new Date();
         const index = date.getDate() % images.length; // 以日期计算索引
         document.getElementById("dailyImage").src = images[index];
-    </script>
+    </script> -->
 
     <script>
         document.querySelectorAll('.nav-menu a').forEach(link => {

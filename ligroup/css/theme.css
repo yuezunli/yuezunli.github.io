@@ -1122,8 +1122,12 @@ table{table-layout:fixed;word-break:break-all;} */
   gap: 10px;
 }
 
-.logo img {
+/* .logo img {
   height: 50px;
+} */
+.logo-img {
+  	height: 50px;  
+	/* padding-bottom: 10px; */
 }
 
 .logo span {
@@ -1167,9 +1171,15 @@ table{table-layout:fixed;word-break:break-all;} */
 	/* text-shadow: 1px 1px 3px rgba(14, 106, 255, 0.581); */
 }
 
+.lab-img {
+    width: 100px;
+    height: 25px;
+  }
+
 .lab-subtitle {
 	font-size: 0.9rem;
 	color: #666;
+	margin-bottom: -15px;
 }
 .nav-menu {
   display: flex;
