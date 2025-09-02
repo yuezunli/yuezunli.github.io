@@ -1,55 +1,68 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Scholar Badge</title>
-    <style>
-        .scholar-badge {
-            display: inline-flex;
-            align-items: center;
-            background: #0666ff;
-            color: white;
-            /* font-family: Arial, sans-serif; */
-            /* font-size: 14px; */
-            padding: 3px 6px;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>纯 CSS Tooltip 示例</title>
+<style>
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    color: #0b66ff;
+  }
 
-        .scholar-badge:hover {
-            background: #3367D6;
-            box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
-        }
+  /* 提示框本体（默认隐藏） */
+  .tooltip .tooltip-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    bottom: 100%; /* 在文字上方显示 */
+    white-space: nowrap;
+    background: #222;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    z-index: 50;
+  }
 
-        .scholar-badge img {
-            width: 18px;
-            height: 18px;
-            margin-right: 8px;
-        }
+  /* 小箭头 */
+  .tooltip .tooltip-box::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
 
-        /* .citation-count {
-            background: white;
-            color: #4285F4;
-            padding: 2px 6px;
-            border-radius: 8px;
-            font-weight: bold;
-            margin-left: 6px;
-            min-width: 40px;
-            text-align: center;
-            display: inline-block;
-        } */
-    </style>
+  /* hover / focus 时显示 */
+  .tooltip:hover .tooltip-box,
+  .tooltip:focus-within .tooltip-box {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+
+  /* 可选 - 鼠标移到提示框上时仍保持显示（便于复制/操作） */
+  .tooltip .tooltip-box:hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
 </head>
 <body>
-
-    <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" class="scholar-badge" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar">
-        <span class="total_citations">1234</span>
-    </a>
-
+  <p>
+    这是一个示例，<span class="tooltip" tabindex="0">把鼠标移到我上面
+      <span class="tooltip-box">这是纯 CSS 实现的注释提示文本。</span>
+    </span>，你会看到注释飘出来。
+  </p>
 </body>
 </html>

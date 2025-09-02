@@ -1227,4 +1227,11 @@ table{table-layout:fixed;word-break:break-all;} */
   width: 100%;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    color: #0b66ff;
+  }
+
 
