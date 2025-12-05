@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta name="referrer" content="never"> -->
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="research lab" content="UBMDFL" />
+    <meta
+      name="author"
+      content="credit: https://github.com/photonlines/Research-Lab-Website"
+    />
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap1.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/png" href="src_img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=1"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="lab-header">
+        <div class="logo">
+          <div class="lab-name">Yuezun Li</div>
+          <!-- <img id="dailyImage"> -->
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html">About me</a>
+          <a href="publications.html">Publications</a>
+          <a href="talks.html">Talks</a>
+          <a href="funds.html">Funds</a>
+          <a href="services.html">Services</a>
+          <a href="lab.html">Lab</a>
+        </nav>
+      </header>
+
+      <div class="col-md-12">
+        <!-- <div class="paper-container"></div> -->
+        <h4 class="subhead">🔈 Talks</h4>
+        <ul class="news-list">
+          <li>
+            [2025.10]: I gave a talk on advances on visual forensics PRCV 2025.
+          </li>
+          <li>
+            [2025.01]: I gave a talk on face forensics in the wild at CSIG Young
+            Scholars forum.
+          </li>
+          <li>
+            [2023.11]: I gave a talk at a forum in CSIG ChinaFMS conference
+            2023.
+          </li>
+          <li>
+            [2022.07]: I gave a tutorial talk on DeepFake Creation, Detection
+            and Obstruction in ICME 2022.
+          </li>
+          <li>
+            [2021.06]: I gave a tutorial talk on DeepFake Generation and
+            Detection in ICASSP 2021.
+          </li>
+          <li>
+            [2021.08]: I gave a tutorial talk on Detecting AI-synthesized Faces
+            in IJCB 2021.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="container-fluid">
+      <p style="text-align: center">
+        <a href="https://clustrmaps.com/site/1bcyj" title="Visit tracker"
+          ><img
+            src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=OuDVjBphuIV15vb_K9-k4Nnidvdol9qiwaJ6-fy4sXQ"
+        /></a>
+      </p>
+      <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-yCBFYKb96-8yFOkGerGi6ZdI4cxXiZdFXRKfDr9owM"></script> -->
+      <p style="text-align: center">
+        &copy; Vision Analysis and Security Lab (VAS)
+      </p>
+    </div>
+
+    <!-- Javascript files -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $("#main-carousel").carousel();
+    </script>
+
+    <!-- <script>
+        const images = ["src_img/earth.gif", "src_img/ai1.gif", "src_img/ai2.gif", "src_img/ai3.gif", "src_img/ai4.gif"]; // 7张图片
+        const date = new Date();
+        const index = date.getDate() % images.length; // 以日期计算索引
+        document.getElementById("dailyImage").src = images[index];
+    </script> -->
+
+    <script>
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $.getJSON(
+          "https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json",
+          function (data) {
+            var citationEles = document.getElementsByClassName(
+              "show_paper_citations"
+            );
+            Array.prototype.forEach.call(citationEles, (element) => {
+              var paperId = element.getAttribute("data");
+              var numCitations = data["publications"][paperId]["num_citations"];
+              element.innerHTML = "[🎓 Citations: " + numCitations + "]";
+              if (numCitations > 100) {
+                element.style.color = "red";
+                // element.style.fontWeight = 'bold';
+              }
+            });
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
