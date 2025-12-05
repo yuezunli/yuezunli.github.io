@@ -1,0 +1,1026 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- borrow from https://jonbarron.info/ -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-7580334-2');
+    </script>
+
+    <title>Yuezun Li's Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+    <meta name="author" content="Yuezun Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpg" href="images/selfie2024.jpg">
+
+    <style>
+        .collapsible {
+            background-color: #ffffff;
+            color: #1772d0;
+            cursor: pointer;
+            padding: 5px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .content {
+            padding: 10px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .flashing-text {
+            background-color: yellow;
+            color: red;
+            font-size: 14px;
+            display: inline-block;
+            animation: blink 2s infinite;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=1"></script>
+</head>
+
+<!-- <body onload="startPetCursor();"> -->
+  <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:25%;max-width:40%">
+                <a href="images/selfie2024.jpg"><img style="width:100%;max-width:100%;border-radius:50%;box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5)" alt="profile photo" src="images/selfie2024.jpg"></a>
+            </td>
+            <td style="padding:2.5%;width:70%;vertical-align:middle">
+                <p style="text-align:center">
+                    <name>Yuezun Li (李岳尊)</name>
+                </p>
+                <p style="text-align:justify">
+                    I am an Assistant Professor/Lecturer at the <a href="https://ai-ouc.cn/">Institute of Artificial Intelligence</a>, at <a href="https://www.ouc.edu.cn/main.htm">Ocean University of China</a>. 
+                    My research focuses on multimedia forensics, computer vision and vision security.
+                    I have published more than 30 papers in prestigious conferences and journals, including NeurIPS, ICCV, CVPR, ECCV, TIFS, with <b>total 
+                        <a href="https://scholar.google.com/citations?user=v0Qt7BAAAAAJ&hl=en"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fyuezunli%2Facad-homepage.github.io%40google-scholar-stats%2Fgs_data_shieldsio.json&amp;logo=Google%20Scholar&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=citations" /></a> 
+                    <!-- <a href="https://scholar.google.com/citations?user=v0Qt7BAAAAAJ&hl=en" class="scholar-badge" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar">
+                        <span class="total_citations"></span>
+                    </a> citations -->
+                    , including several papers with more than <span class='low_bound_citations' data='v0Qt7BAAAAAJ:_xSYboBqXhAC;v0Qt7BAAAAAJ:35N4QoGY0k4C;v0Qt7BAAAAAJ:_Ybze24A_UAC;v0Qt7BAAAAAJ:g5m5HwL7SMYC'></span> citations each</b> (CVPR20, CVPRW19, ICASSP19, WIFS18). The WIFS18 paper was also featured on <b>CCTV13’s "World Weekly" special on deepfakes [7:43]</b>. I serve as a reviewer for top conferences and journals, such as TPAMI, TIP, IJCV, TIFS, ICCV, CVPR, AAAI, NeurIPS, ICLR, etc. I have been recognized on Stanford’s 2023/2024/2025 list of the top 2% of scientists worldwide and am a recipient of the 2024 ACM Qingdao Rising Star Award. 
+                    <!-- <img src="https://img.shields.io/badge/Google Scholar-6400-blue?style=social&logo=google-scholar" style="vertical-align: middle;" /> -->
+                </p>
+                    
+                <p style="text-align:justify">
+                    I was a Senior Research Scientist at the Department of Computer Science and Engineering of <a href="https://www.buffalo.edu/">University at Buffalo, SUNY</a>, 
+                    working with <a href="https://cse.buffalo.edu/~siweilyu/lyu_lab.html">Siwei Lyu</a>. 
+                    I was a summer intern at <a href="https://www.ge.com/research/">GE glocal research center</a> during 2016 - 2018.
+                    I received Ph.D. degree in computer science at <a href="https://www.albany.edu/">University at Albany, SUNY</a> in 2020, advised by <a href="https://cse.buffalo.edu/~siweilyu/lyu_lab.html">Siwei Lyu</a> (IEEE/IAPR Fellow). 
+                    I received M.S. degree in Computer Science in 2015 and B.S. degree in Software Engineering in 2012 at Shandong University. 
+                    
+                </p>                 
+                <p style="text-align:center">
+                    </br>
+                    <a href="mailto:liyuezun@ouc.edu.cn"><i class="fa fa-envelope" style='font-size:30px'></i>&nbsp; &nbsp; &nbsp;
+                    <a href="https://scholar.google.com/citations?user=v0Qt7BAAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-3x" style='font-size:28px'></i>&nbsp; &nbsp; &nbsp;
+                    <a href="https://github.com/yuezunli"><i class="fa fa-github" style='font-size:30px'></i>&nbsp; &nbsp; &nbsp;
+                </p>
+            </td>
+          </tr>
+        </tbody></table>
+        
+        
+        <p style="text-align:justify">📢 <span style="color:rgb(255, 60, 0)" ><b>Research group</b></span>: Currently I am leading the <a href="https://yuezunli.github.io/ligroup/">Vision Analysis and Security (VAS) lab</a> <img src="images/logo.png" width="25">. Our lab has multiple openings. <b>Please drop me an email if you are interested in internship / M.S. program.</b>
+        I also advise the <a href="https://yuezunli.github.io/planktongroup/">POVA group</a> <img src="images/logo-2.png" width="25">, which focuses on underwater computer vision reserach. Drop me an email if you are interested.
+        </p>
+        
+        <p style="text-align:left">☀️ <span style="color:orange" ><b>Representative works</b></span>:         
+                
+            <table class="tab1" width="100%" style="table-layout:fixed;word-break:break-all;background:#fafafa">
+                    <tr>
+                        <th>CVPR'20</th>
+                        <th>CVPRW'19</th>
+                        <th>WIFS'18</th>
+                        <th>ICASSP'19</th>
+                        <th>ICCV'21</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Celeb-DF_A_Large-Scale_Challenging_Dataset_for_DeepFake_Forensics_CVPR_2020_paper.pdf">[Celeb-DF]</a>
+                             <a href="https://github.com/yuezunli/celeb-deepfakeforensics">[<i class="fa fa-github" style="color:black"></i>]</a></td>
+                        <td><a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Li_Exposing_DeepFake_Videos_By_Detecting_Face_Warping_Artifacts_CVPRW_2019_paper.pdf">[FWA]</a>
+                            <a href="https://github.com/yuezunli/CVPRW2019_Face_Artifacts">[<i class="fa fa-github" style="color:black"></i>]</a></td>
+                        <td><a href="https://arxiv.org/abs/1806.02877">[In Ictu Oculi]</a>
+                            <a href="https://github.com/yuezunli/WIFS2018_In_Ictu_Oculi">[<i class="fa fa-github" style="color:black"></i>]</a></td>
+                        <td><a href="https://arxiv.org/pdf/1811.00661">[Head Pose]</a>
+                            <a href="https://github.com/rbassett3/headpose_forensic">[<i class="fa fa-github" style="color:black"></i>]</a></td>
+                        <td><a href="http://openaccess.thecvf.com/content/ICCV2021/html/Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper.html">[ISSBA]</a>
+                            <a href="https://github.com/yuezunli/ISSBA">[<i class="fa fa-github" style="color:black"></i>]</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            🎓 <strong><span class='show_paper_citations' data='v0Qt7BAAAAAJ:_xSYboBqXhAC'></span></strong>
+                        </td>
+                        <td>
+                            🎓 <strong><span class='show_paper_citations' data='v0Qt7BAAAAAJ:35N4QoGY0k4C'></span></strong>
+                        </td>
+                        <td>
+                            🎓 <strong><span class='show_paper_citations' data='v0Qt7BAAAAAJ:g5m5HwL7SMYC'></span></strong>
+                        </td>
+                        <td>
+                            🎓 <strong><span class='show_paper_citations' data='v0Qt7BAAAAAJ:_Ybze24A_UAC'></span></strong>
+                        </td>
+                        <td>
+                            🎓 <strong><span class='show_paper_citations' data='v0Qt7BAAAAAJ:p2g8aNsByqUC'></span></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <iframe width="100" height="80"
+                                src="https://www.youtube.com/embed/vLTiluewGQY">
+                            </iframe>                            
+                        </td>
+                        <td>
+                            <img width="150" height="70" src="images/representative/fwa.png">
+                        </td>
+                        <td>
+                            <a href="https://tv.cctv.com/2019/04/28/VIDE0aLKiWV83f2PrbZDF4G0190428.shtml"><img width="120" height="70" src="images/representative/wifs18.png"></a>
+                        </td>
+                        <td>
+                            <img width="100" height="90" src="images/representative/headpose.png">
+                        </td>
+                        <td>
+                            <iframe width="100" height="80"
+                                src="https://www.youtube.com/embed/yFW5lQL9JK8">
+                            </iframe>                            
+                        </td>
+                    </tr>
+                </table>       
+        
+            </p>
+
+
+        
+        <!-- <hr> -->
+        <div style="padding:10px;width:100%;vertical-align:middle;background-color:#eeefff;">
+            <a href="#News">[News]</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="#Publications">[Publications]</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="#Fundings">[Fundings]</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="#Service">[Service]</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="#talks">[Invited talks]</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="http://it.ouc.edu.cn/lyz2/main.htm">[中文版]</a> &nbsp &nbsp &nbsp &nbsp
+            <!-- <a href="https://yuezunli.github.io/ligroup/"><b>[视觉分析与安全课题组]</b></a> -->
+        </div>
+        
+        <!--==========================================
+                   news
+        ===========================================-->
+        <a name="News"></a>
+        <heading style="padding:10px">🎉 News</heading>    
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+            <td style="padding:10px;width:100%;vertical-align:middle">
+            <ul>
+                <li><b><span style="color: red;background-color: yellow;">[2025.07]: We have released <a href="https://github.com/OUC-VAS/Celeb-DF-PP">Celeb-DF++ benchmark</a>, an extension of earlier Celeb-DF dataset.</span> &nbsp; <div class="flashing-text">New!</div></b></li>
+                <li>[2025.10]: One paper on domain adaptation is accepted by TIP 2025.</b> &nbsp; <div class="flashing-text">New!</div></li>
+                <li>[2025.10]: I gave a talk on advances on visual forensics PRCV 2025.</b> &nbsp; <div class="flashing-text">New!</div></li>
+                <li>[2025.09]: Elected among <a href="https://topscinet.com/scientist_profile/Li,%20Yuezun/2016/?stype=single_year">World's Top 2% Scientists 2025 by Stanford University</a>. &nbsp; <div class="flashing-text">New!</div></li>
+                <li>[2025.07]: One paper on proactive deepfake detection is accepted by TDSC 2025. &nbsp; <div class="flashing-text">New!</div></li>
+                <li>[2025.05]: One paper on underwater stereo matching is accepted by TCSVT 2025. &nbsp; <div class="flashing-text">New!</div></li>
+                <li>[2025.03]: One paper on image manipulation detection is accepted by ICME 2025. &nbsp; <div class="flashing-text">New!</div></li>
+                <li>[2025.02]: Two papers on deepfake detection are accepted by CVPR 2025.  &nbsp; <div class="flashing-text">New!</div></li>
+                <li>[2025.02]: The work of TSOM is elected as WACV 2025 Oral. </li>
+                <li>[2025.01]: I gave a talk on face forensics in the wild at CSIG Young Scholars forum.</b> &nbsp; </li>
+                <li>[2024.11]: One paper on phytoplankton tracking is accepted by TCSVT.</b> &nbsp;</li>
+                <li>[2024.11]: Awarded BMVC outstanding reviewer. </li>
+                <li>[2024.10]: One paper on sequential deepfake detection is accepted by WACV. </li>
+                <li>[2024.09]: One paper on deepfake detection is accepted by NeurIPS. </li>
+                <li>[2024.09]: Elected among <a href="https://topresearcherslist.com/Home/Search?AuthFull=Li,+Yuezun">World's Top 2% Scientists 2024 by Stanford University</a>. </li>  
+            </ul>
+            >> <a href="more_news.html">More</a>
+          </td>
+        </tr>
+        </tbody></table>
+        <hr>               
+        
+        <!--==========================================
+                   publications
+        ===========================================-->
+        <a name="Publications"></a>
+        <heading style="padding:10px;">📝 Publications</heading><font size="1">(+ Advised student, ✉️ Corresponding author, * Equal contribution)</font>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:10px;"><tbody> 
+        <tr>
+            <tr><td style="padding:10px;"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<b>Preprints</b></td></tr>           
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/celeb-df++.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2507.18015">
+                        <papertitle>Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics</papertitle>
+                    </a>
+                    <br>
+                    <b>Yuezun Li</b><sup>✉️</sup>, Delong Zhu<sup>+</sup>, Xinjie Cui<sup>+</sup>, Siwei Lyu
+                    <br>
+                    arXiv:2507.18015, 2025. (An extension of Celeb-DF dataset)
+                    <br>
+                    <a href="https://github.com/OUC-VAS/Celeb-DF-PP">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/TSOM++2025arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2404.13873">
+                        <papertitle>Texture, Shape, Order, and Relation Matter: A New Transformer Design for Sequential DeepFake Detection</papertitle>
+                    </a>
+                    <br>
+                    Yunfei Li<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Baoyuan Wu, Junyu Dong, Guopu Zhu, Siwei Lyu
+                    <br>
+                    arXiv:2404.13873, 2025. (Extended from WACV 2025 (oral))
+                    <br>
+                    <a href="https://github.com/OUC-VAS/TSOM">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/forensicsadapter++2025arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2411.19715">
+                        <papertitle>Forensics Adapter: Unleashing CLIP for Generalizable Face Forgery Detection</papertitle>
+                    </a>
+                    <br>
+                    Xinjie Cui<sup>+</sup>, <b>Yuezun Li<sup>✉️</sup></b>, Delong Zhu, Jiaran Zhou, Junyu Dong, Siwei Lyu
+                    <br>
+                    arXiv:2411.19715, 2025. (Extended from CVPR 2025)
+                    <br>
+                    <a href="https://github.com/OUC-VAS/ForensicsAdapter">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+            
+            
+
+            
+            
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/dfcam2024arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2409.03200">
+                        <papertitle>Active Fake: DeepFake Camouflage</papertitle>
+                    </a>
+                    <br>
+                    Pu Sun<sup>+</sup>, Honggang Qi<sup>✉️</sup>, <b>Yuezun Li</b><sup>✉️</sup>
+                    <br>
+                    arXiv:2409.03200, 2024. 
+                </td>
+            </tr>
+            
+        </tr>
+        
+
+        <tr>
+            <tr>
+                <td style="padding:10px;" colspan="2"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<b>2025
+                    &nbsp; (TIP*1, TDSC*1, CVPR*2, TCSVT*1, WACV*1, ICME*1)
+                </b></td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/hypersfda2024arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2405.06916">
+                        <papertitle>HG-SFDA: HyperGraph Learning Meets Source-free Unsupervised Domain Adaptation</papertitle>
+                    </a>
+                    <br>
+                    Jinkun Jiang<sup>+</sup>, Qingxuan Lv, <b>Yuezun Li</b><sup>✉️</sup>, Yong Du, Junyu Dong<sup>✉️</sup>, Sheng Chen, Hui Yu
+                    <br>
+                    IEEE Transactions on Image Processing (<b>TIP</b>), 2025. 
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/faceposion2024arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2412.01101">
+                        <papertitle>Hiding Faces in Plain Sight: Defending DeepFakes by Disrupting Face Detection</papertitle>
+                    </a>
+                    <br>
+                    Delong Zhu<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Baoyuan Wu, Jiaran Zhou, Zhibo Wang, Siwei Lyu
+                    <br>
+                    IEEE Transactions On Dependable And Secure Computing (<b>TDSC</b>), 2025. (Extended from ICME 2023)
+                    <br>
+                    <a href="https://github.com/OUC-VAS/FacePoison">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/uwstereo2024arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2409.01782">
+                        <papertitle>UWStereo: A Large Synthetic Dataset for Underwater Stereo Matching</papertitle>
+                    </a>
+                    <br>
+                    Qingxuan Lv<sup>+</sup>, Junyu Dong<sup>✉️</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Sheng Chen, Hui Yu, Shu Zhang, Wenhan Wang
+                    <br>
+                    IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2025. 
+                    <br>
+                    <a href="https://github.com/lqxisok/UWStereo">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/hrgr2024arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2410.21861">
+                        <papertitle>HRGR: Enhancing Image Manipulation Detection via Hierarchical Region-aware Graph Reasoning</papertitle>
+                    </a>
+                    <br>
+                    Xudong Wang<sup>+</sup>, Jiaran Zhou, Huiyu Zhou, Junyu Dong, <b>Yuezun Li<sup>✉️</sup></b>
+                    <br>
+                    IEEE International Conference on Multimedia & Expo (<b>ICME</b>), 2025.
+                    <br>
+                    <a href="https://github.com/OUC-VAS/HRGR-IMD">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/forensicsadapter2025cvpr.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2411.19715v2">
+                        <papertitle>Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection</papertitle>
+                    </a>
+                    <br>
+                    Xinjie Cui<sup>+</sup>, <b>Yuezun Li<sup>✉️</sup></b>, Ao Luo, Jiaran Zhou, Junyu Dong
+                    <br>
+                    IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025.
+                    <br>
+                    <a href="https://github.com/OUC-VAS/ForensicsAdapter">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/devil2025cvpr.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>Where the Devil Hides: Deepfake Detectors Can No Longer Be Trusted</papertitle>
+                    </a>
+                    <br>
+                    Shuaiwei Yuan<sup>+</sup>, Junyu Dong, <b>Yuezun Li<sup>✉️</sup></b>
+                    <br>
+                    IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025.
+                </td>
+            </tr>
+            
+            <tr>                
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/tsom2024wacv.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Li_Texture_Shape_and_Order_Matter_A_New_Transformer_Design_for_WACV_2025_paper.pdf">
+                        <papertitle>Texture, Shape and Order Matter: A New Transformer Design for Sequential DeepFake Detection</papertitle>
+                    </a>
+                    <br>
+                    Yunfei Li<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Xin Wang, Baoyuan Wu, Jiaran Zhou, Junyu Dong.
+                    <br>
+                    IEEE/CVF Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2025. <b><span style="color:red">(Oral)</span></b>
+                    <br>
+                    <a href="https://github.com/OUC-VAS/TSOM">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+        </tr>
+
+        <tr>
+            <tr>
+                <td style="padding:10px;" colspan="2"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<b>2024
+                &nbsp; (NeurIPS*1, TIFS*2, TCSVT*2, BMVC*2, ACCV*1, PG*1, CVIU*2, TETC*1, ICASSP*1, ICMR*1, KBS*1)</b></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/pytracker2024arxiv.png' width="170"></div>
+                </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2407.00352">
+                        <papertitle>PhyTracker: An Online Tracker for Phytoplankton</papertitle>
+                    </a>
+                    <br>
+                    Yang Yu<sup>+</sup>, Qingxuan Lv, <b>Yuezun Li</b><sup>✉️</sup>, Zhiqiang Wei, Junyu Dong<sup>✉️</sup>
+                    <br>
+                    IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2024. 
+                    <br>
+                    <a href="https://github.com/OUC-PVOA/PhyTracker">[Code]</a>  
+                    <br>
+                </td>
+            </tr>
+            
+            <tr>                
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/freqblender2024neurips.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2404.13872">
+                        <papertitle>FreqBlender: Enhancing DeepFake Detection by Blending Frequency Knowledge</papertitle>
+                    </a>
+                    <br>
+                    Hanzhe Li<sup>+</sup>, Jiaran Zhou, <b>Yuezun Li</b><sup>✉️</sup>, Baoyuan Wu, Bin Li, Junyu Dong.
+                    <br>
+                    The Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024. 
+                    <br>
+                    <a href="https://github.com/OUC-VAS/FreqBlender">[Code]</a>   
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/dpl2024accv.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2410.07633">
+                        <papertitle>DPL: Cross-quality DeepFake Detection via Dual Progressive Learning</papertitle>
+                    </a>
+                    <br>
+                    Dongliang Zhang<sup>+</sup>, Yunfei Li<sup>+</sup>, Jiaran Zhou, <b>Yuezun Li</b><sup>✉️</sup>.
+                    <br>
+                    Asian Conference on Computer Vision (<b>ACCV</b>), 2024. 
+                    <br>
+                    <a href="https://github.com/OUC-VAS/DPL">[Code]</a>  
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/tpam2024pg.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>TPAM: Transferable Perceptual-constrained Adversarial Meshes</papertitle>
+                    </a>
+                    <br>
+                    Tengjia Kang<sup>+</sup>, <b>Yuezun Li</b>, Jiaran Zhou, Shiqing Xin, Junyu Dong, Changhe Tu.
+                    <br>
+                    Pacific Graphics (<b>PG</b>), 2024. 
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/fastforensics2024bmvc.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2408.16582">
+                        <papertitle>FastForensics: Efficient Two-Stream Design for Real-Time Image Manipulation Detection</papertitle>
+                    </a>
+                    <br>
+                    Yangxiang Zhang<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Ao Luo, Jiaran Zhou, Junyu Dong.
+                    <br>
+                    British Machine Vision Conference (<b>BMVC</b>), 2024. 
+                    <br>
+                    <a href="https://github.com/OUC-VAS/FastForensics">[Code]</a> 
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/mumpy2024arxiv.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/pdf/2404.11054">
+                        <papertitle>Mumpy: Multilateral Temporal-view Pyramid Transformer for Video Inpainting Detection</papertitle>
+                    </a>
+                    <br>
+                    Ying Zhang<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Bo Peng, Jiaran Zhou, Huiyu Zhou, Junyu Dong.
+                    <br>
+                    British Machine Vision Conference (<b>BMVC</b>), 2024. 
+                    <br>
+                    <a href="https://github.com/OUC-VAS/Mumpy">[Code]</a>     
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/domainforensics2024tifs.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2312.10680">
+                        <papertitle>DomainForensics: Exposing Face Forgery across Domains via Bi-directional Adaptation</papertitle>
+                    </a>
+                    <br>
+                    Qingxuan Lv<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Junyu Dong<sup>✉️</sup>, Sheng Chen, Hui Yu, Huiyu Zhou, Shu Zhang.
+                    <br>
+                    IEEE Transactions on Information Forensics and Security (<b>TIFS</b>), 2024.  
+                    <br>
+                    <a href="https://github.com/OUC-VAS/DomainForensics">[Code]</a>                                  
+                    <br> 
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/ssbi2024eccv.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>Fake It till You Make It: Curricular Dynamic Forgery Augmentations towards General Deepfake Detection</papertitle>
+                    </a>
+                    <br>
+                    Yuzhen Lin, Wentang Song, Bin Li, <b>Yuezun Li</b>, Jiangqun Ni, Han Chen, Qiushi Li.
+                    <br>
+                    European Conference on Computer Vision (<b>ECCV</b>), 2024.  
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/multi-face2023arxiv.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2308.01520">
+                        <papertitle>COMICS: End-to-end Bi-grained Contrastive Learning for Multi-face Forgery Detection</papertitle>
+                    </a>
+                    <br>
+                    Cong Zhang<sup>+</sup>, Honggang Qi, Shuhui Wang, <b>Yuezun Li</b><sup>✉️</sup>, Siwei Lyu.
+                    <br>
+                    IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2024.
+                    <br>
+                    <a href="https://github.com/zhangconghhh/COMICS">[Code]</a>  
+                    <br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/forest2023icme.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/abs/2308.00964">
+                        <papertitle>ForensicsForest Family: A Series of Multi-scale Hierarchical Cascade Forests for Detecting GAN-generated Faces</papertitle>
+                    </a>
+                    <br>
+                    Jiucui Lu<sup>+</sup>, Jiaran Zhou<sup>✉️</sup>, Junyu Dong, Bin Li, Siwei Lyu, <b>Yuezun Li</b><sup>✉️</sup>.
+                    <br>
+                    IEEE Transactions on Information Forensics and Security (<b>TIFS</b>), 2024. (Extended from ICME 2023)
+                    <br>
+                    <a href="https://github.com/OUC-VAS/ForensicsForest">[Code]</a>                      
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/fakecatcher2024tetc.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="https://arxiv.org/html/2307.14593v2">
+                        <papertitle>FakeTracer: Catching Face-swap DeepFakes via Implanting Traces in Training</papertitle>
+                    </a>
+                    <br>
+                    Pu Sun<sup>+</sup>, Honggang Qi, <b>Yuezun Li</b><sup>✉️</sup>, Siwei Lyu.
+                    <br>
+                    IEEE Transactions on Emerging Topics in Computing (<b>TETC</b>), 2024. (Extended from ICIP2022)
+                    <br>
+                    <a href="https://github.com/stephenivy07/FakeTracer">[Code]</a>               
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/vse2024icmr.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>Dynamic Soft Labeling for Visual Semantic Embedding</papertitle>
+                    </a>
+                    <br>
+                    Jiaao Yu<sup>+</sup>, Yunlai Ding, Junyu Dong, <b>Yuezun Li</b>.
+                    <br>
+                    ACM International Conference on Multimedia Retrieval (<b>ICMR</b>), 2024. 
+
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/mvapp2024kbs.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>Multiview Adaptive Attention Pooling for Image-Text Retrieval</papertitle>
+                    </a>
+                    <br>
+                    Yunlai Ding<sup>+</sup>, Jiaao Yu<sup>+</sup>, Qingxuan Lv, Haoran Zhao, Junyu Dong, <b>Yuezun Li</b>.
+                    <br>
+                    Knowledge-Based Systems (<b>KBS</b>), 2024. 
+
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/lmkbreaker2024cviu.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>LandmarkBreaker: A Proactive Method to Obstruct DeepFakes via Disrupting Facial Landmark Extraction</papertitle>
+                    </a>
+                    <br>
+                    <b>Yuezun Li</b>, Pu Sun, Honggang Qi, Siwei Lyu.
+                    <br>
+                    Computer Vision and Image Understanding (<b>CVIU</b>), 2024. (Extended from WIFS2020)
+
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/wdeco2024icassp.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>Enhancing Adversarial Robustness of DNNs via Weight Decorrelation in Training</papertitle>
+                    </a>
+                    <br>
+                    Cong Zhang, <b>Yuezun Li</b>, Honggang Qi, Siwei Lyu.
+                    <br>
+                    IEEE International Conference on Acoustics, Speech and Signal Processing (<b>ICASSP</b>), 2024.  
+
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/adani2023cviu.png' width="170"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>AdaNI: Adaptive Noise Injection to Improve Adversarial Robustness</papertitle>
+                    </a>
+                    <br>
+                    <b>Yuezun Li</b>, Cong Zhang, Honggang Qi, Siwei Lyu.
+                    <br>
+                    Computer Vision and Image Understanding (<b>CVIU</b>), 2024.  
+                    <br>
+                    <a href="https://github.com/zhangconghhh/AdaNI">[Code]</a>      
+                    <br>
+                </td>
+            </tr>
+
+            <tr><td style="padding:10px;"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<b>2023</b></td></tr>
+            
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/pmot2023jmse.png' width="150"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>PMOT2023: A large-scale multi-object tracking (MOT) dataset with application to phytoplankton observation</papertitle>
+                    </a>
+                    <br>
+                    Jiaao Yu<sup>+</sup>, Qingxuan Lv, <b>Yuezun Li</b><sup>✉️</sup>, Junyu Dong<sup>✉️</sup>, Haoran Zhao, Qiong Li.
+                    <br>
+                    Journal of Marine Science and Engineering (<b>JMSE</b>), 2023. (interdiscipline)  
+
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/sceneparsing2021tnnls.png' width="150"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>Robust Scene Parsing by Mining Supportive Knowledge from Dataset</papertitle>
+                    </a>
+                    <br>
+                    Ao Luo, Fan Yang, Xin Li, <b>Yuezun Li</b>, Zhicheng Jiao, Hong Cheng, Siwei Lyu.
+                    <br>
+                    IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>), 2023.  
+
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/lafea2023tcsvt.png' width="120"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="">
+                        <papertitle>LaFea: Learning Latent Representation beyond Feature for Universal Domain Adaptation</papertitle>
+                    </a>
+                    <br>
+                    Qingxuan Lv<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Junyu Dong<sup>✉️</sup>, Ziqian Guo.
+                    <br>
+                    IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2023.  
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/forest2023icme.png' width="200"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="papers/ICME2023_ForensicsForest .pdf">
+                        <papertitle>Forensics Forest: Multi-scale Hierarchical Cascade Forest for Detecting GAN-generated Faces</papertitle>
+                    </a>
+                    <br>
+                    Jiucui Lu<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Jiaran Zhou, Bin Li, Siwei Lyu.
+                    <br>
+                    IEEE International Conference on Multimedia and Expo (<b>ICME</b>), 2023. <b><span style="color:red">(Oral)</span></b>
+                </td>
+            </tr>
+    
+            <tr>
+                <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                    <img src='images/faceposion2023icme.png' width="180"></div>
+                        </td>
+                <td valign="middle">
+                    <p>
+                    <a href="papers/ICME2023_FacePoison .pdf">
+                        <papertitle>Face Poison: Obstructing DeepFakes by Disrupting Face Detection</papertitle>
+                    </a>
+                    <br>
+                    <b>Yuezun Li</b>, Jiaran Zhou, Siwei Lyu.
+                    <br>
+                    IEEE International Conference on Multimedia and Expo (<b>ICME</b>), 2023. 
+                </td>
+            </tr>
+
+            <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;;text-align:center;">
+                <img src='images/fmaa2023cose.png' width="130">
+            </td>
+            <td valign="middle">
+                <p>
+                <a href="">
+                    <papertitle>Improving Transferable Adversarial Attack via Feature-Momentum</papertitle>
+                </a>
+                <br>
+                Xianglong He<sup>+</sup>, <b>Yuezun Li</b><sup>✉️</sup>, Haipeng Qu, Junyu Dong.
+                <br>
+                Computers & Security (<b>COSE</b>), 2023.  
+                <br>
+                <a href="https://github.com/XianglongHe/FMAA">[Code]</a>                  
+                <br>
+            </td>
+        </tr> 
+
+        <tr>
+            <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                <img src='images/big2022pr.png' width="180"></div>
+                    </td>
+            <td valign="middle">
+                <p>
+                <a href="">
+                    <papertitle>Watching the BiG Artifacts: Exposing DeepFake Videos via Bi-Granularity Artifacts</papertitle>
+                </a>
+                <br>
+                Han Chen<sup>*</sup>, <b>Yuezun Li</b><sup>*</sup>, Dongdong Lin, Bin Li, Junqiang Wu.
+                <br>
+                Pattern Recognition (<b>PR</b>), 2023.  
+            </td>
+        </tr> 
+        </tbody></table>
+        >> <a href="more_publications.html">More</a>
+        <hr>
+
+        <!--==========================================
+                   fundings
+        ===========================================-->
+        <a name="Fundings"></a>
+        <heading style="padding:10px">🏆 Fundings</heading>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+            <td style="padding:10px;width:100%;vertical-align:middle">
+            <ul>
+                <li>                    
+                    [2025-2027]: PI, Young Scientists Fund of the Shandong Province NSF (山东省自然科学基金青年项目). &nbsp; 
+                    <div class="flashing-text">New!</div></b>
+                </li> 
+                <li>                    
+                    [2025-2027]: PI, Young Scientists Fund of the China NSF (国家自然科学基金青年项目). &nbsp; 
+                    <div class="flashing-text">New!</div></b>
+                </li>  
+                <li>                    
+                    [2022-2023]: PI, Fundamental Research Funds for the Central Universities (中央高校科研经费). &nbsp;
+                </li>  
+                <li>                    
+                    [2022-2023]: PI, Qingdao Postdoctoral Applied Research Project (青岛市博士后资助). &nbsp; </span>
+                </li> 
+                <li>                    
+                    [2021-2022]: PI, CPSF 70-th Support (国家博士后面上资助). &nbsp; </span>
+                </li>   
+                <li>                    
+                    [2021-2022]: PI, CPSF Special Support (国家博士后站前特别资助). &nbsp; </span>
+                </li> 
+            </ul>
+          </td>
+        </tr>
+        </tbody></table>
+        <hr>
+
+        <!--==========================================
+                   services
+        ===========================================-->
+        <a name="Service"></a>
+        <heading style="padding:10px;">🚠 Service</heading>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+            <td style="padding:10px;width:100%;vertical-align:middle">
+            <p>Journal Reviewer: 
+                IEEE TIFS; IEEE TPAMI; IEEE TIP; IEEE TNNLS; IEEE JSTSP; IEEE TMM;
+                IEEE TETCI; IJCV; IEEE TCSVT; Pattern Recognition
+                </p>
+                <p>Conference Reviewer: 
+                CVPR; ICCV; ECCV; ICML; AAAI; NeurIPS; ICLR; BMVC
+                </p>
+          </td>
+        </tr>
+        </tbody></table>
+        <hr>
+
+         <!--==========================================
+                   talks
+        ===========================================-->
+        <a name="talks"></a>
+        <heading style="padding:10px;">🔈 Invited talks</heading>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+                <td style="padding:10px;width:100%;vertical-align:middle">
+                <ul>
+                    <li>                    
+                        [2025.01]: I gave a talk on face forensics in the wild at CSIG Young Scholars forum. 
+                    </li> 
+                    <li>                    
+                        [2023.11]: I gave a talk at a forum in CSIG ChinaFMS conference 2023.
+                    </li>  
+                    <li>                    
+                        [2022.07]: I gave a tutorial talk on DeepFake Creation, Detection and Obstruction in ICME 2022.
+                    </li>  
+                    <li>                    
+                        [2021.06]: I gave a tutorial talk on DeepFake Generation and Detection in ICASSP 2021.
+                    </li> 
+                    <li>                    
+                        [2021.08]: I gave a tutorial talk on Detecting AI-synthesized Faces in IJCB 2021.
+                    </li>   
+                </ul>
+              </td>
+            </tr>
+            </tbody></table>
+        <hr>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td align="center">
+                <a href='https://clustrmaps.com/site/1bcyj'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=OuDVjBphuIV15vb_K9-k4Nnidvdol9qiwaJ6-fy4sXQ'/></a>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+
+<!-- Google Analytics -->
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-131560165-1', 'auto');
+  ga('send', 'pageview');
+</script> -->
+<!-- End Google Analytics -->
+
+<!-- <script>
+    const coll = document.querySelector(".collapsible");
+    const content = document.querySelector(".content");
+
+    coll.addEventListener("click", function() {
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+</script> -->
+
+<script>
+    $(document).ready(function () {
+        $.getJSON("https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json", function (data) {
+            var citationEles = document.getElementsByClassName('show_paper_citations')
+            Array.prototype.forEach.call(citationEles, element => {
+                var paperId = element.getAttribute('data')
+                var numCitations = data['publications'][paperId]['num_citations']
+                element.innerHTML = 'Citations: ' + numCitations;
+            });
+        });
+    })
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $.getJSON("https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json", function (data) {
+            var citationEles = document.getElementsByClassName('total_citations')
+            Array.prototype.forEach.call(citationEles, element => {
+                var numCitations = data['citedby']
+                element.innerHTML = numCitations;
+                console.log(numCitations)
+            });
+        });
+    })
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $.getJSON("https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json", function (data) {
+            var citationEles = document.getElementsByClassName('low_bound_citations')
+            var min_numCitations = 10000000;
+            Array.prototype.forEach.call(citationEles, element => {
+                var paperId = element.getAttribute('data')
+                parts = paperId.split(';')
+                parts = parts.filter(part => part.trim() !== '');
+                parts.forEach((part, index) => {
+                    let trimmedPart = part.trim();
+                    console.log(trimmedPart);
+                    var numCitations = data['publications'][trimmedPart]['num_citations']
+                    console.log(numCitations);
+                    if (numCitations <= min_numCitations) {
+                        min_numCitations = numCitations;
+                    }
+                });
+                element.innerHTML = Math.floor(min_numCitations / 100) * 100;
+            });
+        });
+    })
+</script>
+
+</body>
+
+</html>
