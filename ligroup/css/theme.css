@@ -796,25 +796,27 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 .news-list {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+	list-style: disc;   /* 恢复默认小圆点 */
+    padding-left: 20px; /* 给小圆点留空间 */
+	margin: 10px;
+	height: 200px;
+	overflow-y: auto;
 }
 .news-list li {
-	display: flex;
+	/* display: flex; */
 	align-items: center;
-	padding: 8px 0;
+	padding: 2px 0;
 	border-bottom: 1px solid #eee;
-	font-size: 14px;
+	/* font-size: 14px; */
 }
 
-.news-list li:hover{
+/* .news-list li:hover{
 	background: #f0f8ff;
-}
+} */
 .news-list li:last-child {
 	border-bottom: none;
 }
-.news-date {
+/* .news-date {
 	font-size: 14px;
 	color: #555;
 	flex-shrink: 0;
@@ -824,7 +826,7 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 .news-text {
 	flex-grow: 1;
-}
+} */
 /* .news-list a {
 	text-decoration: none;
 	color: #007bff;
@@ -865,6 +867,8 @@ table{table-layout:fixed;word-break:break-all;} */
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	height: 600px;
+	overflow-y: auto;
 }
 .paper-list li {
 	padding: 5px;
@@ -1164,9 +1168,9 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 .lab-name {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 700;
-	color: #0b5394;
+	/* color: #0b5394; */
 	letter-spacing: 0.5px;
 	/* text-shadow: 1px 1px 3px rgba(14, 106, 255, 0.581); */
 }
@@ -1183,7 +1187,7 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 .nav-menu {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   
 }
@@ -1233,5 +1237,55 @@ table{table-layout:fixed;word-break:break-all;} */
     cursor: help;
     color: #0b66ff;
   }
+
+.social-icons a.icon-link {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: #333;
+    transition: all 0.25s ease;
+}
+
+.social-icons a.icon-link:hover {
+    color: #007acc;
+    transform: scale(1.25);
+}
+
+.ai-google-scholar-square {
+    font-size: 28px !important;
+}
+
+
+/* Wrapper for each paper entry */
+.paper-item {
+    display: flex;
+    width: 100%;
+    /* padding: 3px 0; */
+    border-bottom: 1px solid #eee;
+}
+
+/* Left image area */
+.paper-image {
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+.paper-image img {
+    height: 80px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Right text area */
+.paper-info {
+    flex: 1;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.paper-info p {
+    margin: 0;
+}
 
 
