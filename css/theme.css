@@ -1223,7 +1223,7 @@ table{table-layout:fixed;word-break:break-all;} */
 
 .social-icons a.icon-link {
   display: inline-block;
-  margin: 10px 20px;
+  margin: 10px 15px;
   font-size: 30px;
   color: #333;
   transition: all 0.25s ease;
