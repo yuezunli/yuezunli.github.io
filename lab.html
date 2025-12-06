@@ -54,673 +54,721 @@
         <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
       </header>
 
-      <div class="col-md-12">
-        <div class="col-md-4" style="margin-top: 10px">
-          <div id="main-carousel" class="carousel box_decf">
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="carousel-img-box">
-                  <img src="entertain_img/building2.jpg" alt="img1" />
+      <div class="tabs">
+        <input type="radio" name="tab" id="tab1" checked />
+        <label for="tab1" class="tab-btn">Overview</label>
+
+        <input type="radio" name="tab" id="tab2" />
+        <label for="tab2" class="tab-btn">👤 Member</label>
+
+        <input type="radio" name="tab" id="tab3" />
+        <label for="tab3" class="tab-btn">🎊 Alumini</label>
+
+        <input type="radio" name="tab" id="tab4" />
+        <label for="tab4" class="tab-btn">🎇 Photos</label>
+
+        <input type="radio" name="tab" id="tab5" />
+        <label for="tab5" class="tab-btn">📨 Contact</label>
+
+        <div class="tab-content" id="content1">
+          <div class="col-md-12">
+            <div class="col-md-4" style="margin-top: 10px">
+              <div id="main-carousel" class="carousel box_decf">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="carousel-img-box">
+                      <img src="entertain_img/building2.jpg" alt="img1" />
+                    </div>
+                    <div class="carousel-caption">
+                      <h4>Welcome to VAS lab</h4>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="carousel-img-box">
+                      <img
+                        src="entertain_img/2025.6_VAS毕业照.jpg"
+                        alt="img2"
+                      />
+                    </div>
+                    <div class="carousel-caption">
+                      <h4>2025.06 信息南楼 毕业合影</h4>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="carousel-img-box">
+                      <img
+                        src="entertain_img/2025.6_POVA硕士毕业.jpg"
+                        alt="img3"
+                      />
+                    </div>
+                    <div class="carousel-caption">
+                      <h4>2025.06 信息南楼 毕业合影</h4>
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-caption">
-                  <h4>欢迎来到视觉分析与安全课题组</h4>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="carousel-img-box">
-                  <img src="entertain_img/2025.6_VAS毕业照.jpg" alt="img2" />
-                </div>
-                <div class="carousel-caption">
-                  <h4>2025.06 信息南楼 毕业合影</h4>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="carousel-img-box">
-                  <img src="entertain_img/2025.6_POVA硕士毕业.jpg" alt="img3" />
-                </div>
-                <div class="carousel-caption">
-                  <h4>2025.06 信息南楼 毕业合影</h4>
-                </div>
-              </div>
-            </div>
-            <a
-              class="left carousel-control"
-              href="#main-carousel"
-              data-slide="prev"
-              >‹</a
-            >
-            <a
-              class="right carousel-control"
-              href="#main-carousel"
-              data-slide="next"
-              >›</a
-            >
-          </div>
-        </div>
-
-        <div class="col-md-7" style="float: right; margin-left: 20px">
-          <h4 style="display: flex; align-items: flex-end; gap: 8px">
-            <img class="logo-img" src="src_img/logo.png" alt="Lab Logo" />
-            Vision Analysis and Security (VAS) Lab
-          </h4>
-          <p style="text-align: justify">
-            is led by
-            <a href="https://yuezunli.github.io/">Dr. Yuezun Li</a> and is part
-            of the <a href="https://www.ai-ouc.cn/">OUC AI Research Center</a>.
-            The lab focuses on multimedia forensics and computer vision, and has
-            achieved a series of research outcomes published in top-tier
-            conferences and journals, including NeurIPS, ICCV, CVPR, ECCV, TIP,
-            TIFS, TDSC, etc.
-          </p>
-          <p class="highlight-text">
-            <b>Research directions:</b><br />
-            <b>Multimedia forensics</b>: general/face-centric image/video
-            forensics... <br />
-            <b>Computer vision</b>: general/underwater
-            detection/tracking/generation/security...
-          </p>
-
-          <!-- <img src="src_img/growing.gif" />-->
-          <blockquote class="header-quote">
-            🔉 Optimism is a happiness magnet <cite>—Mary Lou Retton</cite>
-          </blockquote>
-        </div>
-      </div>
-
-      <div class="col-md-12" style="margin-top: -50px">
-        <nav class="lab-nav">
-          <ul class="lab-nav-menu">
-            <li><a href="#Team">👤 Team</a></li>
-            <li><a href="#Alumini">🎊 Alumini</a></li>
-            <li><a href="#Photos">🎇 Photos</a></li>
-            <li><a href="#Contact">📨 Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="col-md-12">
-        <a name="Team"></a>
-        <h3 class="subhead">👤 Team</h3>
-        <!-- <div class="row-fluid marketing"> -->
-        <div class="gallery">
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/cuixinjie.jpg" />
-              <div class="people-item-badge">CVPR*1</div>
-            </div>
-            <p class="description">
-              崔欣洁<br />
-              2023 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/yuanshuaiwei.jpg" />
-              <div class="people-item-badge">CVPR*1</div>
-            </div>
-            <p class="description">
-              袁帅威<br />
-              2023 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/zhudelong.jpg" />
-              <div class="people-item-badge">TDSC*1</div>
-            </div>
-            <p class="description">
-              朱德龙<br />
-              2023 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/fumengxin.png" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              符梦鑫<br />
-              2024 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/zhangzhengxuan.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              张证炫<br />
-              2024 硕士<br />
-              图像篡改检测
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/weizihe.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              魏子贺<br />
-              2024 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/songkeji.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              宋科技<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/hujunmin.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              胡俊敏<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/huanghanqing.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              黄汉卿<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/shangkairui.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              商恺瑞<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/wangxiang.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              王祥<br />
-              2025 硕士<br />
-              图像篡改检测
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/zhengzhiqiang.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              郑志强<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/wangbin.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              王斌<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/wangxingping.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              王星苹<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/liuyixuan.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              刘懿萱<br />
-              2025 硕士<br />
-              图像篡改检测
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/xiaokaiyuan.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              肖开元<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/laijunlin.jpg" />
-              <div class="people-item-badge"></div>
-            </div>
-            <p class="description">
-              赖俊霖<br />
-              2025 硕士<br />
-              人脸鉴伪
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/jiangjinkun.jpg" />
-              <div class="people-item-badge">TIP*1</div>
-            </div>
-            <p class="description">
-              姜锦琨<br />
-              2025 博士<br />
-              Co-advised in
-              <a href="https://yuezunli.github.io/planktongroup/">POVA</a><br />
-              水下视觉
-            </p>
-          </div>
-
-          <div class="person-card">
-            <div class="people-item centered">
-              <img src="people_img/yuyang.jpg" />
-              <div class="people-item-badge">TCSVT*1</div>
-            </div>
-            <p class="description">
-              于阳<br />
-              2025 博士<br />
-              Co-advised in
-              <a href="https://yuezunli.github.io/planktongroup/">POVA</a><br />
-              水下视觉
-            </p>
-          </div>
-        </div>
-        <hr />
-
-        <div class="gallery"></div>
-      </div>
-
-      <div class="col-md-12">
-        <a name="Alumini"></a>
-        <h3 class="subhead">🎊 Alumini</h3>
-        <div style="height: 600px; overflow-y: auto">
-          <table class="alumini">
-            <tr>
-              <th>姓名</th>
-              <th>年级</th>
-              <th>类型</th>
-              <th>工作</th>
-              <th>研究方向</th>
-              <th>
-                在校成果 &nbsp;
-                <span class="badge badge-conference">会议</span>
-                <span class="badge badge-journal">期刊</span>
-                <span class="badge badge-award">奖项</span>
-              </th>
-            </tr>
-            <tr>
-              <td><img src="people_img/qingxuan.jpg" />吕清轩</td>
-              <td>2021-2025</td>
-              <td>博士</td>
-              <td>青岛理工大学</td>
-              <td>水下视觉、人脸鉴伪</td>
-              <td>
-                <span class="badge badge-journal"
-                  >TIFS*1 [CCF A][中科院一区]</span
-                ><br />
-                <span class="badge badge-journal"
-                  >TCSVT*2 [CCF B][中科院一区]</span
-                ><br />
-                <span class="badge badge-award">国家奖学金</span>
-              </td>
-            </tr>
-
-            <tr>
-              <td><img src="people_img/liyunfei.png" />李云飞</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>哈尔滨工业大学（读博）</td>
-              <td>人脸鉴伪</td>
-              <td><span class="badge badge-conference">WACV*1 [Oral]</span></td>
-            </tr>
-            <tr>
-              <td><img src="people_img/chenzengqiang.jpg" />陈增强</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>菏泽市招商局</td>
-              <td>人脸鉴伪</td>
-              <td><span class="badge badge-conference">CCBR*1</span></td>
-            </tr>
-            <tr>
-              <td><img src="people_img/zhangying.jpg" />张迎</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>⼭东省农村信⽤社联合社</td>
-              <td>人脸鉴伪</td>
-              <td>
-                <span class="badge badge-conference">BMVC*1 [CCF C]</span>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/zhangdongliang.jpg" />张东亮</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>招银⽹络科技（杭州）</td>
-              <td>人脸鉴伪</td>
-              <td>
-                <span class="badge badge-conference">ACCV*1 [CCF C]</span>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/zhangyangxiang.jpg" />张仰祥</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>中国光⼤银⾏（⻘岛）</td>
-              <td>图像篡改检测</td>
-              <td>
-                <span class="badge badge-conference">BMVC*1 [CCF C]</span>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/lihanzhe.jpg" />李汉哲</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>中国⼯商银⾏江⻄省分⾏</td>
-              <td>人脸鉴伪</td>
-              <td>
-                <span class="badge badge-conference">NeurIPS*1 [CCF A]</span
-                ><br />
-                <span class="badge badge-award">国家奖学金</span>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/wangxudong.png" />王旭东</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>美团（北京）</td>
-              <td>图像篡改检测</td>
-              <td>
-                <span class="badge badge-conference">ICME*1 [CCF B]</span>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/jiangjinkun.jpg" />姜锦琨</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>中国海洋大学（读博）</td>
-              <td>水下视觉</td>
-              <td>
-                <span class="badge badge-journal"
-                  >TIP*1 [CCF A][中科院一区]</span
+                <a
+                  class="left carousel-control"
+                  href="#main-carousel"
+                  data-slide="prev"
+                  >‹</a
                 >
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/yuyang.jpg" />于阳</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>中国海洋大学（读博）</td>
-              <td>水下视觉</td>
-              <td>
-                <span class="badge badge-journal"
-                  >TCSVT*1 [CCF B][中科院一区]</span
+                <a
+                  class="right carousel-control"
+                  href="#main-carousel"
+                  data-slide="next"
+                  >›</a
                 >
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/kangtengjia.jpg" />康腾甲</td>
-              <td>2022-2025</td>
-              <td>硕士</td>
-              <td>哈尔滨工业大学（读博）</td>
-              <td>对抗三角网格</td>
-              <td>
-                <span class="badge badge-conference">PG*1 [CCF B]</span><br />
-                <span class="badge badge-award">国家奖学金</span>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="people_img/lujiucui.png" />陆久翠</td>
-              <td>2021-2024</td>
-              <td>硕士</td>
-              <td>青岛城市学院</td>
-              <td>人脸鉴伪</td>
-              <td>
-                <span class="badge badge-journal">TIFS*1 [CCF A]</span><br />
-                <span class="badge badge-conference">ICME*1 [CCF B]</span>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="col-md-12">
-        <a name="Photos"></a>
-        <h3 class="subhead">🎇 Photos</h3>
-        <div style="height: 600px; overflow-y: auto">
-          <div class="entergallery-section">
-            <h4>📅 2025 年</h4>
-            <div class="entergallery">
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.6_VAS毕业照.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-06 图书馆 VAS硕士毕业合影</div>
-              </div>
-
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.6_VAS毕业照2.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-06 信息南楼 VAS硕士毕业合影</div>
-              </div>
-
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.6_POVA硕士毕业.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-06 办公室 POVA硕士毕业合影</div>
-              </div>
-
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.6_本科生毕业.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-06 办公室 本科生毕业合影</div>
-              </div>
-
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.6_留学生硕士.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-06 硕士留学生结课合影</div>
-              </div>
-
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.5_大珠山_硕士毕业.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-05 大珠山 VAS硕士毕业合影1</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.5_大珠山_合影.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-05 大珠山 VAS硕士毕业合影2</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2025.5_毕业蛋糕.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2025-05 毕业蛋糕</div>
               </div>
             </div>
-          </div>
 
-          <div class="entergallery-section">
-            <h4>📅 2024 年</h4>
-            <div class="entergallery">
-              <div class="entergallery-item">
+            <div class="col-md-7" style="float: right; margin-left: 20px">
+              <h4 style="display: flex; align-items: flex-end; gap: 8px">
                 <img
-                  src="entertain_img/2024.11_ddl.jpg"
-                  onclick="openModal(this)"
+                  class="logo-img"
+                  src="src_img/logo.png"
+                  alt="Lab Logo"
+                  style="height: 40px"
                 />
-                <div class="overlay">🎓 2024-11 CVPR DDL</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2024.9_聚餐_1.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2024-09 VAS-聚餐合影</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2024.06_硕士毕业.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2024-06 VAS-2021级硕士毕业合影</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2024.06_优秀本科毕设.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2024-06 优秀本科毕业设计</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2024-04.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2024-04 VAS-KFC合影</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2024-01.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2024-01 VAS-一楼咖啡店前合影</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="entergallery-section">
-            <h4>📅 2023 年</h4>
-            <div class="entergallery">
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2023.10_ouc.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2023-10 VAS-图书馆前合影</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2023.5_SRDP国创_.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2023-05 本科SRDP国创小队合影</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2023.4_dazhushan_.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 2023-04 VAS-大珠山活动合影</div>
-              </div>
-            </div>
-          </div>
+                <span>Vision Analysis and Security (VAS) Lab</span>
 
-          <div class="entergallery-section">
-            <h4>😉 Funnies</h4>
-            <div class="entergallery">
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/2024-01a.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 Accept蛋糕</div>
-              </div>
-              <div class="entergallery-item">
-                <img src="entertain_img/slogan.jpg" onclick="openModal(this)" />
-                <div class="overlay">🎓 Accept Flyer</div>
-              </div>
-              <div class="entergallery-item">
-                <img
-                  src="entertain_img/slogan1.jpg"
-                  onclick="openModal(this)"
-                />
-                <div class="overlay">🎓 龙年Accept Flyer</div>
-              </div>
+                <div
+                  class="social-icons"
+                  style="display: flex; align-items: flex-end; gap: 12px"
+                >
+                  <a href="https://github.com/yuezunli" class="icon-link">
+                    <i class="fa fa-github" style="font-size: 28px"></i>
+                  </a>
+                </div>
+              </h4>
+
+              <p style="text-align: justify">
+                is a part of the
+                <a href="https://www.ai-ouc.cn/"
+                  >Institue of Artificial Intelligence at Ocean University of
+                  China (OUC)</a
+                >, directed by
+                <a href="https://yuezunli.github.io/">Dr. Yuezun Li</a>. The lab
+                focuses on multimedia forensics and computer vision, and has
+                achieved a series of research outcomes published in top-tier
+                conferences and journals, including NeurIPS, ICCV, CVPR, ECCV,
+                TIP, TIFS, TDSC, etc.
+              </p>
+              <p class="highlight-text">
+                <b>Research interests:</b><br />
+                <b>👉 Multimedia forensics</b>: general/face-centric image/video
+                forensics... <br />
+                <b>👉 Computer vision</b>: general/underwater
+                detection/tracking/generation/security...
+              </p>
+
+              <!-- <img src="src_img/growing.gif" />-->
+              <blockquote class="header-quote">
+                🔉 Optimism is a happiness magnet — Mary Lou Retton
+              </blockquote>
             </div>
           </div>
         </div>
-        <!-- 图片预览弹窗 -->
-        <div class="modal" id="imageModal">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <img id="modalImg" />
-        </div>
-      </div>
 
-      <div class="col-md-12">
-        <a name="Contact"></a>
-        <h3 class="subhead">📨 Contact</h3>
-        <p class="highlight-text">
-          <b
-            >We welcome students passionate about research and emerging
-            technologies, with a love for mathematics and programming, to join
-            our lab. Contact 📧 <u>liyuezun AT ouc.edu.cn</u>
-          </b>
-        </p>
+        <div class="tab-content" id="content2">
+          <div class="col-md-12">
+            <h4 class="subhead">Students</h4>
+            <!-- <div class="row-fluid marketing"> -->
+            <div class="gallery">
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/cuixinjie.jpg" />
+                  <div class="people-item-badge">CVPR*1</div>
+                </div>
+                <p class="description">
+                  崔欣洁<br />
+                  2023 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/yuanshuaiwei.jpg" />
+                  <div class="people-item-badge">CVPR*1</div>
+                </div>
+                <p class="description">
+                  袁帅威<br />
+                  2023 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/zhudelong.jpg" />
+                  <div class="people-item-badge">TDSC*1</div>
+                </div>
+                <p class="description">
+                  朱德龙<br />
+                  2023 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/fumengxin.png" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  符梦鑫<br />
+                  2024 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/zhangzhengxuan.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  张证炫<br />
+                  2024 硕士<br />
+                  图像篡改检测
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/weizihe.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  魏子贺<br />
+                  2024 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/songkeji.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  宋科技<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/hujunmin.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  胡俊敏<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/huanghanqing.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  黄汉卿<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/shangkairui.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  商恺瑞<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/wangxiang.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  王祥<br />
+                  2025 硕士<br />
+                  图像篡改检测
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/zhengzhiqiang.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  郑志强<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/wangbin.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  王斌<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/wangxingping.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  王星苹<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/liuyixuan.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  刘懿萱<br />
+                  2025 硕士<br />
+                  图像篡改检测
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/xiaokaiyuan.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  肖开元<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/laijunlin.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <p class="description">
+                  赖俊霖<br />
+                  2025 硕士<br />
+                  人脸鉴伪
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/jiangjinkun.jpg" />
+                  <div class="people-item-badge">TIP*1</div>
+                </div>
+                <p class="description">
+                  姜锦琨<br />
+                  2025 博士<br />
+                  Co-advised in
+                  <a href="https://yuezunli.github.io/planktongroup/">POVA</a
+                  ><br />
+                  水下视觉
+                </p>
+              </div>
+
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="people_img/yuyang.jpg" />
+                  <div class="people-item-badge">TCSVT*1</div>
+                </div>
+                <p class="description">
+                  于阳<br />
+                  2025 博士<br />
+                  Co-advised in
+                  <a href="https://yuezunli.github.io/planktongroup/">POVA</a
+                  ><br />
+                  水下视觉
+                </p>
+              </div>
+            </div>
+            <hr />
+
+            <div class="gallery"></div>
+          </div>
+        </div>
+        <div class="tab-content" id="content3">
+          <div class="col-md-12">
+            <div style="height: 1500px; overflow-y: auto">
+              <table class="alumini">
+                <tr>
+                  <th>姓名</th>
+                  <th>年级</th>
+                  <th>类型</th>
+                  <th>工作</th>
+                  <th>研究方向</th>
+                  <th>
+                    在校成果 &nbsp;
+                    <span class="badge badge-conference">会议</span>
+                    <span class="badge badge-journal">期刊</span>
+                    <span class="badge badge-award">奖项</span>
+                  </th>
+                </tr>
+                <tr>
+                  <td><img src="people_img/qingxuan.jpg" />吕清轩</td>
+                  <td>2021-2025</td>
+                  <td>博士</td>
+                  <td>青岛理工大学</td>
+                  <td>水下视觉、人脸鉴伪</td>
+                  <td>
+                    <span class="badge badge-journal"
+                      >TIFS*1 [CCF A][中科院一区]</span
+                    ><br />
+                    <span class="badge badge-journal"
+                      >TCSVT*2 [CCF B][中科院一区]</span
+                    ><br />
+                    <span class="badge badge-award">国家奖学金</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><img src="people_img/liyunfei.png" />李云飞</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>哈尔滨工业大学（读博）</td>
+                  <td>人脸鉴伪</td>
+                  <td>
+                    <span class="badge badge-conference">WACV*1 [Oral]</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/chenzengqiang.jpg" />陈增强</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>菏泽市招商局</td>
+                  <td>人脸鉴伪</td>
+                  <td><span class="badge badge-conference">CCBR*1</span></td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/zhangying.jpg" />张迎</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>⼭东省农村信⽤社联合社</td>
+                  <td>人脸鉴伪</td>
+                  <td>
+                    <span class="badge badge-conference">BMVC*1 [CCF C]</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/zhangdongliang.jpg" />张东亮</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>招银⽹络科技（杭州）</td>
+                  <td>人脸鉴伪</td>
+                  <td>
+                    <span class="badge badge-conference">ACCV*1 [CCF C]</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/zhangyangxiang.jpg" />张仰祥</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>中国光⼤银⾏（⻘岛）</td>
+                  <td>图像篡改检测</td>
+                  <td>
+                    <span class="badge badge-conference">BMVC*1 [CCF C]</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/lihanzhe.jpg" />李汉哲</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>中国⼯商银⾏江⻄省分⾏</td>
+                  <td>人脸鉴伪</td>
+                  <td>
+                    <span class="badge badge-conference">NeurIPS*1 [CCF A]</span
+                    ><br />
+                    <span class="badge badge-award">国家奖学金</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/wangxudong.png" />王旭东</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>美团（北京）</td>
+                  <td>图像篡改检测</td>
+                  <td>
+                    <span class="badge badge-conference">ICME*1 [CCF B]</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/jiangjinkun.jpg" />姜锦琨</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>中国海洋大学（读博）</td>
+                  <td>水下视觉</td>
+                  <td>
+                    <span class="badge badge-journal"
+                      >TIP*1 [CCF A][中科院一区]</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/yuyang.jpg" />于阳</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>中国海洋大学（读博）</td>
+                  <td>水下视觉</td>
+                  <td>
+                    <span class="badge badge-journal"
+                      >TCSVT*1 [CCF B][中科院一区]</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/kangtengjia.jpg" />康腾甲</td>
+                  <td>2022-2025</td>
+                  <td>硕士</td>
+                  <td>哈尔滨工业大学（读博）</td>
+                  <td>对抗三角网格</td>
+                  <td>
+                    <span class="badge badge-conference">PG*1 [CCF B]</span
+                    ><br />
+                    <span class="badge badge-award">国家奖学金</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="people_img/lujiucui.png" />陆久翠</td>
+                  <td>2021-2024</td>
+                  <td>硕士</td>
+                  <td>青岛城市学院</td>
+                  <td>人脸鉴伪</td>
+                  <td>
+                    <span class="badge badge-journal">TIFS*1 [CCF A]</span
+                    ><br />
+                    <span class="badge badge-conference">ICME*1 [CCF B]</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="content4">
+          <div class="col-md-12">
+            <div style="height: 1500px; overflow-y: auto">
+              <div class="entergallery-section">
+                <h4>📅 2025 年</h4>
+                <div class="entergallery">
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.6_VAS毕业照.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2025-06 图书馆 VAS硕士毕业合影</div>
+                  </div>
+
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.6_VAS毕业照2.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">
+                      🎓 2025-06 信息南楼 VAS硕士毕业合影
+                    </div>
+                  </div>
+
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.6_POVA硕士毕业.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">
+                      🎓 2025-06 办公室 POVA硕士毕业合影
+                    </div>
+                  </div>
+
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.6_本科生毕业.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2025-06 办公室 本科生毕业合影</div>
+                  </div>
+
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.6_留学生硕士.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2025-06 硕士留学生结课合影</div>
+                  </div>
+
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.5_大珠山_硕士毕业.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">
+                      🎓 2025-05 大珠山 VAS硕士毕业合影1
+                    </div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.5_大珠山_合影.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">
+                      🎓 2025-05 大珠山 VAS硕士毕业合影2
+                    </div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2025.5_毕业蛋糕.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2025-05 毕业蛋糕</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="entergallery-section">
+                <h4>📅 2024 年</h4>
+                <div class="entergallery">
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2024.11_ddl.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2024-11 CVPR DDL</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2024.9_聚餐_1.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2024-09 VAS-聚餐合影</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2024.06_硕士毕业.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2024-06 VAS-2021级硕士毕业合影</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2024.06_优秀本科毕设.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2024-06 优秀本科毕业设计</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2024-04.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2024-04 VAS-KFC合影</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2024-01.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2024-01 VAS-一楼咖啡店前合影</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="entergallery-section">
+                <h4>📅 2023 年</h4>
+                <div class="entergallery">
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2023.10_ouc.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2023-10 VAS-图书馆前合影</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2023.5_SRDP国创_.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2023-05 本科SRDP国创小队合影</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2023.4_dazhushan_.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 2023-04 VAS-大珠山活动合影</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="entergallery-section">
+                <h4>😉 Funnies</h4>
+                <div class="entergallery">
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/2024-01a.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 Accept蛋糕</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/slogan.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 Accept Flyer</div>
+                  </div>
+                  <div class="entergallery-item">
+                    <img
+                      src="entertain_img/slogan1.jpg"
+                      onclick="openModal(this)"
+                    />
+                    <div class="overlay">🎓 龙年Accept Flyer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 图片预览弹窗 -->
+            <div class="modal" id="imageModal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img id="modalImg" />
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="content5">
+          <div class="col-md-12">
+            <p class="highlight-text">
+              <b
+                >We welcome students passionate about research and emerging
+                technologies, with a love for mathematics and programming, to
+                join our lab. Contact 📧 <u>liyuezun [AT] ouc.edu.cn</u>
+              </b>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <hr />
