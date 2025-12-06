@@ -52,6 +52,7 @@
           <a href="services.html">Services</a>
           <a href="lab.html">Lab</a>
         </nav>
+        <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
       </header>
 
       <div class="col-md-12">
@@ -1252,6 +1253,14 @@
             });
           }
         );
+      });
+    </script>
+
+    <script>
+      const toggleBtn = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
       });
     </script>
   </body>

@@ -51,69 +51,37 @@
           <a href="services.html">Services</a>
           <a href="lab.html">Lab</a>
         </nav>
+        <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
       </header>
 
-      <div>
-        <div class="col-md-5" style="margin-top: 10px; margin-left: 20px">
-          <div id="main-carousel" class="carousel slide box_decf">
+      <div class="col-md-12">
+        <div class="col-md-4" style="margin-top: 10px">
+          <div id="main-carousel" class="carousel box_decf">
             <div class="carousel-inner">
               <div class="item active">
-                <img
-                  src="entertain_img/building2.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
+                <div class="carousel-img-box">
+                  <img src="entertain_img/building2.jpg" alt="img1" />
+                </div>
                 <div class="carousel-caption">
                   <h4>欢迎来到视觉分析与安全课题组</h4>
-                  <!-- -->
-                  <p></p>
                 </div>
               </div>
+
               <div class="item">
-                <img
-                  src="entertain_img/2025.6_VAS毕业照.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
+                <div class="carousel-img-box">
+                  <img src="entertain_img/2025.6_VAS毕业照.jpg" alt="img2" />
+                </div>
                 <div class="carousel-caption">
                   <h4>2025.06 信息南楼 毕业合影</h4>
-                  <p></p>
                 </div>
               </div>
 
               <div class="item">
-                <img
-                  src="entertain_img/2025.6_POVA硕士毕业.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
+                <div class="carousel-img-box">
+                  <img src="entertain_img/2025.6_POVA硕士毕业.jpg" alt="img3" />
+                </div>
                 <div class="carousel-caption">
                   <h4>2025.06 信息南楼 毕业合影</h4>
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="item">
-                <img
-                  src="entertain_img/2025.5_大珠山_硕士毕业.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
-                <div class="carousel-caption">
-                  <h4>2025.05 大珠山合影 硕士毕业</h4>
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="item">
-                <img
-                  src="entertain_img/2024.11_ddl.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
-                <div class="carousel-caption">
-                  <h4>2024.11 CVPR DDL</h4>
-                  <p></p>
                 </div>
               </div>
             </div>
@@ -132,7 +100,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="float: left; margin-left: 20px">
+        <div class="col-md-7" style="float: right; margin-left: 20px">
           <h4 style="display: flex; align-items: flex-end; gap: 8px">
             <img class="logo-img" src="src_img/logo.png" alt="Lab Logo" />
             Vision Analysis and Security (VAS) Lab
@@ -147,11 +115,11 @@
             TIFS, TDSC, etc.
           </p>
           <p class="highlight-text">
-            <b>Research areas:</b><br />
-            <b>Multimedia forensics</b>: face forensics; image/video
-            manipulation detection... <br />
+            <b>Research directions:</b><br />
+            <b>Multimedia forensics</b>: general/face-centric image/video
+            forensics... <br />
             <b>Computer vision</b>: general/underwater
-            detection/tracking/generation...
+            detection/tracking/generation/security...
           </p>
 
           <!-- <img src="src_img/growing.gif" />-->
@@ -161,13 +129,13 @@
         </div>
       </div>
 
-      <div class="col-md-12">
+      <div class="col-md-12" style="margin-top: -50px">
         <nav class="lab-nav">
           <ul class="lab-nav-menu">
             <li><a href="#Team">👤 Team</a></li>
             <li><a href="#Alumini">🎊 Alumini</a></li>
-            <li><a href="#">🎇 Photos</a></li>
-            <li><a href="#">📨 Contact</a></li>
+            <li><a href="#Photos">🎇 Photos</a></li>
+            <li><a href="#Contact">📨 Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -746,10 +714,13 @@
       <div class="col-md-12">
         <a name="Contact"></a>
         <h3 class="subhead">📨 Contact</h3>
-        <a href="mailto:liyuezun@ouc.edu.cn" class="icon-link">
-          <i class="fa fa-envelope"></i>
-        </a>
-        Send your CV to email: liyuezun [AT] ouc [dot] edu [dot] cn.
+        <p class="highlight-text">
+          <b
+            >We welcome students passionate about research and emerging
+            technologies, with a love for mathematics and programming, to join
+            our lab. Contact 📧 <u>liyuezun AT ouc.edu.cn</u>
+          </b>
+        </p>
       </div>
     </div>
     <hr />
@@ -790,6 +761,14 @@
       function closeModal() {
         document.getElementById("imageModal").style.display = "none";
       }
+    </script>
+
+    <script>
+      const toggleBtn = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
     </script>
   </body>
 </html>
