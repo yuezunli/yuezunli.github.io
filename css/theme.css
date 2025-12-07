@@ -710,7 +710,7 @@ ul {
   /* color: #0077cc; */
   /* font-size: 0.95rem; */
   font-family: "Times New Roman", Times, serif;
-  /* font-size: small; */
+  font-size: small;
   color: #ad5151;
   font-weight: bold;
   font-style: italic;
@@ -771,6 +771,7 @@ th {
   background-color: rgba(0, 64, 128, 0.85);
   color: white;
   font-weight: bold;
+  font-size: 16px;
 }
 .alumini tr:nth-child(even) {
   background-color: #f2f2f2;
@@ -1348,10 +1349,10 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 /*** Tab **/
-/* 容器 */
+/* --- 容器 --- */
 .tabs {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* 隐藏 radio */
@@ -1359,47 +1360,51 @@ table{table-layout:fixed;word-break:break-all;} */
   display: none;
 }
 
-/* Tab 按钮（上方一排） */
+/* --- Tab 样式 --- */
 .tab-btn {
-  display: inline-block;
-  padding: 8px 20px;
-  margin-right: 20px;
-  font-size: 16px;
-  color: #555;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 22px;
+  margin-right: 0px; /* 让标签无缝连接 */
+  /* font-size: 16px; */
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-bottom: none;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
+  color: #555;
+  /* border-radius: 10px 10px 0 0; */
   transition: all 0.2s ease;
 }
 
-/* hover 效果 */
+/* 悬停 */
 .tab-btn:hover {
-  color: #007bff; /* 悬停变色 */
-  font-weight: bold;
-  transform: scale(1.2); /* 放大一点 */
+  background: #ececec;
 }
 
-/* 被选中时样式 */
+/* --- 选中态 --- */
 #tab1:checked + label[for="tab1"],
 #tab2:checked + label[for="tab2"],
 #tab3:checked + label[for="tab3"],
 #tab4:checked + label[for="tab4"],
 #tab5:checked + label[for="tab5"] {
+  background: #ffffff;
   color: #000;
-  border-bottom: 2px solid #0077cc; /* 蓝色下划线 */
   font-weight: 600;
-  transform: scale(1.1); /* 放大一点 */
+  /* border-bottom: 3px solid #4c76ff; */
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.06);
+  /* transform: scale(1.1); */
 }
 
 /* 内容区 */
 .tab-content {
   display: none;
-  padding: 15px 5px 5px 0;
-  margin-top: 10px;
-  /* font-size: 15px;
-  line-height: 1.6; */
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  margin-top: -1px; /* 与 tab 完美衔接 */
 }
 
-/* 选中显示对应内容 */
+/* --- 选中显示内容 --- */
 #tab1:checked ~ #content1 {
   display: block;
 }
@@ -1420,4 +1425,30 @@ papertitle {
   font-weight: bold;
   /* font-size: 18px;  */
   /* color: #000;  */
+}
+
+/* 简洁图片网格 */
+.collab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+.collab-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+.icollab-tem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.collab-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
 }
