@@ -1,6 +1,26 @@
 body {
   padding-top: 0px;
   padding-bottom: 0px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Lato",
+    "Helvetica Neue", "Arial", "PingFang SC", "Microsoft YaHei", "黑体", "宋体",
+    sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #0b3ad6;
+  text-decoration: none;
+  /* font-weight: bold; */
 }
 
 /* Custom container */
@@ -513,18 +533,6 @@ img.no-style {
 .highlight {
   color: #fb9a08;
   font-weight: bold;
-}
-
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #0b3ad6;
-  text-decoration: none;
-  /* font-weight: bold; */
 }
 
 .jumbotron {
@@ -1439,7 +1447,7 @@ papertitle {
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .icollab-tem:hover {
   transform: translateY(-4px);
