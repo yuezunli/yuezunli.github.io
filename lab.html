@@ -62,7 +62,7 @@
         <label for="tab2" class="tab-btn">👤 Member</label>
 
         <input type="radio" name="tab" id="tab3" />
-        <label for="tab3" class="tab-btn">🎊 Alumini</label>
+        <label for="tab3" class="tab-btn">🎊 Alumni</label>
 
         <input type="radio" name="tab" id="tab4" />
         <label for="tab4" class="tab-btn">🎇 Photos</label>
@@ -70,6 +70,7 @@
         <input type="radio" name="tab" id="tab5" />
         <label for="tab5" class="tab-btn">🔰 Collaboration</label>
 
+        <!-- Overview -->
         <div class="tab-content" id="content1">
           <div class="col-md-12" style="display: flex; align-items: center">
             <div class="col-md-4" style="margin-top: 10px">
@@ -209,10 +210,45 @@
           </div>
         </div>
 
+        <!-- Member -->
         <div class="tab-content" id="content2">
           <div class="col-md-12">
-            <h4 class="subhead">Students</h4>
+            <h4 class="subhead">PhD students</h4>
+            <div class="gallery">
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="images/people_img/jiangjinkun.jpg" />
+                  <div class="people-item-badge">TIP*1</div>
+                </div>
+                <p class="description">
+                  Jinkun Jiang (姜锦琨)<br />
+                  2025 PhD<br />
+                  Co-advised with
+                  <a href="https://it.ouc.edu.cn/djy/main.htm">Prof. Dong</a
+                  ><br />
+                  Vision algorithms
+                </p>
+              </div>
 
+              <div class="person-card">
+                <div class="people-item centered">
+                  <img src="images/people_img/yuyang.jpg" />
+                  <div class="people-item-badge">TCSVT*1</div>
+                </div>
+                <p class="description">
+                  Yang Yu (于阳)<br />
+                  2025 PhD<br />
+                  Co-advised with
+                  <a href="https://it.ouc.edu.cn/djy/main.htm">Prof. Dong</a
+                  ><br />
+                  Vision algorithms
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <h4 class="subhead">Master students</h4>
             <div class="gallery">
               <div class="person-card">
                 <div class="people-item centered">
@@ -225,7 +261,6 @@
                   Face forensics
                 </p>
               </div>
-
               <div class="person-card">
                 <div class="people-item centered">
                   <img src="images/people_img/yuanshuaiwei.jpg" />
@@ -417,43 +452,11 @@
                   Face forensics
                 </p>
               </div>
-
-              <div class="person-card">
-                <div class="people-item centered">
-                  <img src="images/people_img/jiangjinkun.jpg" />
-                  <div class="people-item-badge">TIP*1</div>
-                </div>
-                <p class="description">
-                  Jinkun Jiang (姜锦琨)<br />
-                  2025 PhD<br />
-                  Co-advised in
-                  <a href="https://yuezunli.github.io/planktongroup/">POVA</a
-                  ><br />
-                  Vision algorithms
-                </p>
-              </div>
-
-              <div class="person-card">
-                <div class="people-item centered">
-                  <img src="images/people_img/yuyang.jpg" />
-                  <div class="people-item-badge">TCSVT*1</div>
-                </div>
-                <p class="description">
-                  Yang Yu (于阳)<br />
-                  2025 PhD<br />
-                  Co-advised in
-                  <a href="https://yuezunli.github.io/planktongroup/">POVA</a
-                  ><br />
-                  Vision algorithms
-                </p>
-              </div>
             </div>
-
-            <hr />
-            <div class="gallery"></div>
           </div>
         </div>
 
+        <!-- Alumni -->
         <div class="tab-content" id="content3">
           <div class="col-md-12">
             <div style="height: 1500px; overflow-y: auto">
@@ -632,6 +635,7 @@
           </div>
         </div>
 
+        <!-- Photos -->
         <div class="tab-content" id="content4">
           <div class="col-md-12">
             <div style="height: 1500px; overflow-y: auto">
@@ -811,6 +815,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Collaboration -->
         <div class="tab-content" id="content5">
           <div class="col-md-12">
             <div class="collab-grid" id="collab-grid">
