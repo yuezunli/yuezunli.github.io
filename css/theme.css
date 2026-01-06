@@ -936,7 +936,7 @@ table{table-layout:fixed;word-break:break-all;} */
   font-weight: normal;
   padding: 3px 5px;
   border-radius: 3px;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 .badge-conference {
