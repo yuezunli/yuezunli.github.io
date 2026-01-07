@@ -815,8 +815,6 @@ table{table-layout:fixed;word-break:break-all;} */
   list-style: disc; /* 恢复默认小圆点 */
   padding-left: 20px; /* 给小圆点留空间 */
   margin: 10px;
-  height: 300px;
-  overflow-y: auto;
 }
 .news-list li {
   /* display: flex; */
@@ -878,7 +876,7 @@ table{table-layout:fixed;word-break:break-all;} */
 
 .news-new {
   font-weight: bold;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   animation: colorChange 1s infinite;
 }
 
