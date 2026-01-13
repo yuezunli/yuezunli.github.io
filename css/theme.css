@@ -1458,3 +1458,54 @@ papertitle {
   background: #fff;
   padding: 10px;
 }
+
+/* ===== Base ===== */
+.badge1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 0.85em;
+  font-weight: 500;
+  line-height: 1;
+
+  padding: 3px 8px;
+  border-radius: 6px;
+
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* ===== Code (clickable) ===== */
+.badge-code {
+  background: #f1f3f4;
+  color: #24292f;
+  border: 1px solid #e0e0e0;
+}
+
+.badge-code:hover {
+  background: #1a73e8;
+  color: #ffffff;
+  border-color: #1a73e8;
+}
+
+/* ===== CCF Rank (static) ===== */
+.badge-rank {
+  background: #f5f5f5;
+  color: #444;
+  border: 1px solid #dddddd;
+  font-weight: 600;
+  cursor: default;
+}
+
+/* ===== Citations ===== */
+.badge-cite {
+  background: #f9fafb;
+  color: #555;
+  border: 1px solid #e5e7eb;
+}
+
+.badge-cite i {
+  font-size: 0.9em;
+  opacity: 0.75;
+}
