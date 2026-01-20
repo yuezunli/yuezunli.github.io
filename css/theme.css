@@ -1230,6 +1230,40 @@ table{table-layout:fixed;word-break:break-all;} */
 
 /* 手机端 */
 @media (max-width: 768px) {
+  .lab-header {
+    flex-wrap: wrap; /* 允许换行 */
+  }
+
+  .nav-menu {
+    display: none; /* 默认隐藏 */
+    flex-direction: column; /* 👈 强制纵向 */
+    align-items: stretch; /* 每一项占满 */
+    width: 100%;
+    background: #fff;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .nav-menu.show {
+    display: flex; /* 展开后才是 flex */
+  }
+
+  .nav-menu a {
+    display: block; /* 👈 防止 inline 横排 */
+    width: 100%;
+    padding: 12px 20px;
+    border-top: 1px solid #eee;
+    text-align: left;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* @media (max-width: 768px) {
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -1248,7 +1282,7 @@ table{table-layout:fixed;word-break:break-all;} */
   .nav-menu.show {
     display: flex;
   }
-}
+} */
 
 /* .nav-menu a.active {
   color: #0077cc;
@@ -1314,6 +1348,18 @@ table{table-layout:fixed;word-break:break-all;} */
 
 .paper-info p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .paper-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .paper-image img {
+    width: 200%;
+    max-width: 280px;
+  }
 }
 
 /* 导航栏容器 */
