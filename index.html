@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
@@ -53,7 +53,7 @@
           <a href="talks.html">Talks</a>
           <a href="funds.html">Funds</a>
           <a href="services.html">Services</a>
-          <a href="lab.html">Lab</a>
+          <a href="lab.html">⛺ Lab</a>
         </nav>
         <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
       </header>
@@ -977,7 +977,7 @@
           <div class="paper-image">
             <img
               src="images/paper_img/fwa.png"
-              onerror="this.style.display='none';"
+              onerror="this.style.display = 'none'"
             />
           </div>
           <div class="paper-info">
@@ -1014,7 +1014,7 @@
           <div class="paper-image">
             <img
               src="images/paper_img/headpose.png"
-              onerror="this.style.display='none';"
+              onerror="this.style.display = 'none'"
             />
           </div>
           <div class="paper-info">
@@ -1052,7 +1052,7 @@
           <div class="paper-image">
             <img
               src="images/paper_img/lloc2019ihmmsec.png"
-              onerror="this.style.display='none';"
+              onerror="this.style.display = 'none'"
             />
           </div>
           <div class="paper-info">
@@ -1083,7 +1083,7 @@
           <div class="paper-image">
             <img
               src="images/paper_img/ssm2019bmvc.png"
-              onerror="this.style.display='none';"
+              onerror="this.style.display = 'none'"
             />
           </div>
           <div class="paper-info">
@@ -1113,7 +1113,7 @@
           <div class="paper-image">
             <img
               src="images/paper_img/wifs18.png"
-              onerror="this.style.display='none';"
+              onerror="this.style.display = 'none'"
             />
           </div>
           <div class="paper-info">
@@ -1158,7 +1158,7 @@
           <div class="paper-image">
             <img
               src="images/paper_img/RAP2018bmvc.png"
-              onerror="this.style.display='none';"
+              onerror="this.style.display = 'none'"
             />
           </div>
           <div class="paper-info">
@@ -1394,7 +1394,7 @@
           "https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json",
           function (data) {
             var citationEles = document.getElementsByClassName(
-              "show_paper_citations"
+              "show_paper_citations",
             );
             Array.prototype.forEach.call(citationEles, (element) => {
               var paperId = element.getAttribute("data");
@@ -1411,7 +1411,7 @@
                 // element.style.fontWeight = 'bold';
               }
             });
-          }
+          },
         );
       });
 
@@ -1420,7 +1420,7 @@
           "https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json",
           function (data) {
             var citationEles = document.getElementsByClassName(
-              "low_bound_citations"
+              "low_bound_citations",
             );
             var min_numCitations = 10000000;
             Array.prototype.forEach.call(citationEles, (element) => {
@@ -1439,7 +1439,7 @@
               });
               element.innerHTML = Math.floor(min_numCitations / 100) * 100;
             });
-          }
+          },
         );
       });
     </script>
