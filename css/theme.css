@@ -974,19 +974,6 @@ table{table-layout:fixed;word-break:break-all;} */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* 响应式优化 */
-@media (max-width: 1024px) {
-  .bder {
-    width: 45%;
-  }
-}
-
-@media (max-width: 768px) {
-  .bder {
-    width: 100%;
-  }
-}
-
 /* 突出显示文本 */
 .highlight-text {
   /* font-size: 14px; */
@@ -1566,4 +1553,10 @@ papertitle {
 .badge-cite i {
   font-size: 0.9em;
   opacity: 0.75;
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
