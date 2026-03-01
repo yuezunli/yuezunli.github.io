@@ -1476,7 +1476,7 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 papertitle {
-  font-weight: bold;
+  font-weight: 500;
   /* font-size: 18px;  */
   color: #000;
   /* color: #444; */
