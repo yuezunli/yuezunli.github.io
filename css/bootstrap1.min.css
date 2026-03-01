@@ -725,6 +725,10 @@
   .col-md-offset-0 {
     margin-left: 0;
   }
+
+  .col-md-offset-1x {
+    margin-left: 4%;
+  }
 }
 
 @media (min-width: 1200px) {

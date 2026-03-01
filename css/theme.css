@@ -1295,6 +1295,20 @@ table{table-layout:fixed;word-break:break-all;} */
   color: #0b66ff;
 }
 
+.selfie {
+  display: flex;
+  /* margin: 10px 10px; */
+  justify-content: center; /* 水平居中 */
+  flex-wrap: wrap; /* 屏幕变窄时自动换行 */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* 水平居中 */
+  flex-wrap: wrap; /* 屏幕变窄时自动换行 */
+}
+
 .social-icons a.icon-link {
   display: inline-block;
   margin: 10px 10px;
