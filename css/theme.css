@@ -13,13 +13,13 @@ body {
 
 a {
   color: #234b8e;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus,
 a:hover {
   color: #0b3ad6;
-  /* text-decoration: none; */
+  text-decoration: underline;
   /* font-weight: bold; */
 }
 
