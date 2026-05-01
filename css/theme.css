@@ -825,6 +825,7 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 .news-list li {
   /* display: flex; */
+  text-align: left;
   align-items: center;
   padding: 2px 0;
   /* border-bottom: 1px solid #eee; */
@@ -1353,6 +1354,7 @@ table{table-layout:fixed;word-break:break-all;} */
   flex: 1;
   padding: 10px;
   vertical-align: middle;
+  text-align: left;
 }
 
 .paper-info a {
@@ -1603,4 +1605,13 @@ hr {
   height: 1px;
   background: linear-gradient(to right, transparent, #ccc, transparent);
   margin: 10px 0 20px;
+}
+
+.year-meta {
+  font-size: 11px;
+  color: #3f3f3f;
+  margin-left: 10px;
+  background: #f5f5f5;
+  /* padding: 2px 6px; */
+  border-radius: 6px;
 }
