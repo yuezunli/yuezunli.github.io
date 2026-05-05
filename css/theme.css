@@ -507,7 +507,7 @@ img.no-style {
 
 .subhead {
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 /* .bder{
@@ -1234,12 +1234,13 @@ table{table-layout:fixed;word-break:break-all;} */
     display: none; /* 默认隐藏 */
     flex-direction: column; /* 👈 强制纵向 */
     align-items: stretch; /* 每一项占满 */
-    width: 100%;
+    width: 50%;
     background: #fff;
 
     position: absolute;
     top: 100%;
-    left: 0;
+    /* left: 0; */
+    right: 0;
   }
 
   .nav-menu.show {
@@ -1303,6 +1304,14 @@ table{table-layout:fixed;word-break:break-all;} */
   flex-wrap: wrap; /* 屏幕变窄时自动换行 */
 }
 
+.selfie img {
+  width: 100%;
+  max-width: 180px; /* 桌面端最大尺寸 */
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
 .social-icons {
   display: flex;
   gap: 15px;
@@ -1333,7 +1342,7 @@ table{table-layout:fixed;word-break:break-all;} */
   width: 100%;
   align-items: center;
   /* padding: 3px 0; */
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 
 /* Left image area */
@@ -1366,16 +1375,24 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 @media (max-width: 768px) {
+  .selfie img {
+    max-width: 120px;
+  }
+
   .paper-item {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .paper-image img {
+    display: none;
+  }
+
+  /* .paper-image img {
     width: 400%;
     height: 200%;
     max-width: 280px;
-  }
+  } */
 }
 
 /* 导航栏容器 */
@@ -1492,11 +1509,11 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 papertitle {
-  font-weight: bold;
-  /* font-size: 18px;  */
+  /* font-weight: bold; */
+  font-size: 15px;
   color: #000;
   /* color: #444; */
-  /* text-decoration: none; */
+  text-decoration: underline;
 }
 
 /* 简洁图片网格 */
@@ -1539,6 +1556,8 @@ papertitle {
 
   padding: 3px 8px;
   border-radius: 6px;
+
+  margin-top: 3px;
 
   white-space: nowrap;
   text-decoration: none;
@@ -1594,10 +1613,10 @@ papertitle {
 }
 
 .author-note-center {
-  text-align: center;
-  font-size: 13px;
+  /* text-align: center; */
+  font-size: 12px;
   color: #777;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 hr {
