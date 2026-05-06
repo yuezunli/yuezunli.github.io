@@ -1346,16 +1346,41 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 /* Left image area */
+/* .paper-image {
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+} */
+
+/* .paper-image img {
+  height: 80px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
 .paper-image {
   width: 20%;
   text-align: center;
   padding: 10px;
 }
 
-.paper-image img {
-  height: 80px;
+/* 外层容器（关键） */
+.paper-image .img-box {
+  width: 150px; /* 固定宽 */
+  height: 100px; /* 固定高 */
+  background: #fff; /* 白色填充 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 图片自适应放入 */
+.paper-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* 👈 关键：保持比例，不裁剪 */
 }
 
 /* Right text area */
@@ -1384,7 +1409,7 @@ table{table-layout:fixed;word-break:break-all;} */
     align-items: flex-start;
   }
 
-  .paper-image img {
+  .paper-image {
     display: none;
   }
 
