@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Generalizable Face Forgery Detection via Separable Prompt Learning",
+    "authors": "Enrui Yang, <b>Yuezun Li</b><sup>#</sup>",
+    "venue": "arXiv:2604.17307, 2026.",
+    "image": "images/paper_img/sepl2026arxiv.png",
+    "link": "https://arxiv.org/abs/2604.17307",
+    "code": "https://github.com/OUC-YER/SePL-DeepfakeDetection",
+    "scholar": "v0Qt7BAAAAAJ:xx"
+  },
+  {
+    "title": "Generalizing Video DeepFake Detection by Self-generated Audio-Visual Pseudo-Fakes",
+    "authors": "Zihe Wei, <b>Yuezun Li</b><sup>#</sup>",
+    "venue": "arXiv:2604.09110, 2026.",
+    "image": "images/paper_img/avpf2026arxiv.png",
+    "link": "https://arxiv.org/abs/2604.09110",
+    "code": "https://github.com/OUC-VAS/AVPF",
+    "scholar": "v0Qt7BAAAAAJ:xx"
+  },
+  {
+    "title": "Detecting Diffusion-generated Images via Dynamic Assembly Forests",
+    "authors": "Mengxin Fu, <b>Yuezun Li</b><sup>#</sup>",
+    "venue": "arXiv:2604.09106, 2026.",
+    "image": "images/paper_img/daf2026arxiv.png",
+    "link": "https://arxiv.org/pdf/2604.09106",
+    "code": "https://github.com/OUC-VAS/DAF",
+    "scholar": "v0Qt7BAAAAAJ:xx"
+  },
+  {
+    "title": "Off-the-shelf Vision Models Benefit Image Manipulation Localization",
+    "authors": "Zhengxuan Zhang, Keji Song, Junmin Hu, Ao Luo, <b>Yuezun Li</b><sup>#</sup>",
+    "venue": "arXiv:2604.09096, 2026.",
+    "image": "images/paper_img/revi2026arxiv.png",
+    "link": "https://arxiv.org/pdf/2604.09096",
+    "code": "https://github.com/OUC-VAS/ReVi",
+    "scholar": "v0Qt7BAAAAAJ:xx"
+  },
+
+  {
+    "title": "Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics",
+    "authors": "<b>Yuezun Li</b><sup>#</sup>, Delong Zhu, Xinjie Cui, Siwei Lyu",
+    "venue": "arXiv:2507.18015, 2025.",
+    "image": "images/paper_img/celeb-df++.png",
+    "link": "https://arxiv.org/abs/2507.18015",
+    "code": "https://github.com/OUC-VAS/Celeb-DF-PP",
+    "scholar": "v0Qt7BAAAAAJ:2KloaMYe4IUC"
+  },
+  {
+    "title": "Texture, Shape, Order, and Relation Matter: A New Transformer Design for Sequential DeepFake Detection",
+    "authors": "Yunfei Li, <b>Yuezun Li</b><sup>#</sup>, Baoyuan Wu, Junyu Dong, Guopu Zhu, Siwei Lyu",
+    "venue": "arXiv:2404.13873, 2025 (WACV 2025 extended)",
+    "image": "images/paper_img/TSOM++2025arxiv.png",
+    "link": "https://arxiv.org/pdf/2404.13873",
+    "code": "https://github.com/OUC-VAS/TSOM",
+    "scholar": "v0Qt7BAAAAAJ:35r97b3x0nAC"
+  },
+  {
+    "title": "Forensics Adapter: Unleashing CLIP for Generalizable Face Forgery Detection",
+    "authors": "Xinjie Cui, <b>Yuezun Li</b><sup>#</sup>, Delong Zhu, Jiaran Zhou, Junyu Dong, Siwei Lyu",
+    "venue": "arXiv:2411.19715, 2025 (CVPR 2025 extended)",
+    "image": "images/paper_img/forensicsadapter++2025arxiv.png",
+    "link": "https://arxiv.org/pdf/2411.19715",
+    "code": "https://github.com/OUC-VAS/ForensicsAdapter",
+    "scholar": "v0Qt7BAAAAAJ:tzM49s52ZIMC"
+  },
+
+  {
+    "title": "Active Fake: DeepFake Camouflage",
+    "authors": "Pu Sun, Honggang Qi<sup>#</sup>, <b>Yuezun Li</b><sup>#</sup>",
+    "venue": "arXiv:2409.03200, 2024.",
+    "image": "images/paper_img/dfcam2024arxiv.png",
+    "link": "https://arxiv.org/pdf/2409.03200",
+    "code": "",
+    "scholar": "v0Qt7BAAAAAJ:SdhP9T11ey4C"
+  },
+
+  {
+    "title": "Hiding Faces in Plain Sight: Disrupting AI Face Synthesis with Adversarial Perturbations",
+    "authors": "<b>Yuezun Li</b>, Xin Yang, Baoyuan Wu, Siwei Lyu",
+    "venue": "arXiv:1906.09288, 2019 (preliminary version of TDSC 2025)",
+    "image": "images/paper_img/hiding2019arxiv.png",
+    "link": "https://arxiv.org/pdf/1906.09288",
+    "code": "",
+    "scholar": "v0Qt7BAAAAAJ:ZHo1McVdvXMC"
+  }
+]
