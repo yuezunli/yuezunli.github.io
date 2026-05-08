@@ -14,7 +14,7 @@
       {
         "title": "Optical Flow Matching: Reframing Optical Flow as Continuous Transport Dynamics",
         "authors": "Ao Luo, Xin Li, Fan Yang, <b>Yuezun Li</b>, Zhaoquan Yuan, Shan Zhao, Bing Su, Xiao Wu",
-        "venue": "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026.",
+        "venue": "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026. <b>(Oral)</b>",
         "image": "images/paper_img/opticalflow2026cvpr.png",
         "code": "",
         "scholar": "v0Qt7BAAAAAJ:xx"
@@ -88,7 +88,7 @@
       {
         "title": "Texture, Shape and Order Matter: A New Transformer Design for Sequential DeepFake Detection",
         "authors": "Yunfei Li, <b>Yuezun Li</b><sup>#</sup>, Xin Wang, Baoyuan Wu, Jiaran Zhou, Junyu Dong",
-        "venue": "IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2025. <b><span style='color:red'>(Oral)</span></b>",
+        "venue": "IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2025. <b>(Oral)</b>",
         "image": "images/paper_img/tsom2024wacv.png",
         "paper": "https://openaccess.thecvf.com/content/WACV2025/papers/Li_Texture_Shape_and_Order_Matter_A_New_Transformer_Design_for_WACV_2025_paper.pdf",
         "code": "https://github.com/OUC-VAS/TSOM",
@@ -267,7 +267,7 @@
       {
         "title": "Forensics Forest: Multi-scale Hierarchical Cascade Forest for Detecting GAN-generated Faces",
         "authors": "Jiucui Lu, <b>Yuezun Li</b><sup>#</sup>, Jiaran Zhou, Bin Li, Siwei Lyu.",
-        "venue": "IEEE International Conference on Multimedia and Expo (<b>ICME</b>), 2023. <b><span style='color: red'>(Oral)</span></b>",
+        "venue": "IEEE International Conference on Multimedia and Expo (<b>ICME</b>), 2023. <b>(Oral)</b>",
         "image": "images/paper_img/forest2023icme.png",
         "link": "papers/ICME2023_ForensicsForest .pdf",
         "scholar": "v0Qt7BAAAAAJ:5ugPr518TE4C"
@@ -411,7 +411,7 @@
       {
         "title": "Graph-to-Graph Energy Minimization for Video Object Segmentation",
         "authors": "<b>Yuezun Li</b><sup>*</sup>, Longyin Wen<sup>*</sup>, Ming-Ching Chang, Siwei Lyu",
-        "venue": "IEEE International Conference on Advanced Video and Signal-Based Surveillance (<b>AVSS</b>), 2019 (Oral).",
+        "venue": "IEEE International Conference on Advanced Video and Signal-Based Surveillance (<b>AVSS</b>), 2019. <b>(Oral)</b>",
         "image": "images/paper_img/seg2019avss.png"
       },
       {

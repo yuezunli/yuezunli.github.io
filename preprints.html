@@ -94,7 +94,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $.getJSON(
           "https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json",
@@ -148,7 +148,7 @@
           },
         );
       });
-    </script>
+    </script> -->
 
     <script>
       const toggleBtn = document.querySelector(".nav-toggle");
@@ -159,6 +159,40 @@
     </script>
 
     <script>
+      /* =========================
+     Citation 初始化函数
+  ========================== */
+
+      function loadCitations() {
+        $.getJSON(
+          "https://cdn.jsdelivr.net/gh/yuezunli/acad-homepage.github.io@google-scholar-stats/gs_data.json",
+
+          function (data) {
+            var citationEles = document.getElementsByClassName(
+              "show_paper_citations",
+            );
+
+            Array.prototype.forEach.call(citationEles, (element) => {
+              var paperId = element.getAttribute("data");
+
+              try {
+                var numCitations =
+                  data["publications"][paperId]["num_citations"];
+              } catch (err) {
+                console.error("Citation Error:", err);
+                return;
+              }
+
+              element.innerHTML = "Citations: " + numCitations;
+
+              if (numCitations > 100) {
+                element.style.color = "red";
+              }
+            });
+          },
+        );
+      }
+
       fetch("preprints.json")
         .then((res) => {
           if (!res.ok) {
@@ -247,6 +281,12 @@
 
             container.appendChild(paper);
           });
+          /* =========================
+         关键：
+         DOM插入完后再加载citation
+      ========================== */
+
+          loadCitations();
         })
 
         .catch((err) => {
