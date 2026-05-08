@@ -6,7 +6,7 @@
     "image": "images/paper_img/sepl2026arxiv.png",
     "link": "https://arxiv.org/abs/2604.17307",
     "code": "https://github.com/OUC-YER/SePL-DeepfakeDetection",
-    "scholar": "v0Qt7BAAAAAJ:xx"
+    "scholar": "v0Qt7BAAAAAJ:yB1At4FlUx8C"
   },
   {
     "title": "Generalizing Video DeepFake Detection by Self-generated Audio-Visual Pseudo-Fakes",
@@ -15,7 +15,7 @@
     "image": "images/paper_img/avpf2026arxiv.png",
     "link": "https://arxiv.org/abs/2604.09110",
     "code": "https://github.com/OUC-VAS/AVPF",
-    "scholar": "v0Qt7BAAAAAJ:xx"
+    "scholar": "v0Qt7BAAAAAJ:nrtMV_XWKgEC"
   },
   {
     "title": "Detecting Diffusion-generated Images via Dynamic Assembly Forests",
@@ -24,7 +24,7 @@
     "image": "images/paper_img/daf2026arxiv.png",
     "link": "https://arxiv.org/pdf/2604.09106",
     "code": "https://github.com/OUC-VAS/DAF",
-    "scholar": "v0Qt7BAAAAAJ:xx"
+    "scholar": "v0Qt7BAAAAAJ:XD-gHx7UXLsC"
   },
   {
     "title": "Off-the-shelf Vision Models Benefit Image Manipulation Localization",
@@ -33,7 +33,7 @@
     "image": "images/paper_img/revi2026arxiv.png",
     "link": "https://arxiv.org/pdf/2604.09096",
     "code": "https://github.com/OUC-VAS/ReVi",
-    "scholar": "v0Qt7BAAAAAJ:xx"
+    "scholar": "v0Qt7BAAAAAJ:9Nmd_mFXekcC"
   },
 
   {
