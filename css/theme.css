@@ -1260,36 +1260,6 @@ table{table-layout:fixed;word-break:break-all;} */
   }
 }
 
-/* @media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    background: #fff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  .nav-toggle {
-    display: block;
-  }
-  .nav-menu.show {
-    display: flex;
-  }
-} */
-
-/* .nav-menu a.active {
-  color: #0077cc;
-  font-weight: 600;
-}
-
-.nav-menu a.active::after {
-  width: 100%;
-} */
-
 .tooltip {
   position: relative;
   display: inline-block;
