@@ -375,9 +375,9 @@ body > .navbar .brand:hover {
 	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216);
 } */
 
-.person-card {
+/* .person-card {
   display: inline-block;
-  text-align: center; /* 让文本居中（可选） */
+  text-align: center; 
 }
 
 .people-item {
@@ -387,33 +387,15 @@ body > .navbar .brand:hover {
   margin-right: 15px;
   margin-top: 5px;
   position: relative;
-  display: block; /* 确保 p 换行 */
+  display: block; 
 }
 
-/* 鼠标悬停放大效果 */
-/* .people-item:hover {
-	transform: scale(1.05);
-} */
-
-/* 个人照片 */
 .people-item img {
   width: 150px;
   height: 150px;
   border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 2px 2px 10px rgba(142, 141, 141, 0.3);
-}
-
-img.no-style {
-  all: unset;
-}
-
-.people-item h5 {
-  color: #333333;
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0.6em 0;
-  margin-bottom: 2px;
 }
 
 .people-item p {
@@ -433,16 +415,15 @@ img.no-style {
   white-space: nowrap;
 }
 
-/* 鼠标悬停放大效果 */
 .people-item-badge:hover {
   transform: scale(1.05);
 }
 
 .description {
-  margin-top: 8px; /* 确保 p 与图片有间距 */
+  margin-top: 8px; 
   font-size: 14px;
   color: #333;
-}
+} */
 
 .source-item:hover {
   box-shadow: 0px 1px 5px 1px rgb(216, 216, 216);
@@ -1629,3 +1610,5 @@ hr {
   /* padding: 2px 6px; */
   border-radius: 6px;
 }
+
+
