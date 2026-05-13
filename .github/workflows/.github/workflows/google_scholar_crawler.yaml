@@ -1,0 +1,96 @@
+# name: Get Citation Data
+
+# on:
+#   page_build:
+#   schedule:
+#     - cron: "0 8 * * *"
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Install Reqs
+#         run: |
+#           sudo apt-get install python3-setuptools
+#       - name: Run
+#         run: |
+#           cd ./google_scholar_crawler
+#           pip3 install -r requirements.txt
+#           echo hahahahahaha
+#           python3 main.py
+#           cd ./results
+#           git init
+#           git config --local user.name "${GITHUB_ACTOR}"
+#           export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+#           git add *.json
+#           git commit -m "Updated Citation Data"
+#           git push "${remote_repo}" HEAD:google-scholar-stats --force
+#         env:
+#           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+
+name: Get Citation Data
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-setuptools
+
+      - name: Install python packages
+        run: |
+          cd google_scholar_crawler
+          pip3 install -r requirements.txt
+
+      - name: Run crawler
+        env:
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        run: |
+          cd google_scholar_crawler
+          python3 main.py
+
+          ls -lah results/
+
+      - name: Switch to stats branch
+        run: |
+          git fetch origin google-scholar-stats
+
+          git checkout google-scholar-stats || \
+          git checkout -b google-scholar-stats origin/google-scholar-stats || \
+          git checkout --orphan google-scholar-stats
+
+      - name: Prepare files
+        run: |
+          rm -f *.json || true
+
+          cp google_scholar_crawler/results/*.json .
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add *.json
+
+          git commit -m "Update citation data" || echo "No changes"
+
+      - name: Push to branch
+        run: |
+          git push origin google-scholar-stats
