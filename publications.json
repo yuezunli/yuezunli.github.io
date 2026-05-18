@@ -8,7 +8,8 @@
         "venue": "IEEE Transactions on Information Forensics and Security (<b>TIFS</b>), 2026.",
         "image": "images/paper_img/tifs2026tsdf.png",
         "code": "https://github.com/vpsg-research/TSDF",
-        "scholar": "v0Qt7BAAAAAJ:evX43VCCuoAC"
+        "scholar": "v0Qt7BAAAAAJ:evX43VCCuoAC",
+        "selected": 1
       },
 
       {
@@ -17,7 +18,8 @@
         "venue": "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026. <b>(Oral)</b>",
         "image": "images/paper_img/opticalflow2026cvpr.png",
         "code": "",
-        "scholar": "v0Qt7BAAAAAJ:xx"
+        "scholar": "v0Qt7BAAAAAJ:xx",
+        "selected": 1
       }
     ]
   },
@@ -32,7 +34,8 @@
         "image": "images/paper_img/hypersfda2024arxiv.png",
         "paper": "https://arxiv.org/abs/2405.06916",
         "code": "https://github.com/OUC-POVA/HG-SFDA",
-        "scholar": "v0Qt7BAAAAAJ:fEOibwPWpKIC"
+        "scholar": "v0Qt7BAAAAAJ:fEOibwPWpKIC",
+        "selected": 1
       },
 
       {
@@ -42,7 +45,8 @@
         "image": "images/paper_img/faceposion2024arxiv.png",
         "paper": "https://arxiv.org/pdf/2412.01101",
         "code": "https://github.com/OUC-VAS/FacePoison",
-        "scholar": "v0Qt7BAAAAAJ:dQ2og3OwTAUC"
+        "scholar": "v0Qt7BAAAAAJ:dQ2og3OwTAUC",
+        "selected": 1
       },
 
       {
@@ -52,7 +56,8 @@
         "image": "images/paper_img/uwstereo2024arxiv.png",
         "paper": "https://arxiv.org/abs/2409.01782",
         "code": "https://github.com/lqxisok/UWStereo",
-        "scholar": "v0Qt7BAAAAAJ:5awf1xo2G04C"
+        "scholar": "v0Qt7BAAAAAJ:5awf1xo2G04C",
+        "selected": 1
       },
 
       {
@@ -72,7 +77,8 @@
         "image": "images/paper_img/forensicsadapter2025cvpr.png",
         "paper": "https://arxiv.org/pdf/2411.19715v2",
         "code": "https://github.com/OUC-VAS/ForensicsAdapter",
-        "scholar": "v0Qt7BAAAAAJ:UHK10RUVsp4C"
+        "scholar": "v0Qt7BAAAAAJ:UHK10RUVsp4C",
+        "selected": 1
       },
 
       {
@@ -82,7 +88,8 @@
         "image": "images/paper_img/devil2025cvpr.png",
         "paper": "",
         "code": "",
-        "scholar": "v0Qt7BAAAAAJ:_Re3VWB3Y0AC"
+        "scholar": "v0Qt7BAAAAAJ:_Re3VWB3Y0AC",
+        "selected": 1
       },
 
       {
@@ -92,7 +99,8 @@
         "image": "images/paper_img/tsom2024wacv.png",
         "paper": "https://openaccess.thecvf.com/content/WACV2025/papers/Li_Texture_Shape_and_Order_Matter_A_New_Transformer_Design_for_WACV_2025_paper.pdf",
         "code": "https://github.com/OUC-VAS/TSOM",
-        "scholar": "v0Qt7BAAAAAJ:Y5dfb0dijaUC"
+        "scholar": "v0Qt7BAAAAAJ:Y5dfb0dijaUC",
+        "selected": 1
       }
     ]
   },
@@ -106,7 +114,8 @@
         "image": "images/paper_img/pytracker2024arxiv.png",
         "paper": "https://arxiv.org/abs/2407.00352",
         "code": "https://github.com/OUC-PVOA/PhyTracker",
-        "scholar": "v0Qt7BAAAAAJ:LjlpjdlvIbIC"
+        "scholar": "v0Qt7BAAAAAJ:LjlpjdlvIbIC",
+        "selected": 1
       },
       {
         "title": "FreqBlender: Enhancing DeepFake Detection by Blending Frequency Knowledge",
@@ -115,7 +124,8 @@
         "image": "images/paper_img/freqblender2024neurips.png",
         "paper": "https://arxiv.org/abs/2404.13872",
         "code": "https://github.com/OUC-VAS/FreqBlender",
-        "scholar": "v0Qt7BAAAAAJ:W5xh706n7nkC"
+        "scholar": "v0Qt7BAAAAAJ:W5xh706n7nkC",
+        "selected": 1
       },
       {
         "title": "DPL: Cross-quality DeepFake Detection via Dual Progressive Learning",
@@ -124,7 +134,8 @@
         "image": "images/paper_img/dpl2024accv.png",
         "paper": "https://arxiv.org/pdf/2410.07633",
         "code": "https://github.com/OUC-VAS/DPL",
-        "scholar": "v0Qt7BAAAAAJ:VL0QpB8kHFEC"
+        "scholar": "v0Qt7BAAAAAJ:VL0QpB8kHFEC",
+        "selected": 1
       },
       {
         "title": "TPAM: Transferable Perceptual-constrained Adversarial Meshes",
@@ -141,7 +152,8 @@
         "image": "images/paper_img/fastforensics2024bmvc.png",
         "paper": "https://arxiv.org/pdf/2408.16582",
         "code": "https://github.com/OUC-VAS/FastForensics",
-        "scholar": "v0Qt7BAAAAAJ:WqliGbK-hY8C"
+        "scholar": "v0Qt7BAAAAAJ:WqliGbK-hY8C",
+        "selected": 1
       },
       {
         "title": "Mumpy: Multilateral Temporal-view Pyramid Transformer for Video Inpainting Detection",
@@ -150,7 +162,8 @@
         "image": "images/paper_img/mumpy2024arxiv.png",
         "paper": "https://arxiv.org/pdf/2404.11054",
         "code": "https://github.com/OUC-VAS/Mumpy",
-        "scholar": "v0Qt7BAAAAAJ:AXPGKjj_ei8C"
+        "scholar": "v0Qt7BAAAAAJ:AXPGKjj_ei8C",
+        "selected": 1
       },
       {
         "title": "DomainForensics: Exposing Face Forgery across Domains via Bi-directional Adaptation",
@@ -159,7 +172,8 @@
         "image": "images/paper_img/domainforensics2024tifs.png",
         "paper": "https://arxiv.org/abs/2312.10680",
         "code": "https://github.com/OUC-VAS/DomainForensics",
-        "scholar": "v0Qt7BAAAAAJ:XiVPGOgt02cC"
+        "scholar": "v0Qt7BAAAAAJ:XiVPGOgt02cC",
+        "selected": 1
       },
       {
         "title": "Fake It till You Make It: Curricular Dynamic Forgery Augmentations towards General Deepfake Detection",
@@ -176,7 +190,8 @@
         "image": "images/paper_img/multi-face2023arxiv.png",
         "paper": "https://arxiv.org/abs/2308.01520",
         "code": "https://github.com/zhangconghhh/COMICS",
-        "scholar": "v0Qt7BAAAAAJ:9vf0nzSNQJEC"
+        "scholar": "v0Qt7BAAAAAJ:9vf0nzSNQJEC",
+        "selected": 1
       },
       {
         "title": "ForensicsForest Family: A Series of Multi-scale Hierarchical Cascade Forests for Detecting GAN-generated Faces",
@@ -185,7 +200,8 @@
         "image": "images/paper_img/forest2023icme.png",
         "paper": "https://arxiv.org/abs/2308.00964",
         "code": "https://github.com/OUC-VAS/ForensicsForest",
-        "scholar": "v0Qt7BAAAAAJ:1qzjygNMrQYC"
+        "scholar": "v0Qt7BAAAAAJ:1qzjygNMrQYC",
+        "selected": 1
       },
       {
         "title": "FakeTracer: Catching Face-swap DeepFakes via Implanting Traces in Training",
@@ -262,7 +278,8 @@
         "authors": "Qingxuan Lv, <b>Yuezun Li</b><sup>#</sup>, Junyu Dong<sup>#</sup>, Ziqian Guo.",
         "venue": "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2023.",
         "image": "images/paper_img/lafea2023tcsvt.png",
-        "scholar": "v0Qt7BAAAAAJ:mvPsJ3kp5DgC"
+        "scholar": "v0Qt7BAAAAAJ:mvPsJ3kp5DgC",
+        "selected": 1
       },
       {
         "title": "Forensics Forest: Multi-scale Hierarchical Cascade Forest for Detecting GAN-generated Faces",
@@ -293,7 +310,8 @@
         "authors": "Han Chen<sup>*</sup>, <b>Yuezun Li</b><sup>*</sup>, Dongdong Lin, Bin Li, Junqiang Wu.",
         "venue": "Pattern Recognition (<b>PR</b>), 2023.",
         "image": "images/paper_img/big2022pr.png",
-        "scholar": "v0Qt7BAAAAAJ:vRqMK49ujn8C"
+        "scholar": "v0Qt7BAAAAAJ:vRqMK49ujn8C",
+        "selected": 1
       }
     ]
   },
@@ -341,7 +359,8 @@
         "venue": "IEEE International Conference on Computer Vision (<b>ICCV</b>), 2021.",
         "image": "images/paper_img/ssba2021iccv.png",
         "code": "https://github.com/yuezunli/ISSBA",
-        "scholar": "v0Qt7BAAAAAJ:p2g8aNsByqUC"
+        "scholar": "v0Qt7BAAAAAJ:p2g8aNsByqUC",
+        "selected": 1
       },
       {
         "title": "TransRPN: Towards the Transferable Adversarial Perturbations Using Region Proposal Networks and Beyond",
@@ -377,7 +396,8 @@
         "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>), 2021.",
         "image": "images/paper_img/specular2021icassp.png",
         "code": "https://cse.buffalo.edu/ubmdfl/projects/GAN_detect_iris/GAN_Iris.html",
-        "scholar": "v0Qt7BAAAAAJ:abG-DnoFyZgC"
+        "scholar": "v0Qt7BAAAAAJ:abG-DnoFyZgC",
+        "selected": 1
       },
       {
         "title": "Landmark Breaker: Obstructing DeepFake By Disturbing Landmark Extraction",
@@ -399,14 +419,16 @@
         "venue": "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020.",
         "image": "images/paper_img/celebdf2020cvpr.png",
         "code": "https://forms.gle/QpoPFy6T9vHmPUQdA",
-        "scholar": "v0Qt7BAAAAAJ:_xSYboBqXhAC"
+        "scholar": "v0Qt7BAAAAAJ:_xSYboBqXhAC",
+        "selected": 1
       },
       {
         "title": "Exploring the Vulnerability of Single Shot Module in Object Detectors via Imperceptible Background Patches",
         "authors": "<b>Yuezun Li</b>, Xiao Bian, Ming-Ching Chang, Siwei Lyu",
         "venue": "British Machine Vision Conference (<b>BMVC</b>), 2019.",
         "image": "images/paper_img/ssm2019bmvc.png",
-        "scholar": "v0Qt7BAAAAAJ:a0OBvERweLwC"
+        "scholar": "v0Qt7BAAAAAJ:a0OBvERweLwC",
+        "selected": 1
       },
       {
         "title": "Graph-to-Graph Energy Minimization for Video Object Segmentation",
@@ -420,7 +442,8 @@
         "venue": "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) Workshop on Media Forensics, 2019.",
         "image": "images/paper_img/fwa.png",
         "code": "https://github.com/danmohaha/CVPRW2019_Face_Artifacts",
-        "scholar": "v0Qt7BAAAAAJ:35N4QoGY0k4C"
+        "scholar": "v0Qt7BAAAAAJ:35N4QoGY0k4C",
+        "selected": 1
       },
       {
         "title": "De-identification Without Losing Faces",
@@ -434,7 +457,8 @@
         "authors": "Xin Yang, <b>Yuezun Li</b>, Honggang Qi, Siwei Lyu",
         "venue": "ACM Workshop on Information Hiding and Multimedia Security (<b>IHMMSec</b>), 2019.",
         "image": "images/paper_img/lloc2019ihmmsec.png",
-        "scholar": "v0Qt7BAAAAAJ:SeFeTyx0c_EC"
+        "scholar": "v0Qt7BAAAAAJ:SeFeTyx0c_EC",
+        "selected": 1
       },
       {
         "title": "Exposing Deep Fakes Using Inconsistent Head Poses",
@@ -442,7 +466,8 @@
         "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>), 2019.",
         "image": "images/paper_img/headpose.png",
         "code": "https://bitbucket.org/ericyang3721/headpose_forensic/src/master/",
-        "scholar": "v0Qt7BAAAAAJ:_Ybze24A_UAC"
+        "scholar": "v0Qt7BAAAAAJ:_Ybze24A_UAC",
+        "selected": 1
       },
       {
         "title": "Robust Adversarial Perturbation on Deep Proposal-based Models",
@@ -450,7 +475,8 @@
         "venue": "British Machine Vision Conference (<b>BMVC</b>), 2018.",
         "image": "images/paper_img/RAP2018bmvc.png",
         "code": "https://github.com/yuezunli/BMVC2018R-AP",
-        "scholar": "v0Qt7BAAAAAJ:yD5IFk8b50cC"
+        "scholar": "v0Qt7BAAAAAJ:yD5IFk8b50cC",
+        "selected": 1
       },
       {
         "title": "In Ictu Oculi: Exposing AI Generated Fake Face Videos by Detecting Eye Blinking",
@@ -458,7 +484,8 @@
         "venue": "IEEE International Workshop on Information Forensics and Security (<b>WIFS</b>), 2018.",
         "image": "images/paper_img/wifs18.png",
         "code": "https://github.com/danmohaha/WIFS2018_In_Ictu_Oculi",
-        "scholar": "v0Qt7BAAAAAJ:g5m5HwL7SMYC"
+        "scholar": "v0Qt7BAAAAAJ:g5m5HwL7SMYC",
+        "selected": 1
       },
       {
         "title": "Pixel Offset Regression (POR) for Single-shot Instance Segmentation",

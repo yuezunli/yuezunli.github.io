@@ -56,19 +56,32 @@
           # Corresponding author · * Equal contribution
         </p>
         <!-- <hr /> -->
-        <div>
-          <select id="yearNav" onchange="jumpToYear(this.value)">
-            <option value="">Jump to Year</option>
-            <option value="year2026">2026</option>
-            <option value="year2025">2025</option>
-            <option value="year2024">2024</option>
-            <option value="year2023">2023</option>
-            <option value="year2022">2022</option>
-            <option value="year2021">2021></option>
-          </select>
-        </div>
+        <div class="tabs">
+          <input type="radio" name="tab" id="tab1" checked />
+          <label for="tab1" class="tab-btn">Selected</label>
 
-        <div id="papers-container"></div>
+          <input type="radio" name="tab" id="tab2" />
+          <label for="tab2" class="tab-btn">All by date</label>
+
+          <div class="tab-content" id="content1">
+            <div id="papers-selected"></div>
+          </div>
+          <div class="tab-content" id="content2">
+            <div>
+              <select id="yearNav" onchange="jumpToYear(this.value)">
+                <option value="">Jump to Year</option>
+                <option value="year2026">2026</option>
+                <option value="year2025">2025</option>
+                <option value="year2024">2024</option>
+                <option value="year2023">2023</option>
+                <option value="year2022">2022</option>
+                <option value="year2021">2021></option>
+              </select>
+            </div>
+
+            <div id="papers-container"></div>
+          </div>
+        </div>
       </div>
     </div>
     <hr />
@@ -259,6 +272,138 @@
          DOM插入完后再加载citation
       ========================== */
 
+          loadCitations();
+        })
+
+        .catch((err) => {
+          console.error("Failed to load publications.json");
+          console.error(err);
+        });
+    </script>
+
+    <script>
+      /* =========================
+         Citation 初始化函数
+      ========================== */
+
+      function loadCitations() {
+        $.getJSON(
+          "https://cdn.jsdelivr.net/gh/yuezunli/yuezunli.github.io@google-scholar-stats/gs_data.json",
+
+          function (data) {
+            var citationEles = document.getElementsByClassName(
+              "show_paper_citations",
+            );
+
+            Array.prototype.forEach.call(citationEles, (element) => {
+              var paperId = element.getAttribute("data");
+
+              try {
+                var numCitations =
+                  data["publications"][paperId]["num_citations"];
+              } catch (err) {
+                console.error("Citation Error:", err);
+                return;
+              }
+
+              element.innerHTML = "Citations: " + numCitations;
+
+              if (numCitations > 100) {
+                element.style.color = "red";
+              }
+            });
+          },
+        );
+      }
+
+      fetch("./publications.json")
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error(`HTTP Error: ${res.status}`);
+          }
+          return res.json();
+        })
+
+        .then((data) => {
+          const container = document.getElementById("papers-selected");
+
+          data.forEach((section) => {
+            /* ===== 论文 ===== */
+            section.papers.forEach((p) => {
+              // 只显示 selected == 1 的论文
+              if (p.selected === 1) {
+                const paper = document.createElement("div");
+                paper.className = "paper-item";
+
+                paper.innerHTML = `
+            <div class="paper-image">
+              <div class="img-box">
+                <img src="${p.image}" alt="${p.title}" />
+              </div>
+            </div>
+
+            <div class="paper-info">
+              <p>
+
+                <a href="${p.paper || "#"}" target="_blank">
+
+                  <papertitle>
+                    ${p.title}
+                  </papertitle>
+
+                </a>
+
+                <br />
+
+                ${p.authors}
+
+                <br />
+                
+                ${p.venue}
+
+                <br />
+
+                ${
+                  p.code
+                    ? `
+                  <a
+                    class="badge1 badge-code"
+                    href="${p.code}"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                  </a>
+                `
+                    : ""
+                }
+
+                ${
+                  p.scholar
+                    ? `
+                  <span class="badge1 badge-cite">
+                    <i class="fa-solid fa-book"></i>
+
+                    <span
+                      class="show_paper_citations"
+                      data="${p.scholar}"
+                    ></span>
+
+                  </span>
+                `
+                    : ""
+                }
+
+              </p>
+            </div>
+          `;
+
+                container.appendChild(paper);
+              }
+            });
+          });
+
+          // DOM插入完后再加载citation
           loadCitations();
         })
 
