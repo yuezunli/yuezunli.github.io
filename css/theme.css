@@ -1611,4 +1611,31 @@ hr {
   border-radius: 6px;
 }
 
+.lab-badge{
+
+  background:#eff6ff;
+
+  color:#2563eb !important;
+
+  padding:7px 14px;
+
+  border-radius:999px;
+
+  font-weight:600;
+
+  font-size:14px;
+
+  transition:0.25s;
+}
+
+.lab-badge:hover{
+
+  background:#2563eb;
+
+  color:white !important;
+
+  transform:translateY(-1px);
+}
+
+
 
