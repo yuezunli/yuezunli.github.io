@@ -3,8 +3,9 @@ body {
   padding-bottom: 0px;
   margin: 0;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", "Lato", "Helvetica Neue",
-    "Arial", "PingFang SC", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", "Lato",
+    "Helvetica Neue", "Arial", "PingFang SC", "Microsoft YaHei", "黑体", "宋体",
+    sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333;
@@ -371,60 +372,6 @@ body > .navbar .brand:hover {
   line-height: 55px;
 }
 
-/* .people-item:hover {
-	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216);
-} */
-
-/* .person-card {
-  display: inline-block;
-  text-align: center; 
-}
-
-.people-item {
-  width: 150px;
-  height: auto;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 5px;
-  position: relative;
-  display: block; 
-}
-
-.people-item img {
-  width: 150px;
-  height: 150px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  box-shadow: 2px 2px 10px rgba(142, 141, 141, 0.3);
-}
-
-.people-item p {
-  margin-bottom: 1px;
-}
-
-.people-item-badge {
-  position: absolute;
-  bottom: 5px;
-  left: 2px;
-  background: rgba(0, 100, 250, 0.8);
-  color: white;
-  font-size: 0.85em;
-  font-weight: bold;
-  padding: 1px 3px;
-  border-radius: 0px;
-  white-space: nowrap;
-}
-
-.people-item-badge:hover {
-  transform: scale(1.05);
-}
-
-.description {
-  margin-top: 8px; 
-  font-size: 14px;
-  color: #333;
-} */
-
 .source-item:hover {
   box-shadow: 0px 1px 5px 1px rgb(216, 216, 216);
 }
@@ -749,36 +696,6 @@ th {
 .tab2 {
   table-layout: fixed;
   word-break: break-all;
-}
-
-.alumini {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.alumini th,
-.alumini td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
-}
-.alumini th {
-  background-color: rgba(0, 64, 128, 0.85);
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-}
-.alumini tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.alumini img {
-  width: 50px; /* 控制图片大小 */
-  height: 50px;
-  border-radius: 5px; /* 圆角，可选 */
-  margin-left: -5px;
-  margin-right: 10px;
 }
 
 /* table,table td,table th{border:1px solid #eceaea;border-collapse:collapse;text-align: center;padding: 5px;}
@@ -1493,34 +1410,6 @@ papertitle {
   text-decoration: underline;
 }
 
-/* 简洁图片网格 */
-.collab-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
-}
-.collab-item {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
-  /* cursor: pointer; */
-}
-.icollab-tem:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-}
-.collab-item img {
-  width: 100%;
-  height: 120px;
-  object-fit: contain;
-  background: #fff;
-  padding: 10px;
-}
-
 /* ===== Base ===== */
 .badge1 {
   display: inline-flex;
@@ -1596,12 +1485,12 @@ papertitle {
   /* letter-spacing: 0.5px; */
 }
 
-hr {
+/* hr {
   border: none;
   height: 1px;
   background: linear-gradient(to right, transparent, #ccc, transparent);
   margin: 10px 0 20px;
-}
+} */
 
 .year-meta {
   font-size: 11px;
@@ -1611,4 +1500,3 @@ hr {
   /* padding: 2px 6px; */
   border-radius: 6px;
 }
-

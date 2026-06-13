@@ -1,3 +1,31 @@
+/* 简洁图片网格 */
+.collab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+}
+.collab-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  /* cursor: pointer; */
+}
+.icollab-tem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.collab-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
+
 .person-card {
   display: inline-block;
   margin: 5px;
@@ -53,4 +81,44 @@
 
 .description p {
   margin: 1px 0;
+}
+
+.alumni {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+.alumni th,
+.alumni td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+.alumni th {
+  /* background-color: rgba(0, 64, 128, 0.85);
+  color: white; */
+  font-weight: bold;
+  font-size: 16px;
+}
+/* .alumni tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.alumni img {
+  width: 50px; /* 控制图片大小 */
+  height: 50px;
+  border-radius: 5px; /* 圆角，可选 */
+  margin-left: -5px;
+  margin-right: 10px;
+}
+
+.code-card {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #f0f0f0;
+  padding: 5px;
+  width: 300px; /* 固定宽度 */
+  text-align: left; /* 左对齐文本 */
 }
