@@ -17,8 +17,8 @@
         "authors": "Ao Luo, Xin Li, Fan Yang, <b>Yuezun Li</b>, Zhaoquan Yuan, Shan Zhao, Bing Su, Xiao Wu",
         "venue": "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026. <b>(Oral)</b>",
         "image": "images/paper_img/opticalflow2026cvpr.png",
-        "code": "",
-        "scholar": "v0Qt7BAAAAAJ:xx",
+        "code": "https://github.com/LA30/OFM",
+        "scholar": "v0Qt7BAAAAAJ:ipzZ9siozwsC",
         "selected": 1
       }
     ]
