@@ -3,6 +3,16 @@
     "year": 2026,
     "papers": [
       {
+        "title": "Forensics Adapter: Unleashing CLIP for Generalizable Face Forgery Detection",
+        "authors": "Xinjie Cui, <b>Yuezun Li</b><sup>#</sup>, Delong Zhu, Jiaran Zhou, Junyu Dong, Siwei Lyu",
+        "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2026.",
+        "image": "images/paper_img/foradapp2026tpami.png",
+        "code": "https://github.com/OUC-VAS/ForensicsAdapter",
+        "scholar": "v0Qt7BAAAAAJ:xx",
+        "selected": 1
+      },
+
+      {
         "title": "Boosting Active Defense Persistence: A Two-Stage Defense Framework Combining Interruption and Poisoning Against Deepfake",
         "authors": "Hongrui Zheng, <b>Yuezun Li</b>, Liejun Wang, Yunfeng Diao, Zhiqing Guo",
         "venue": "IEEE Transactions on Information Forensics and Security (<b>TIFS</b>), 2026.",
