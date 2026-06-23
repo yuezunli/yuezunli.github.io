@@ -3,11 +3,14 @@ import jsonpickle
 import json
 from datetime import datetime
 import os
+import time
 
 # Setup proxy
 pg = ProxyGenerator()
 pg.FreeProxies()  # Use free rotating proxies
 scholarly.use_proxy(pg)
+
+time.sleep(5)
 
 author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
 scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
