@@ -95,6 +95,19 @@ function loadPublications(id) {
               `
                   : ""
               }
+              ${
+                p.arxiv
+                  ? `
+                <a
+                  class="badge1 badge-cite"
+                  href="${p.arxiv}"
+                  target="_blank"
+                >
+                  <img src="images/src_img/arxiv-logo.svg" width="25px" \>
+                </a>
+              `
+                  : ""
+              }
 
             </p>
           </div>
@@ -157,7 +170,7 @@ function loadpreprints(id) {
           <div class="paper-info">
             <p>
 
-              <a href="${p.link || "#"}" target="_blank">
+              <a href="${p.paperlink || "#"}" target="_blank">
 
                 <papertitle>
                   ${p.title}

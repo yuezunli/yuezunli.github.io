@@ -4,6 +4,7 @@
     "papers": [
       {
         "title": "Forensics Adapter: Unleashing CLIP for Generalizable Face Forgery Detection",
+        "arxiv": "https://arxiv.org/pdf/2411.19715",
         "authors": "Xinjie Cui, <b>Yuezun Li</b><sup>#</sup>, Delong Zhu, Jiaran Zhou, Junyu Dong, Siwei Lyu",
         "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2026.",
         "image": "images/paper_img/foradapp2026tpami.png",
@@ -77,7 +78,8 @@
         "image": "images/paper_img/hrgr2024arxiv.png",
         "paper": "https://arxiv.org/abs/2410.21861",
         "code": "https://github.com/lqxisok/HRGR-IMD",
-        "scholar": "v0Qt7BAAAAAJ:ZuybSZzF8UAC"
+        "scholar": "v0Qt7BAAAAAJ:ZuybSZzF8UAC",
+        "selected": 1
       },
 
       {
@@ -153,7 +155,8 @@
         "venue": "Pacific Graphics (<b>PG</b>), 2024.",
         "image": "images/paper_img/tpam2024pg.png",
         "paper": "",
-        "scholar": "v0Qt7BAAAAAJ:PR6Y55bgFSsC"
+        "scholar": "v0Qt7BAAAAAJ:PR6Y55bgFSsC",
+        "selected": 0
       },
       {
         "title": "FastForensics: Efficient Two-Stream Design for Real-Time Image Manipulation Detection",
@@ -191,7 +194,8 @@
         "venue": "European Conference on Computer Vision (<b>ECCV</b>), 2024.",
         "image": "images/paper_img/ssbi2024eccv.png",
         "paper": "",
-        "scholar": "v0Qt7BAAAAAJ:ye4kPcJQO24C"
+        "scholar": "v0Qt7BAAAAAJ:ye4kPcJQO24C",
+        "selected": 0
       },
       {
         "title": "COMICS: End-to-end Bi-grained Contrastive Learning for Multi-face Forgery Detection",
@@ -220,7 +224,8 @@
         "image": "images/paper_img/fakecatcher2024tetc.png",
         "paper": "https://arxiv.org/html/2307.14593v2",
         "code": "https://github.com/OUC-VAS/ForensicsForest",
-        "scholar": "v0Qt7BAAAAAJ:Mojj43d5GZwC"
+        "scholar": "v0Qt7BAAAAAJ:Mojj43d5GZwC",
+        "selected": 0
       },
       {
         "title": "Dynamic Soft Labeling for Visual Semantic Embedding",
@@ -228,7 +233,8 @@
         "venue": "ACM International Conference on Multimedia Retrieval (<b>ICMR</b>), 2024.",
         "image": "images/paper_img/vse2024icmr.png",
         "paper": "",
-        "scholar": "v0Qt7BAAAAAJ:eq2jaN3J8jMC"
+        "scholar": "v0Qt7BAAAAAJ:eq2jaN3J8jMC",
+        "selected": 0
       },
       {
         "title": "Multiview Adaptive Attention Pooling for Image-Text Retrieval",
@@ -236,7 +242,8 @@
         "venue": "Knowledge-Based Systems (<b>KBS</b>), 2024.",
         "image": "images/paper_img/mvapp2024kbs.png",
         "paper": "",
-        "scholar": "v0Qt7BAAAAAJ:HE397vMXCloC"
+        "scholar": "v0Qt7BAAAAAJ:HE397vMXCloC",
+        "selected": 0
       },
       {
         "title": "LandmarkBreaker: A proactive method to obstruct DeepFakes via disrupting facial landmark extraction",
@@ -244,7 +251,8 @@
         "venue": "Computer Vision and Image Understanding (<b>CVIU</b>), 2024. (Extended from WIFS2020)",
         "image": "images/paper_img/lmkbreaker2024cviu.png",
         "paper": "",
-        "scholar": "v0Qt7BAAAAAJ:t6usbXjVLHcC"
+        "scholar": "v0Qt7BAAAAAJ:t6usbXjVLHcC",
+        "selected": 0
       },
       {
         "title": "Enhancing Adversarial Robustness of DNNs via Weight Decorrelation in Training",
@@ -252,7 +260,8 @@
         "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>), 2024.",
         "image": "images/paper_img/wdeco2024icassp.png",
         "paper": "",
-        "scholar": "v0Qt7BAAAAAJ:WA5NYHcadZ8C"
+        "scholar": "v0Qt7BAAAAAJ:WA5NYHcadZ8C",
+        "selected": 0
       },
       {
         "title": "AdaNI: Adaptive Noise Injection to Improve Adversarial Robustness",
@@ -261,7 +270,8 @@
         "image": "images/paper_img/adani2023cviu.png",
         "paper": "",
         "code": "https://github.com/zhangconghhh/AdaNI",
-        "scholar": "v0Qt7BAAAAAJ:bnK-pcrLprsC"
+        "scholar": "v0Qt7BAAAAAJ:bnK-pcrLprsC",
+        "selected": 0
       }
     ]
   },
@@ -274,14 +284,16 @@
         "authors": "Jiaao Yu, Qingxuan Lv, <b>Yuezun Li</b><sup>#</sup>, Junyu Dong<sup>#</sup>, Haoran Zhao, Qiong Li.",
         "venue": "Journal of Marine Science and Engineering (<b>JMSE</b>), 2023.",
         "image": "images/paper_img/pmot2023jmse.png",
-        "scholar": "v0Qt7BAAAAAJ:kRWSkSYxWN8C"
+        "scholar": "v0Qt7BAAAAAJ:kRWSkSYxWN8C",
+        "selected": 0
       },
       {
         "title": "Robust Scene Parsing by Mining Supportive Knowledge from Dataset",
         "authors": "Ao Luo, Fan Yang, Xin Li, <b>Yuezun Li</b>, Zhicheng Jiao, Hong Cheng, Siwei Lyu.",
         "venue": "IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>), 2023.",
         "image": "images/paper_img/sceneparsing2021tnnls.png",
-        "scholar": "v0Qt7BAAAAAJ:uWQEDVKXjbEC"
+        "scholar": "v0Qt7BAAAAAJ:uWQEDVKXjbEC",
+        "selected": 0
       },
       {
         "title": "LaFea: Learning Latent Representation beyond Feature for Universal Domain Adaptation",
@@ -297,7 +309,8 @@
         "venue": "IEEE International Conference on Multimedia and Expo (<b>ICME</b>), 2023. <b>(Oral)</b>",
         "image": "images/paper_img/forest2023icme.png",
         "link": "papers/ICME2023_ForensicsForest .pdf",
-        "scholar": "v0Qt7BAAAAAJ:5ugPr518TE4C"
+        "scholar": "v0Qt7BAAAAAJ:5ugPr518TE4C",
+        "selected": 0
       },
       {
         "title": "Face Poison: Obstructing DeepFakes by Disrupting Face Detection",
@@ -305,7 +318,8 @@
         "venue": "IEEE International Conference on Multimedia and Expo (<b>ICME</b>), 2023.",
         "image": "images/paper_img/faceposion2023icme.png",
         "link": "papers/ICME2023_FacePoison .pdf",
-        "scholar": "v0Qt7BAAAAAJ:wbdj-CoPYUoC"
+        "scholar": "v0Qt7BAAAAAJ:wbdj-CoPYUoC",
+        "selected": 0
       },
       {
         "title": "Improving Transferable Adversarial Attack via Feature-Momentum",
@@ -313,7 +327,8 @@
         "venue": "Computers & Security (<b>COSE</b>), 2023.",
         "image": "images/paper_img/fmaa2023cose.png",
         "code": "https://github.com/XianglongHe/FMAA",
-        "scholar": "v0Qt7BAAAAAJ:q3oQSFYPqjQC"
+        "scholar": "v0Qt7BAAAAAJ:q3oQSFYPqjQC",
+        "selected": 0
       },
       {
         "title": "Watching the BiG Artifacts: Exposing DeepFake Videos via Bi-Granularity Artifacts",
@@ -334,7 +349,8 @@
         "venue": "IEEE Conference on Image Processing (<b>ICIP</b>), 2022.",
         "image": "images/paper_img/facetracer2022icip.png",
         "code": "https://github.com/stephenivy07/FakeTracer",
-        "scholar": "v0Qt7BAAAAAJ:tS2w5q8j5-wC"
+        "scholar": "v0Qt7BAAAAAJ:tS2w5q8j5-wC",
+        "selected": 0
       },
       {
         "title": "LandmarkGAN: Synthesizing Faces from Landmarks",
@@ -342,21 +358,24 @@
         "venue": "Pattern Recognition Letters (<b>PRL</b>), 2022.",
         "image": "images/paper_img/landmark2022prl.png",
         "code": "https://github.com/stephenivy07/Landmarkgan",
-        "scholar": "v0Qt7BAAAAAJ:CHSYGLWDkRkC"
+        "scholar": "v0Qt7BAAAAAJ:CHSYGLWDkRkC",
+        "selected": 0
       },
       {
         "title": "Learning a Deep Dual-level Network for Robust DeepFake Detection",
         "authors": "Wenbo Pu, Jing Hu, Xin Wang, <b>Yuezun Li</b>, Shu Hu, Bin Zhu, Qi Song, Xi Wu, Siwei Lyu.",
         "venue": "Pattern Recognition (<b>PR</b>), 2022.",
         "image": "images/paper_img/duallevel2022pr.jpg",
-        "scholar": "v0Qt7BAAAAAJ:K3LRdlH-MEoC"
+        "scholar": "v0Qt7BAAAAAJ:K3LRdlH-MEoC",
+        "selected": 0
       },
       {
         "title": "Detection-by-Simulation: Exposing DeepFake via Simulating Forgery using Face Reconstruction",
         "authors": "Jiaran Zhou and <b>Yuezun Li</b><sup>#</sup>.",
         "venue": "IEEE International Conference on Multimedia Information Processing, Retrieval (<b>MIPR</b>), 2022.",
         "image": "images/paper_img/d-by-s2022mipr.png",
-        "scholar": "v0Qt7BAAAAAJ:tOudhMTPpwUC"
+        "scholar": "v0Qt7BAAAAAJ:tOudhMTPpwUC",
+        "selected": 0
       }
     ]
   },
@@ -377,28 +396,32 @@
         "authors": "<b>Yuezun Li</b>, Ming-Ching Chang, Pu Sun, Honggang Qi, Junyu Dong, Siwei Lyu",
         "venue": "Computer Vision and Image Understanding (<b>CVIU</b>), 2021.",
         "image": "images/paper_img/transrpn2021cviu.jpg",
-        "scholar": "v0Qt7BAAAAAJ:u9iWguZQMMsC"
+        "scholar": "v0Qt7BAAAAAJ:u9iWguZQMMsC",
+        "selected": 0
       },
       {
         "title": "DFGC 2021: A DeepFake Game Competition",
         "authors": "Bo Peng, Hongxing Fan, Wei Wang, Jing Dong, <b>Yuezun Li</b>, Siwei Lyu, et al.",
         "venue": "International Joint Conference on Biometrics (<b>IJCB</b>), 2021.",
         "image": "images/paper_img/dfdc2021.png",
-        "scholar": "v0Qt7BAAAAAJ:SP6oXDckpogC"
+        "scholar": "v0Qt7BAAAAAJ:SP6oXDckpogC",
+        "selected": 0
       },
       {
         "title": "DeepFake-o-meter: An Open Platform for DeepFake Detection",
         "authors": "<b>Yuezun Li</b>, Cong Zhang, Pu Sun, Lipeng Ke, Yan Ju, Honggang Qi, Siwei Lyu",
         "venue": "Systematic Approaches to Digital Forensic Engineering (<b>S&P</b>), 2021.",
         "image": "images/paper_img/df0m2021sp.png",
-        "scholar": "v0Qt7BAAAAAJ:P5F9QuxV20EC"
+        "scholar": "v0Qt7BAAAAAJ:P5F9QuxV20EC",
+        "selected": 1
       },
       {
         "title": "Imperceptible Adversarial Examples For Fake Image Detection",
         "authors": "Quanyu Liao, <b>Yuezun Li</b>, Xin Wang, Bin Kong, Bin Zhu, Siwei Lyu, Youbing Yin, Qi Song, Xi Wu",
         "venue": "IEEE Conference on Image Processing (<b>ICIP</b>), 2021.",
         "image": "images/paper_img/impadv2021icip.png",
-        "scholar": "v0Qt7BAAAAAJ:OU6Ihb5iCvQC"
+        "scholar": "v0Qt7BAAAAAJ:OU6Ihb5iCvQC",
+        "selected": 0
       },
       {
         "title": "Exposing GAN-generated Faces Using Inconsistent Corneal Specular Highlights",
@@ -414,14 +437,16 @@
         "authors": "Pu Sun<sup>*</sup>, <b>Yuezun Li</b><sup>*</sup>, Honggang Qi, Siwei Lyu",
         "venue": "IEEE International Workshop on Information Forensics and Security (<b>WIFS</b>), 2020.",
         "image": "images/paper_img/lmkadv2020wifs.png",
-        "scholar": "v0Qt7BAAAAAJ:KxtntwgDAa4C"
+        "scholar": "v0Qt7BAAAAAJ:KxtntwgDAa4C",
+        "selected": 0
       },
       {
         "title": "Fast Portrait Segmentation with Highly Light-weight Network",
         "authors": "<b>Yuezun Li</b><sup>*</sup>, Ao Luo<sup>*</sup>, Siwei Lyu",
         "venue": "IEEE International Conference on Image Processing (<b>ICIP</b>), 2020.",
         "image": "images/paper_img/portraitseg2020icip.png",
-        "scholar": "v0Qt7BAAAAAJ:NhqRSupF_l8C"
+        "scholar": "v0Qt7BAAAAAJ:NhqRSupF_l8C",
+        "selected": 0
       },
       {
         "title": "Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics",
@@ -444,7 +469,8 @@
         "title": "Graph-to-Graph Energy Minimization for Video Object Segmentation",
         "authors": "<b>Yuezun Li</b><sup>*</sup>, Longyin Wen<sup>*</sup>, Ming-Ching Chang, Siwei Lyu",
         "venue": "IEEE International Conference on Advanced Video and Signal-Based Surveillance (<b>AVSS</b>), 2019. <b>(Oral)</b>",
-        "image": "images/paper_img/seg2019avss.png"
+        "image": "images/paper_img/seg2019avss.png",
+        "selected": 0
       },
       {
         "title": "Exposing DeepFake Videos By Detecting Face Warping Artifacts",
@@ -460,7 +486,8 @@
         "authors": "<b>Yuezun Li</b>, Siwei Lyu",
         "venue": "ACM Workshop on Information Hiding and Multimedia Security (<b>IHMMSec</b>), 2019.",
         "image": "images/paper_img/deid2019ihmmsec.png",
-        "scholar": "v0Qt7BAAAAAJ:HoB7MX3m0LUC"
+        "scholar": "v0Qt7BAAAAAJ:HoB7MX3m0LUC",
+        "selected": 0
       },
       {
         "title": "Exposing GAN-synthesized Faces Using Landmark Locations",
@@ -501,7 +528,8 @@
         "title": "Pixel Offset Regression (POR) for Single-shot Instance Segmentation",
         "authors": "<b>Yuezun Li</b>, Xiao Bian, Ming-Ching Chang, Longyin Wen, Siwei Lyu",
         "venue": "IEEE International Conference on Advanced Video and Signal-Based Surveillance (<b>AVSS</b>), 2018.",
-        "image": "images/paper_img/pixel2018avss.png"
+        "image": "images/paper_img/pixel2018avss.png",
+        "selected": 0
       }
     ]
   }
