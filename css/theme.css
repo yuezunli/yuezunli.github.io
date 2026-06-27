@@ -593,7 +593,7 @@ ul.sponsors {
 ul {
   padding: 0;
   margin: 0;
-  text-align: justify;
+  /* text-align: justify; */
   /* list-style-type: none;	 */
 }
 
