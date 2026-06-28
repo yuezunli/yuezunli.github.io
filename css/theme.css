@@ -1183,15 +1183,15 @@ table{table-layout:fixed;word-break:break-all;} */
 
 .social-icons {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   justify-content: center; /* 水平居中 */
   flex-wrap: wrap; /* 屏幕变窄时自动换行 */
 }
 
 .social-icons a.icon-link {
   display: inline-block;
-  margin: 10px 10px;
-  font-size: 30px;
+  margin: 15px 6px;
+  font-size: 28px;
   color: #333;
   transition: all 0.25s ease;
 }
