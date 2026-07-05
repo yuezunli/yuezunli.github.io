@@ -1205,6 +1205,41 @@ table{table-layout:fixed;word-break:break-all;} */
   font-size: 28px !important;
 }
 
+.profile-sidebar {
+  padding-top: 25px;
+}
+
+/* 手机端优化 */
+@media (max-width: 768px) {
+  .profile-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    /* margin-bottom: 20px; */
+    padding-top: 10px;
+  }
+
+  .selfie {
+    flex-shrink: 0;
+  }
+
+  .selfie img {
+    max-width: 50px;
+    border-radius: 50%;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .social-icons a.icon-link {
+    margin: 6px 2px;
+    font-size: 24px;
+  }
+}
+
 /* Wrapper for each paper entry */
 .paper-item {
   display: flex;
@@ -1269,10 +1304,6 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 @media (max-width: 768px) {
-  .selfie img {
-    max-width: 120px;
-  }
-
   .paper-item {
     flex-direction: column;
     align-items: flex-start;
