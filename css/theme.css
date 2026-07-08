@@ -1210,7 +1210,7 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 /* 手机端优化 */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .profile-sidebar {
     display: flex;
     align-items: center;
@@ -1303,7 +1303,7 @@ table{table-layout:fixed;word-break:break-all;} */
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .paper-item {
     flex-direction: column;
     align-items: flex-start;
