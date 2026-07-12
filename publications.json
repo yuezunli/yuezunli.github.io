@@ -3,6 +3,16 @@
     "year": 2026,
     "papers": [
       {
+        "title": "Generalizing Video DeepFake Detection by Self-generated Audio-Visual Pseudo-Fakes",
+        "authors": "Zihe Wei, <b>Yuezun Li</b><sup>#</sup>",
+        "venue": "ACM International Conference on Multimedia (<b>ACM MM</b>), 2026.",
+        "image": "images/paper_img/avpf2026arxiv.png",
+        "arxiv": "https://arxiv.org/abs/2604.09110",
+        "code": "https://github.com/OUC-VAS/AVPF",
+        "scholar": "v0Qt7BAAAAAJ:nrtMV_XWKgEC",
+        "selected": 1
+      },
+      {
         "title": "Forensics Adapter: Unleashing CLIP for Generalizable Face Forgery Detection",
         "arxiv": "https://arxiv.org/pdf/2411.19715",
         "authors": "Xinjie Cui, <b>Yuezun Li</b><sup>#</sup>, Delong Zhu, Jiaran Zhou, Junyu Dong, Siwei Lyu",

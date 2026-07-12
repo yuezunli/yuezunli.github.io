@@ -8,15 +8,7 @@
     "code": "https://github.com/OUC-YER/SePL-DeepfakeDetection",
     "scholar": "v0Qt7BAAAAAJ:yB1At4FlUx8C"
   },
-  {
-    "title": "Generalizing Video DeepFake Detection by Self-generated Audio-Visual Pseudo-Fakes",
-    "authors": "Zihe Wei, <b>Yuezun Li</b><sup>#</sup>",
-    "venue": "arXiv:2604.09110, 2026.",
-    "image": "images/paper_img/avpf2026arxiv.png",
-    "paperlink": "https://arxiv.org/abs/2604.09110",
-    "code": "https://github.com/OUC-VAS/AVPF",
-    "scholar": "v0Qt7BAAAAAJ:nrtMV_XWKgEC"
-  },
+
   {
     "title": "Detecting Diffusion-generated Images via Dynamic Assembly Forests",
     "authors": "Mengxin Fu, <b>Yuezun Li</b><sup>#</sup>",
