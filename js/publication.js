@@ -40,20 +40,15 @@ function loadPublications(id) {
             paper.innerHTML = `
           <div class="paper-image">
             <div class="img-box">
-              <img src="${p.image}" alt="${p.title}" />
+              <img src="${p.image}" alt="${p.title}" loading="lazy" />
             </div>
           </div>
 
           <div class="paper-info">
             <p>
-
-              <a href="${p.paper || "#"}" target="_blank">
-
-                <papertitle>
+               <papertitle>
                   ${p.title}
                 </papertitle>
-
-              </a>
 
               <br />
 
@@ -64,6 +59,20 @@ function loadPublications(id) {
               ${p.venue}
 
               <br />
+
+              ${
+                p.arxiv
+                  ? `
+                <a
+                  class="badge1 badge-cite"
+                  href="${p.arxiv}"
+                  target="_blank"
+                >
+                  <img src="images/src_img/arxiv-logo.svg" width="25px" loading="lazy" />
+                </a>
+              `
+                  : ""
+              }
 
               ${
                 p.code
@@ -95,19 +104,7 @@ function loadPublications(id) {
               `
                   : ""
               }
-              ${
-                p.arxiv
-                  ? `
-                <a
-                  class="badge1 badge-cite"
-                  href="${p.arxiv}"
-                  target="_blank"
-                >
-                  <img src="images/src_img/arxiv-logo.svg" width="25px" \>
-                </a>
-              `
-                  : ""
-              }
+              
 
             </p>
           </div>
@@ -163,20 +160,15 @@ function loadpreprints(id) {
         paper.innerHTML = `
           <div class="paper-image">
             <div class="img-box">
-              <img src="${p.image}" alt="${p.title}" />
+              <img src="${p.image}" alt="${p.title}" loading="lazy" />
             </div>
           </div>
 
           <div class="paper-info">
             <p>
-
-              <a href="${p.paperlink || "#"}" target="_blank">
-
                 <papertitle>
                   ${p.title}
                 </papertitle>
-
-              </a>
 
               <br />
 
@@ -188,6 +180,19 @@ function loadpreprints(id) {
 
               <br />
 
+              ${
+                p.arxiv
+                  ? `
+                <a
+                  class="badge1 badge-cite"
+                  href="${p.arxiv}"
+                  target="_blank"
+                >
+                  <img src="images/src_img/arxiv-logo.svg" width="25px" loading="lazy" />
+                </a>
+              `
+                  : ""
+              }
               ${
                 p.code
                   ? `
@@ -218,6 +223,7 @@ function loadpreprints(id) {
               `
                   : ""
               }
+              
 
             </p>
           </div>

@@ -4,7 +4,7 @@
     "authors": "Enrui Yang, <b>Yuezun Li</b><sup>#</sup>",
     "venue": "arXiv:2604.17307, 2026.",
     "image": "images/paper_img/sepl2026arxiv.png",
-    "paperlink": "https://arxiv.org/abs/2604.17307",
+    "arxiv": "https://arxiv.org/abs/2604.17307",
     "code": "https://github.com/OUC-YER/SePL-DeepfakeDetection",
     "scholar": "v0Qt7BAAAAAJ:yB1At4FlUx8C"
   },
@@ -14,7 +14,7 @@
     "authors": "Mengxin Fu, <b>Yuezun Li</b><sup>#</sup>",
     "venue": "arXiv:2604.09106, 2026.",
     "image": "images/paper_img/daf2026arxiv.png",
-    "paperlink": "https://arxiv.org/pdf/2604.09106",
+    "arxiv": "https://arxiv.org/pdf/2604.09106",
     "code": "https://github.com/OUC-VAS/DAF",
     "scholar": "v0Qt7BAAAAAJ:XD-gHx7UXLsC"
   },
@@ -23,7 +23,7 @@
     "authors": "Zhengxuan Zhang, Keji Song, Junmin Hu, Ao Luo, <b>Yuezun Li</b><sup>#</sup>",
     "venue": "arXiv:2604.09096, 2026.",
     "image": "images/paper_img/revi2026arxiv.png",
-    "paperlink": "https://arxiv.org/pdf/2604.09096",
+    "arxiv": "https://arxiv.org/pdf/2604.09096",
     "code": "https://github.com/OUC-VAS/ReVi",
     "scholar": "v0Qt7BAAAAAJ:9Nmd_mFXekcC"
   },
@@ -32,8 +32,8 @@
     "title": "Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics",
     "authors": "<b>Yuezun Li</b><sup>#</sup>, Delong Zhu, Xinjie Cui, Siwei Lyu",
     "venue": "arXiv:2507.18015, 2025.",
-    "image": "images/paper_img/celeb-df++.png",
-    "paperlink": "https://arxiv.org/abs/2507.18015",
+    "image": "images/paper_img/celeb-df++.jpeg",
+    "arxiv": "https://arxiv.org/abs/2507.18015",
     "code": "https://github.com/OUC-VAS/Celeb-DF-PP",
     "scholar": "v0Qt7BAAAAAJ:2KloaMYe4IUC"
   },
@@ -42,7 +42,7 @@
     "authors": "Yunfei Li, <b>Yuezun Li</b><sup>#</sup>, Baoyuan Wu, Junyu Dong, Guopu Zhu, Siwei Lyu",
     "venue": "arXiv:2404.13873, 2025 (WACV 2025 extended)",
     "image": "images/paper_img/TSOM++2025arxiv.png",
-    "paperlink": "https://arxiv.org/pdf/2404.13873",
+    "arxiv": "https://arxiv.org/pdf/2404.13873",
     "code": "https://github.com/OUC-VAS/TSOM",
     "scholar": "v0Qt7BAAAAAJ:35r97b3x0nAC"
   },
@@ -52,7 +52,7 @@
     "authors": "Pu Sun, Honggang Qi<sup>#</sup>, <b>Yuezun Li</b><sup>#</sup>",
     "venue": "arXiv:2409.03200, 2024.",
     "image": "images/paper_img/dfcam2024arxiv.png",
-    "paperlink": "https://arxiv.org/pdf/2409.03200",
+    "arxiv": "https://arxiv.org/pdf/2409.03200",
     "code": "",
     "scholar": "v0Qt7BAAAAAJ:SdhP9T11ey4C"
   },
@@ -62,7 +62,7 @@
     "authors": "<b>Yuezun Li</b>, Xin Yang, Baoyuan Wu, Siwei Lyu",
     "venue": "arXiv:1906.09288, 2019 (preliminary version of TDSC 2025)",
     "image": "images/paper_img/hiding2019arxiv.png",
-    "paperlink": "https://arxiv.org/pdf/1906.09288",
+    "arxiv": "https://arxiv.org/pdf/1906.09288",
     "code": "",
     "scholar": "v0Qt7BAAAAAJ:ZHo1McVdvXMC"
   }

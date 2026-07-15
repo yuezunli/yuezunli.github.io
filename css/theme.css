@@ -1276,8 +1276,8 @@ table{table-layout:fixed;word-break:break-all;} */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* border-radius: 6px; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 /* 图片自适应放入 */
@@ -1377,7 +1377,7 @@ table{table-layout:fixed;word-break:break-all;} */
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 22px;
+  padding: 3px 15px;
   margin-right: 0px; /* 让标签无缝连接 */
   /* font-size: 16px; */
   background: #f7f7f7;
@@ -1463,15 +1463,19 @@ papertitle {
 
 /* ===== Code (clickable) ===== */
 .badge-code {
-  background: #f1f3f4;
-  color: #24292f;
+  background: #f9fafb;
+  /* color: #24292f; */
+  color: #555;
   border: 1px solid #e0e0e0;
 }
 
 .badge-code:hover {
-  background: #1a73e8;
+  /* background: #1a73e8;
   color: #ffffff;
-  border-color: #1a73e8;
+  border-color: #1a73e8; */
+  background: #f9fafb;
+  /* color: #24292f; */
+  color: #555;
 }
 
 /* ===== CCF Rank (static) ===== */

@@ -19,7 +19,7 @@
         "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2026.",
         "image": "images/paper_img/foradapp2026tpami.png",
         "code": "https://github.com/OUC-VAS/ForensicsAdapter",
-        "scholar": "v0Qt7BAAAAAJ:xx",
+        "scholar": "v0Qt7BAAAAAJ:zLWjf1WUPmwC",
         "selected": 1
       },
 
@@ -53,7 +53,7 @@
         "authors": "Jinkun Jiang, Qingxuan Lv, <b>Yuezun Li</b><sup>#</sup>, Yong Du, Junyu Dong<sup>#</sup>, Sheng Chen, Hui Yu",
         "venue": "IEEE Transactions on Image Processing (<b>TIP</b>), 2025.",
         "image": "images/paper_img/hypersfda2024arxiv.png",
-        "paper": "https://arxiv.org/abs/2405.06916",
+        "arxiv": "https://arxiv.org/abs/2405.06916",
         "code": "https://github.com/OUC-POVA/HG-SFDA",
         "scholar": "v0Qt7BAAAAAJ:fEOibwPWpKIC",
         "selected": 1
@@ -63,8 +63,8 @@
         "title": "Hiding Faces in Plain Sight: Defending DeepFakes by Disrupting Face Detection",
         "authors": "Delong Zhu, <b>Yuezun Li</b><sup>#</sup>, Baoyuan Wu, Jiaran Zhou, Zhibo Wang, Siwei Lyu",
         "venue": "IEEE Transactions On Dependable and Secure Computing (<b>TDSC</b>), 2025. (Extended from ICME 2023)",
-        "image": "images/paper_img/faceposion2024arxiv.png",
-        "paper": "https://arxiv.org/pdf/2412.01101",
+        "image": "images/paper_img/faceposion2024arxiv.jpeg",
+        "arxiv": "https://arxiv.org/pdf/2412.01101",
         "code": "https://github.com/OUC-VAS/FacePoison",
         "scholar": "v0Qt7BAAAAAJ:dQ2og3OwTAUC",
         "selected": 1
@@ -74,8 +74,8 @@
         "title": "UWStereo: A Large Synthetic Dataset for Underwater Stereo Matching",
         "authors": "Qingxuan Lv, Junyu Dong<sup>#</sup>, <b>Yuezun Li</b><sup>#</sup>, Sheng Chen, Hui Yu, Shu Zhang, Wenhan Wang",
         "venue": "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2025.",
-        "image": "images/paper_img/uwstereo2024arxiv.png",
-        "paper": "https://arxiv.org/abs/2409.01782",
+        "image": "images/paper_img/uwstereo2024arxiv.jpeg",
+        "arxiv": "https://arxiv.org/abs/2409.01782",
         "code": "https://github.com/lqxisok/UWStereo",
         "scholar": "v0Qt7BAAAAAJ:5awf1xo2G04C",
         "selected": 1
@@ -86,7 +86,7 @@
         "authors": "Xudong Wang, Jiaran Zhou, Huiyu Zhou, Junyu Dong, <b>Yuezun Li</b><sup>#</sup>",
         "venue": "IEEE International Conference on Multimedia & Expo (<b>ICME</b>), 2025.",
         "image": "images/paper_img/hrgr2024arxiv.png",
-        "paper": "https://arxiv.org/abs/2410.21861",
+        "arxiv": "https://arxiv.org/abs/2410.21861",
         "code": "https://github.com/lqxisok/HRGR-IMD",
         "scholar": "v0Qt7BAAAAAJ:ZuybSZzF8UAC",
         "selected": 1
@@ -97,7 +97,7 @@
         "authors": "Xinjie Cui, <b>Yuezun Li</b><sup>#</sup>, Ao Luo, Jiaran Zhou, Junyu Dong",
         "venue": "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025.",
         "image": "images/paper_img/forensicsadapter2025cvpr.png",
-        "paper": "https://arxiv.org/pdf/2411.19715v2",
+        "arxiv": "https://arxiv.org/pdf/2411.19715v2",
         "code": "https://github.com/OUC-VAS/ForensicsAdapter",
         "scholar": "v0Qt7BAAAAAJ:UHK10RUVsp4C",
         "selected": 1
@@ -134,7 +134,7 @@
         "authors": "Yang Yu, Qingxuan Lv, <b>Yuezun Li</b><sup>#</sup>, Zhiqiang Wei, Junyu Dong<sup>#</sup>",
         "venue": "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2024.",
         "image": "images/paper_img/pytracker2024arxiv.png",
-        "paper": "https://arxiv.org/abs/2407.00352",
+        "arxiv": "https://arxiv.org/abs/2407.00352",
         "code": "https://github.com/OUC-PVOA/PhyTracker",
         "scholar": "v0Qt7BAAAAAJ:LjlpjdlvIbIC",
         "selected": 1
@@ -144,7 +144,7 @@
         "authors": "Hanzhe Li, Jiaran Zhou, <b>Yuezun Li</b><sup>#</sup>, Baoyuan Wu, Bin Li, Junyu Dong",
         "venue": "Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024.",
         "image": "images/paper_img/freqblender2024neurips.png",
-        "paper": "https://arxiv.org/abs/2404.13872",
+        "arxiv": "https://arxiv.org/abs/2404.13872",
         "code": "https://github.com/OUC-VAS/FreqBlender",
         "scholar": "v0Qt7BAAAAAJ:W5xh706n7nkC",
         "selected": 1
@@ -154,7 +154,7 @@
         "authors": "Dongliang Zhang, Yunfei Li, Jiaran Zhou, <b>Yuezun Li</b><sup>#</sup>",
         "venue": "Asian Conference on Computer Vision (<b>ACCV</b>), 2024.",
         "image": "images/paper_img/dpl2024accv.png",
-        "paper": "https://arxiv.org/pdf/2410.07633",
+        "arxiv": "https://arxiv.org/pdf/2410.07633",
         "code": "https://github.com/OUC-VAS/DPL",
         "scholar": "v0Qt7BAAAAAJ:VL0QpB8kHFEC",
         "selected": 1
@@ -173,7 +173,7 @@
         "authors": "Yangxiang Zhang, <b>Yuezun Li</b><sup>#</sup>, Ao Luo, Jiaran Zhou, Junyu Dong",
         "venue": "British Machine Vision Conference (<b>BMVC</b>), 2024.",
         "image": "images/paper_img/fastforensics2024bmvc.png",
-        "paper": "https://arxiv.org/pdf/2408.16582",
+        "arxiv": "https://arxiv.org/pdf/2408.16582",
         "code": "https://github.com/OUC-VAS/FastForensics",
         "scholar": "v0Qt7BAAAAAJ:WqliGbK-hY8C",
         "selected": 1
@@ -182,8 +182,8 @@
         "title": "Mumpy: Multilateral Temporal-view Pyramid Transformer for Video Inpainting Detection",
         "authors": "Ying Zhang, <b>Yuezun Li</b><sup>#</sup>, Bo Peng, Jiaran Zhou, Huiyu Zhou, Junyu Dong",
         "venue": "British Machine Vision Conference (<b>BMVC</b>), 2024.",
-        "image": "images/paper_img/mumpy2024arxiv.png",
-        "paper": "https://arxiv.org/pdf/2404.11054",
+        "image": "images/paper_img/mumpy2024arxiv.jpeg",
+        "arxiv": "https://arxiv.org/pdf/2404.11054",
         "code": "https://github.com/OUC-VAS/Mumpy",
         "scholar": "v0Qt7BAAAAAJ:AXPGKjj_ei8C",
         "selected": 1
@@ -193,7 +193,7 @@
         "authors": "Qingxuan Lv, <b>Yuezun Li</b><sup>#</sup>, Junyu Dong<sup>#</sup>, Sheng Chen, Hui Yu, Huiyu Zhou, Shu Zhang",
         "venue": "IEEE Transactions on Information Forensics and Security (<b>TIFS</b>), 2024.",
         "image": "images/paper_img/domainforensics2024tifs.png",
-        "paper": "https://arxiv.org/abs/2312.10680",
+        "arxiv": "https://arxiv.org/abs/2312.10680",
         "code": "https://github.com/OUC-VAS/DomainForensics",
         "scholar": "v0Qt7BAAAAAJ:XiVPGOgt02cC",
         "selected": 1
@@ -212,7 +212,7 @@
         "authors": "Cong Zhang, Honggang Qi, Shuhui Wang, <b>Yuezun Li</b><sup>#</sup>, Siwei Lyu",
         "venue": "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2024.",
         "image": "images/paper_img/multi-face2023arxiv.png",
-        "paper": "https://arxiv.org/abs/2308.01520",
+        "arxiv": "https://arxiv.org/abs/2308.01520",
         "code": "https://github.com/zhangconghhh/COMICS",
         "scholar": "v0Qt7BAAAAAJ:9vf0nzSNQJEC",
         "selected": 1
@@ -222,7 +222,7 @@
         "authors": "Jiucui Lu, Jiaran Zhou<sup>#</sup>, Junyu Dong, Bin Li, Siwei Lyu, <b>Yuezun Li</b><sup>#</sup>",
         "venue": "IEEE Transactions on Information Forensics and Security (<b>TIFS</b>), 2024. (Extended from ICME 2023)",
         "image": "images/paper_img/forest2023icme.png",
-        "paper": "https://arxiv.org/abs/2308.00964",
+        "arxiv": "https://arxiv.org/abs/2308.00964",
         "code": "https://github.com/OUC-VAS/ForensicsForest",
         "scholar": "v0Qt7BAAAAAJ:1qzjygNMrQYC",
         "selected": 1
@@ -232,7 +232,7 @@
         "authors": "Pu Sun, Honggang Qi, <b>Yuezun Li</b><sup>#</sup>, Siwei Lyu",
         "venue": "IEEE Transactions on Emerging Topics in Computing (<b>TETC</b>), 2024. (Extended from ICIP2022)",
         "image": "images/paper_img/fakecatcher2024tetc.png",
-        "paper": "https://arxiv.org/html/2307.14593v2",
+        "arxiv": "https://arxiv.org/html/2307.14593v2",
         "code": "https://github.com/OUC-VAS/ForensicsForest",
         "scholar": "v0Qt7BAAAAAJ:Mojj43d5GZwC",
         "selected": 0
@@ -250,7 +250,7 @@
         "title": "Multiview Adaptive Attention Pooling for Image-Text Retrieval",
         "authors": "Yunlai Ding, Jiaao Yu, Qingxuan Lv, Haoran Zhao, Junyu Dong, <b>Yuezun Li</b>",
         "venue": "Knowledge-Based Systems (<b>KBS</b>), 2024.",
-        "image": "images/paper_img/mvapp2024kbs.png",
+        "image": "images/paper_img/mvapp2024kbs.jpeg",
         "paper": "",
         "scholar": "v0Qt7BAAAAAJ:HE397vMXCloC",
         "selected": 0
