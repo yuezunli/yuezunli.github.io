@@ -38,15 +38,11 @@ function loadPublications(id) {
             paper.className = "paper-item";
 
             paper.innerHTML = `
-          <div class="paper-image">
-            <div class="img-box">
-              <img src="${p.image}" alt="${p.title}" loading="lazy" />
-            </div>
-          </div>
+          
 
           <div class="paper-info">
             <p>
-               <papertitle>
+            <papertitle>
                   ${p.title}
                 </papertitle>
 
@@ -158,11 +154,6 @@ function loadpreprints(id) {
         paper.className = "paper-item";
 
         paper.innerHTML = `
-          <div class="paper-image">
-            <div class="img-box">
-              <img src="${p.image}" alt="${p.title}" loading="lazy" />
-            </div>
-          </div>
 
           <div class="paper-info">
             <p>
