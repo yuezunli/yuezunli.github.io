@@ -4,14 +4,19 @@ function loadPublications(id) {
   const jsonPath = container.dataset.json;
   const mode = container.dataset.mode;
 
-  fetch(jsonPath)
-    .then((res) => {
-      if (!res.ok) {
-        throw new Error(`HTTP Error: ${res.status}`);
-      }
-      return res.json();
-    })
+  // fetch(jsonPath)
+  //   .then((res) => {
+  //     if (!res.ok) {
+  //       throw new Error(`HTTP Error: ${res.status}`);
+  //     }
+  //     return res.json();
+  //   })
+  const cached = sessionStorage.getItem("publicationsData");
 
+  (cached
+    ? Promise.resolve(JSON.parse(cached))
+    : fetch(jsonPath).then((r) => r.json())
+  )
     .then((data) => {
       // const container = document.getElementById("papers-container");
 
@@ -132,13 +137,19 @@ function loadpreprints(id) {
   const jsonPath = container.dataset.json;
   const mode = container.dataset.mode;
 
-  fetch(jsonPath)
-    .then((res) => {
-      if (!res.ok) {
-        throw new Error(`HTTP Error: ${res.status}`);
-      }
-      return res.json();
-    })
+  // fetch(jsonPath)
+  //   .then((res) => {
+  //     if (!res.ok) {
+  //       throw new Error(`HTTP Error: ${res.status}`);
+  //     }
+  //     return res.json();
+  //   })
+  const cached = sessionStorage.getItem("preprintsData");
+
+  (cached
+    ? Promise.resolve(JSON.parse(cached))
+    : fetch(jsonPath).then((r) => r.json())
+  )
 
     .then((data) => {
       /* ===== 可选：按年份从新到旧排序 ===== */

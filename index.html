@@ -30,6 +30,9 @@
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=1"></script>
+
+    <link rel="prefetch" href="publication.html" />
+    <link rel="preload" href="js/publication.js" as="script" />
   </head>
 
   <body>
@@ -429,6 +432,20 @@
         const index = date.getDate() % images.length; // 以日期计算索引
         document.getElementById("dailyImage").src = images[index];
     </script> -->
+
+    <script>
+      fetch("./publications.json")
+        .then((res) => res.json())
+        .then((data) => {
+          sessionStorage.setItem("publicationsData", JSON.stringify(data));
+        });
+
+      fetch("./preprints.json")
+        .then((res) => res.json())
+        .then((data) => {
+          sessionStorage.setItem("preprintsData", JSON.stringify(data));
+        });
+    </script>
 
     <script>
       document.querySelectorAll(".nav-menu a").forEach((link) => {
