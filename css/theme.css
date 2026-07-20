@@ -1446,6 +1446,8 @@ papertitle {
   color: #000;
   /* color: #444; */
   text-decoration: underline;
+  border-left: 3px solid #234b8e;
+  padding-left: 10px;
 }
 
 /* ===== Base ===== */
