@@ -3,7 +3,7 @@ body {
   padding-bottom: 0px;
   margin: 0;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", "Lato",
+    -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Lato",
     "Helvetica Neue", "Arial", "PingFang SC", "Microsoft YaHei", "黑体", "宋体",
     sans-serif;
   font-size: 14px;
@@ -736,6 +736,11 @@ table{table-layout:fixed;word-break:break-all;} */
 .news-list li:last-child {
   border-bottom: none;
 }
+
+.pinned::marker {
+    content: "📌 ";
+}
+
 /* .news-date {
 	font-size: 14px;
 	color: #555;
