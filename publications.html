@@ -51,21 +51,22 @@
       </header>
 
       <div class="col-md-12">
-        <p class="author-note-center">
-          # Corresponding author · * Equal contribution
-        </p>
         <!-- <hr /> -->
-        <div class="tabs">
-          <input type="radio" name="tab" id="tab1" checked />
-          <label for="tab1" class="tab-btn">Selected</label>
+        <div class="tabs-pub">
+          <input type="radio" name="tab-pub" id="tab-pub1" checked />
+          <label for="tab-pub1" class="tab-pub-btn">Selected</label>
 
-          <input type="radio" name="tab" id="tab2" />
-          <label for="tab2" class="tab-btn">All by date</label>
+          <input type="radio" name="tab-pub" id="tab-pub2" />
+          <label for="tab-pub2" class="tab-pub-btn">All by date</label>
 
-          <input type="radio" name="tab" id="tab3" />
-          <label for="tab3" class="tab-btn">Preprints</label>
+          <input type="radio" name="tab-pub" id="tab-pub3" />
+          <label for="tab-pub3" class="tab-pub-btn">Preprints</label>
 
-          <div class="tab-content" id="content1">
+          <p class="author-note-center">
+            # Corresponding author · * Equal contribution
+          </p>
+
+          <div class="tab-pub-content" id="content1">
             <!-- <div id="papers-selected"></div> -->
             <div
               id="papers-selected"
@@ -73,7 +74,7 @@
               data-mode="selected"
             ></div>
           </div>
-          <div class="tab-content" id="content2">
+          <div class="tab-pub-content" id="content2">
             <div>
               <select id="yearNav" onchange="jumpToYear(this.value)">
                 <option value="">Jump to Year</option>
@@ -89,7 +90,7 @@
             <!-- <div id="papers-container"></div> -->
             <div id="papers-container" data-json="./publications.json"></div>
           </div>
-          <div class="tab-content" id="content3">
+          <div class="tab-pub-content" id="content3">
             <!-- <div id="papers-selected"></div> -->
             <div id="papers-preprints" data-json="./preprints.json"></div>
           </div>

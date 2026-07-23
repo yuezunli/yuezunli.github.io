@@ -1372,78 +1372,62 @@ table{table-layout:fixed;word-break:break-all;} */
   transform: scale(1.3); /* 放大一点 */
 }
 
-/*** Tab **/
-/* --- 容器 --- */
-.tabs {
+/*** Tab-pub ***/
+.tabs-pub {
   width: 100%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 /* 隐藏 radio */
-.tabs input[type="radio"] {
-  display: none;
+.tabs-pub input[type="radio"] {
+  position: absolute;
+  opacity: 0;
 }
 
-/* --- Tab 样式 --- */
-.tab-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 3px 15px;
-  margin-right: 0px; /* 让标签无缝连接 */
-  /* font-size: 16px; */
-  background: #f7f7f7;
-  border: 1px solid #ddd;
-  border-bottom: none;
+/* Tab */
+.tab-pub-btn {
+  display: inline-block;
+  padding: 6px 0;
+  margin-right: 24px;
+
+  background: none;
+  border: none;
+
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
   cursor: pointer;
-  color: #555;
-  /* border-radius: 5px 5px 0 0; */
-  transition: all 0.2s ease;
+
+  border-bottom: 2px solid transparent;
+  transition: color .2s ease;
 }
 
-/* 悬停 */
-.tab-btn:hover {
-  background: #ececec;
+/* Hover */
+.tab-pub-btn:hover {
+  color: #222;
 }
 
-/* --- 选中态 --- */
-#tab1:checked + label[for="tab1"],
-#tab2:checked + label[for="tab2"],
-#tab3:checked + label[for="tab3"],
-#tab4:checked + label[for="tab4"],
-#tab5:checked + label[for="tab5"] {
-  background: #ffffff;
-  color: #000;
+/* 当前选中 */
+#tab-pub1:checked + label,
+#tab-pub2:checked + label,
+#tab-pub3:checked + label {
+  color: #111;
   font-weight: 600;
-  /* border-bottom: 3px solid #4c76ff; */
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.06);
-  /* transform: scale(1.1); */
+  border-bottom-color: #222;
 }
 
 /* 内容区 */
-.tab-content {
+.tab-pub-content {
   display: none;
-  padding: 20px 0;
-  border-top: 1px solid #ddd;
-  margin-top: -1px; /* 与 tab 完美衔接 */
+  /* padding-top: 18px; */
+  margin-top: 8px;
+  /* border-top: 1px solid #ddd; */
 }
 
-/* --- 选中显示内容 --- */
-#tab1:checked ~ #content1 {
-  display: block;
-}
-#tab2:checked ~ #content2 {
-  display: block;
-}
-#tab3:checked ~ #content3 {
-  display: block;
-}
-#tab4:checked ~ #content4 {
-  display: block;
-}
-#tab5:checked ~ #content5 {
-  display: block;
-}
+/* 显示对应内容 */
+#tab-pub1:checked ~ #content1 { display: block; }
+#tab-pub2:checked ~ #content2 { display: block; }
+#tab-pub3:checked ~ #content3 { display: block; }
 
 papertitle {
   /* font-weight: bold; */
