@@ -1,31 +1,58 @@
-from scholarly import scholarly, ProxyGenerator
-import jsonpickle
 import json
-from datetime import datetime
 import os
 import time
+from datetime import datetime
+from pathlib import Path
 
-# Setup proxy
-pg = ProxyGenerator()
-pg.FreeProxies()  # Use free rotating proxies
-scholarly.use_proxy(pg)
+from scholarly import ProxyGenerator, scholarly
 
-time.sleep(5)
+RESULTS_DIRECTORY = Path("results")
 
-author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
-name = author['name']
-author['updated'] = str(datetime.now())
-author['publications'] = {v['author_pub_id']:v for v in author['publications']}
-print(json.dumps(author, indent=2))
-os.makedirs('results', exist_ok=True)
-with open(f'results/gs_data.json', 'w') as outfile:
-    json.dump(author, outfile, ensure_ascii=False)
 
-shieldio_data = {
-  "schemaVersion": 1,
-  "label": "citations",
-  "message": f"{author['citedby']}",
-}
-with open(f'results/gs_data_shieldsio.json', 'w') as outfile:
-    json.dump(shieldio_data, outfile, ensure_ascii=False)
+def configure_proxy() -> None:
+    proxy_generator = ProxyGenerator()
+    proxy_generator.FreeProxies()
+    scholarly.use_proxy(proxy_generator)
+
+
+def fetch_author() -> dict:
+    author = scholarly.search_author_id(os.environ["GOOGLE_SCHOLAR_ID"])
+    scholarly.fill(
+        author,
+        sections=["basics", "indices", "counts", "publications"],
+    )
+    author["updated"] = datetime.now().isoformat()
+    author["publications"] = {
+        publication["author_pub_id"]: publication
+        for publication in author["publications"]
+    }
+    return author
+
+
+def write_json(filename: str, data: dict) -> None:
+    RESULTS_DIRECTORY.mkdir(exist_ok=True)
+    output_path = RESULTS_DIRECTORY / filename
+
+    with output_path.open("w", encoding="utf-8") as output_file:
+        json.dump(data, output_file, ensure_ascii=False)
+
+
+def main() -> None:
+    configure_proxy()
+    time.sleep(5)
+
+    author = fetch_author()
+    print(json.dumps(author, indent=2))
+    write_json("gs_data.json", author)
+    write_json(
+        "gs_data_shieldsio.json",
+        {
+            "schemaVersion": 1,
+            "label": "citations",
+            "message": str(author["citedby"]),
+        },
+    )
+
+
+if __name__ == "__main__":
+    main()

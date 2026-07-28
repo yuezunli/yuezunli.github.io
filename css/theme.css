@@ -24,6 +24,10 @@ a:hover {
   /* font-weight: bold; */
 }
 
+.high-citation-count {
+  color: red;
+}
+
 /* Custom container */
 
 .container {
@@ -1429,8 +1433,8 @@ table{table-layout:fixed;word-break:break-all;} */
 #tab-pub2:checked ~ #content2 { display: block; }
 #tab-pub3:checked ~ #content3 { display: block; }
 
-papertitle {
-  /* font-weight: bold; */
+.paper-title {
+  font-weight: normal;
   font-size: 15px;
   color: #000;
   /* color: #444; */

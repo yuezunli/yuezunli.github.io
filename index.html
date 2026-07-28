@@ -24,12 +24,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- <link rel="icon" type="image/jpg" href="images/src_img/icon.jpg" /> -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;display=swap"
       rel="stylesheet"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=1"></script>
 
     <link rel="prefetch" href="publication.html" />
     <link rel="preload" href="js/publication.js" as="script" />
@@ -64,7 +62,7 @@
               <i class="fa fa-envelope"></i>
             </a>
             <a
-              href="https://scholar.google.com/citations?user=v0Qt7BAAAAAJ&hl=en"
+              href="https://scholar.google.com/citations?user=v0Qt7BAAAAAJ&amp;hl=en"
               class="icon-link"
             >
               <i class="fa-solid fa-graduation-cap"></i>
@@ -88,13 +86,13 @@
           <p>
             I am an Associate Professor at Ocean University of China, where I
             lead the
-            <a href="lab.html">Visual Analysis & Security (VAS) Lab</a>. My
+            <a href="lab.html">Visual Analysis &amp; Security (VAS) Lab</a>. My
             research focuses on <em>Trustworthy Visual Intelligence</em>, with
             particular interests in multimedia forensics, vision security, and
             machine learning. My work has been published in leading venues with
             over
             <a
-              href="https://scholar.google.com/citations?user=v0Qt7BAAAAAJ&hl=en"
+              href="https://scholar.google.com/citations?user=v0Qt7BAAAAAJ&amp;hl=en"
               ><img
                 src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fyuezunli%2Fyuezunli.github.io%40google-scholar-stats%2Fgs_data_shieldsio.json&amp;logo=Google%20Scholar&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=citations"
             /></a>
@@ -318,7 +316,7 @@
           <li>
             [2023.07]: I gave a talk at a forum in
             <a
-              href="https://conf.ccf.org.cn/web/html5/index.html?globalId=m1082232101379641344167806583986&type=1"
+              href="https://conf.ccf.org.cn/web/html5/index.html?globalId=m1082232101379641344167806583986&amp;type=1"
               >CCF CFTC 2023</a
             >
             on Recent Advances on CV Security. &nbsp;
@@ -422,7 +420,7 @@
           </li>
           <li>
             [2021.03]: One paper on DeepFake-o-meter is accepted by SADFE in
-            conjunction with the IEEE S&P 2021
+            conjunction with the IEEE S&amp;P 2021
           </li>
           <li>[2021.02]: One paper is accepted by ICASSP 2021.</li>
           <li>[2020.02]: Our paper on Celeb-DF is accepted by CVPR 2020.</li>
@@ -437,85 +435,13 @@
         <script
           type="text/javascript"
           id="mapmyvisitors"
-          src="https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=m&d=bh3fgFAbucBbHvyVovqQwVmagcYC8FEi3AWscCWrDs4"
+          src="https://mapmyvisitors.com/map.js?cl=ffffff&amp;w=a&amp;t=m&amp;d=bh3fgFAbucBbHvyVovqQwVmagcYC8FEi3AWscCWrDs4"
         ></script>
       </div>
     </div>
 
-    <!-- Javascript files -->
-    <!-- <script src="js/header.js"></script>
-    <script src="js/footer.js"></script> -->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $("#main-carousel").carousel();
-    </script>
-
-    <!-- <script>
-        const images = ["src_img/earth.gif", "src_img/ai1.gif", "src_img/ai2.gif", "src_img/ai3.gif", "src_img/ai4.gif"]; // 7张图片
-        const date = new Date();
-        const index = date.getDate() % images.length; // 以日期计算索引
-        document.getElementById("dailyImage").src = images[index];
-    </script> -->
-
-    <script>
-      fetch("./publications.json")
-        .then((res) => res.json())
-        .then((data) => {
-          sessionStorage.setItem("publicationsData", JSON.stringify(data));
-        });
-
-      fetch("./preprints.json")
-        .then((res) => res.json())
-        .then((data) => {
-          sessionStorage.setItem("preprintsData", JSON.stringify(data));
-        });
-    </script>
-
-    <script>
-      document.querySelectorAll(".nav-menu a").forEach((link) => {
-        if (link.href === window.location.href) {
-          link.classList.add("active");
-        }
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $.getJSON(
-          "https://cdn.jsdelivr.net/gh/yuezunli/yuezunli.github.io@google-scholar-stats/gs_data.json",
-          function (data) {
-            var citationEles = document.getElementsByClassName(
-              "low_bound_citations",
-            );
-            var min_numCitations = 10000000;
-            Array.prototype.forEach.call(citationEles, (element) => {
-              var paperId = element.getAttribute("data");
-              parts = paperId.split(";");
-              parts = parts.filter((part) => part.trim() !== "");
-              parts.forEach((part, index) => {
-                let trimmedPart = part.trim();
-                console.log(trimmedPart);
-                var numCitations =
-                  data["publications"][trimmedPart]["num_citations"];
-                console.log(numCitations);
-                if (numCitations <= min_numCitations) {
-                  min_numCitations = numCitations;
-                }
-              });
-              element.innerHTML = Math.floor(min_numCitations / 100) * 100;
-            });
-          },
-        );
-      });
-    </script>
-
-    <script>
-      const toggleBtn = document.querySelector(".nav-toggle");
-      const navMenu = document.querySelector(".nav-menu");
-      toggleBtn.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
-      });
-    </script>
+    <!-- JavaScript -->
+    <script src="js/loadcitations.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>

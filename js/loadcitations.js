@@ -1,59 +1,79 @@
-$(document).ready(function () {
-  $.getJSON(
-    "https://cdn.jsdelivr.net/gh/yuezunli/yuezunli.github.io@google-scholar-stats/gs_data.json",
-    function (data) {
-      var citationEles = document.getElementsByClassName("low_bound_citations");
-      var min_numCitations = 10000000;
-      Array.prototype.forEach.call(citationEles, (element) => {
-        var paperId = element.getAttribute("data");
-        parts = paperId.split(";");
-        parts = parts.filter((part) => part.trim() !== "");
-        parts.forEach((part, index) => {
-          let trimmedPart = part.trim();
-          console.log(trimmedPart);
-          var numCitations = data["publications"][trimmedPart]["num_citations"];
-          console.log(numCitations);
-          if (numCitations <= min_numCitations) {
-            min_numCitations = numCitations;
-          }
-        });
-        element.innerHTML = Math.floor(min_numCitations / 100) * 100;
-      });
-    },
-  );
-});
+"use strict";
 
-/* =========================
-     Citation 初始化函数
-  ========================== */
+const SCHOLAR_DATA_URL =
+  "https://cdn.jsdelivr.net/gh/yuezunli/yuezunli.github.io@google-scholar-stats/gs_data.json";
 
-function loadCitations() {
-  $.getJSON(
-    "https://cdn.jsdelivr.net/gh/yuezunli/yuezunli.github.io@google-scholar-stats/gs_data.json",
+let scholarDataRequest;
 
-    function (data) {
-      var citationEles = document.getElementsByClassName(
-        "show_paper_citations",
-      );
+function fetchScholarData() {
+  if (!scholarDataRequest) {
+    scholarDataRequest = fetch(SCHOLAR_DATA_URL).then((response) => {
+      if (!response.ok) {
+        throw new Error(`Citation request failed: HTTP ${response.status}`);
+      }
 
-      Array.prototype.forEach.call(citationEles, (element) => {
-        var paperId = element.getAttribute("data");
+      return response.json();
+    });
+  }
 
-        try {
-          var numCitations = data["publications"][paperId]["num_citations"];
-        } catch (err) {
-          console.error("Citation Error:", err);
-          return;
-        }
-
-        element.innerHTML = "Citations: " + numCitations;
-
-        if (numCitations > 100) {
-          element.style.color = "red";
-        }
-      });
-    },
-  );
+  return scholarDataRequest;
 }
 
-loadCitations();
+function getCitationCount(data, paperId) {
+  return data.publications?.[paperId]?.num_citations;
+}
+
+async function loadCitationLowerBounds() {
+  const elements = document.querySelectorAll(".low_bound_citations");
+
+  if (elements.length === 0) {
+    return;
+  }
+
+  try {
+    const data = await fetchScholarData();
+
+    elements.forEach((element) => {
+      const counts = (element.dataset.paperIds || element.getAttribute("data") || "")
+        .split(";")
+        .map((paperId) => paperId.trim())
+        .filter(Boolean)
+        .map((paperId) => getCitationCount(data, paperId))
+        .filter(Number.isFinite);
+
+      if (counts.length > 0) {
+        element.textContent = String(Math.floor(Math.min(...counts) / 100) * 100);
+      }
+    });
+  } catch (error) {
+    console.error("Failed to load citation lower bounds.", error);
+  }
+}
+
+async function loadCitations() {
+  const elements = document.querySelectorAll(".show_paper_citations");
+
+  if (elements.length === 0) {
+    return;
+  }
+
+  try {
+    const data = await fetchScholarData();
+
+    elements.forEach((element) => {
+      const paperId = element.dataset.paperId || element.getAttribute("data");
+      const citationCount = getCitationCount(data, paperId);
+
+      if (!Number.isFinite(citationCount)) {
+        return;
+      }
+
+      element.textContent = `Citations: ${citationCount}`;
+      element.classList.toggle("high-citation-count", citationCount > 100);
+    });
+  } catch (error) {
+    console.error("Failed to load paper citations.", error);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadCitationLowerBounds);
