@@ -45,83 +45,136 @@ function fetchJSON(jsonPath) {
 */
 
 /**
+ * 添加只允许 <b> 和 <sup> 的格式化文本。
+ * 其他标签会作为普通文本显示。
+ */
+function appendFormattedText(parent, value) {
+  const tokens = String(value ?? "").split(/(<\/?(?:b|sup)>)/gi);
+  const elementStack = [parent];
+
+  tokens.forEach((token) => {
+    const normalizedToken = token.toLowerCase();
+
+    if (normalizedToken === "<b>" || normalizedToken === "<sup>") {
+      const tagName = normalizedToken.slice(1, -1);
+      const element = document.createElement(tagName);
+
+      elementStack[elementStack.length - 1].appendChild(element);
+      elementStack.push(element);
+      return;
+    }
+
+    if (normalizedToken === "</b>" || normalizedToken === "</sup>") {
+      if (elementStack.length > 1) {
+        elementStack.pop();
+      }
+      return;
+    }
+
+    elementStack[elementStack.length - 1].appendChild(
+      document.createTextNode(token),
+    );
+  });
+}
+
+function appendLineBreak(parent) {
+  parent.appendChild(document.createElement("br"));
+}
+
+function createExternalLink(url, className, label) {
+  let parsedUrl;
+
+  try {
+    parsedUrl = new URL(url, window.location.href);
+  } catch {
+    return null;
+  }
+
+  if (!["http:", "https:"].includes(parsedUrl.protocol)) {
+    return null;
+  }
+
+  const link = document.createElement("a");
+
+  link.className = className;
+  link.href = parsedUrl.href;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+
+  if (label) {
+    link.append(label);
+  }
+
+  return link;
+}
+
+/**
  * 根据论文数据创建论文 DOM 元素。
  */
-function createPaperElement(p) {
+function createPaperElement(paperData) {
   const paper = document.createElement("div");
+  const paperInfo = document.createElement("div");
+  const content = document.createElement("p");
+  const title = document.createElement("span");
 
   paper.className = "paper-item";
+  paperInfo.className = "paper-info";
+  title.className = "paper-title";
+  title.textContent = paperData.title;
+  content.appendChild(title);
 
-  paper.innerHTML = `
-    <div class="paper-info">
-      <p>
-        <span class="paper-title">
-          ${p.title}
-        </span>
+  appendLineBreak(content);
+  appendFormattedText(content, paperData.authors);
+  appendLineBreak(content);
+  appendFormattedText(content, paperData.venue);
+  appendLineBreak(content);
 
-        <br />
+  if (paperData.arxiv) {
+    const arxivLink = createExternalLink(
+      paperData.arxiv,
+      "badge1 badge-cite",
+    );
+    const arxivLogo = document.createElement("img");
 
-        ${p.authors}
+    arxivLogo.src = "images/src_img/arxiv-logo.svg";
+    arxivLogo.width = 25;
+    arxivLogo.loading = "lazy";
+    arxivLogo.alt = "arXiv";
+    if (arxivLink) {
+      arxivLink.appendChild(arxivLogo);
+      content.appendChild(arxivLink);
+    }
+  }
 
-        <br />
+  if (paperData.code) {
+    const codeLink = createExternalLink(
+      paperData.code,
+      "badge1 badge-code",
+    );
+    if (codeLink) {
+      const githubIcon = document.createElement("i");
 
-        ${p.venue}
+      githubIcon.className = "fa-brands fa-github";
+      codeLink.append(githubIcon, " Code");
+      content.appendChild(codeLink);
+    }
+  }
 
-        <br />
+  if (paperData.scholar) {
+    const citationBadge = document.createElement("span");
+    const scholarIcon = document.createElement("i");
+    const citationCount = document.createElement("span");
 
-        ${
-          p.arxiv
-            ? `
-              <a
-                class="badge1 badge-cite"
-                href="${p.arxiv}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="images/src_img/arxiv-logo.svg"
-                  width="25px"
-                  loading="lazy"
-                  alt="arXiv"
-                />
-              </a>
-            `
-            : ""
-        }
+    citationBadge.className = "badge1 badge-cite";
+    scholarIcon.className = "fa-brands fa-google-scholar";
+    citationCount.className = "show_paper_citations";
+    citationCount.dataset.paperId = paperData.scholar;
+    citationBadge.append(scholarIcon, " ", citationCount);
+    content.appendChild(citationBadge);
+  }
 
-        ${
-          p.code
-            ? `
-              <a
-                class="badge1 badge-code"
-                href="${p.code}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-                Code
-              </a>
-            `
-            : ""
-        }
-
-        ${
-          p.scholar
-            ? `
-              <span class="badge1 badge-cite">
-                <i class="fa-brands fa-google-scholar"></i>
-
-                <span
-                  class="show_paper_citations"
-                  data="${p.scholar}"
-                ></span>
-              </span>
-            `
-            : ""
-        }
-      </p>
-    </div>
-  `;
+  paperInfo.appendChild(content);
+  paper.appendChild(paperInfo);
 
   return paper;
 }
@@ -199,13 +252,11 @@ function loadPublications(id) {
           yearTitle.className = "subhead";
           yearTitle.id = `year${section.year}`;
 
-          yearTitle.innerHTML = `
-            <i
-              class="fa fa-calendar"
-              aria-hidden="true"
-            ></i>
-            &nbsp;${section.year}&nbsp;
-          `;
+          const calendarIcon = document.createElement("i");
+
+          calendarIcon.className = "fa fa-calendar";
+          calendarIcon.setAttribute("aria-hidden", "true");
+          yearTitle.append(calendarIcon, `\u00a0${section.year}\u00a0`);
 
           fragment.appendChild(yearTitle);
         }
