@@ -742,7 +742,7 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 .pinned::marker {
-  content: "📌 ";
+    content: "📌 ";
 }
 
 /* .news-date {
@@ -1403,7 +1403,7 @@ table{table-layout:fixed;word-break:break-all;} */
   cursor: pointer;
 
   border-bottom: 2px solid transparent;
-  transition: color 0.2s ease;
+  transition: color .2s ease;
 }
 
 /* Hover */
@@ -1429,15 +1429,9 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 /* 显示对应内容 */
-#tab-pub1:checked ~ #content1 {
-  display: block;
-}
-#tab-pub2:checked ~ #content2 {
-  display: block;
-}
-#tab-pub3:checked ~ #content3 {
-  display: block;
-}
+#tab-pub1:checked ~ #content1 { display: block; }
+#tab-pub2:checked ~ #content2 { display: block; }
+#tab-pub3:checked ~ #content3 { display: block; }
 
 .paper-title {
   font-weight: normal;
@@ -1467,6 +1461,10 @@ table{table-layout:fixed;word-break:break-all;} */
 
   white-space: nowrap;
   text-decoration: none;
+}
+
+.badge1 + .badge1 {
+  margin-left: 6px;
 }
 
 /* ===== Code (clickable) ===== */
