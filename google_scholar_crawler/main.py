@@ -11,7 +11,18 @@ RESULTS_DIRECTORY = Path("results")
 
 def configure_proxy() -> None:
     proxy_generator = ProxyGenerator()
-    proxy_generator.FreeProxies()
+    scraper_api_key = os.getenv("SCRAPER_API_KEY")
+
+    if scraper_api_key:
+        configured = proxy_generator.ScraperAPI(scraper_api_key)
+        proxy_name = "ScraperAPI"
+    else:
+        configured = proxy_generator.FreeProxies()
+        proxy_name = "free proxy"
+
+    if not configured:
+        raise RuntimeError(f"Unable to configure {proxy_name} for Google Scholar")
+
     scholarly.use_proxy(proxy_generator)
 
 

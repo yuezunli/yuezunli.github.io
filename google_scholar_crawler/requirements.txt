@@ -1,5 +1,4 @@
 jsonpickle==4.0.5
 scholarly==1.7.11
+free-proxy==1.1.2
 httpx==0.23.3
-scholarly==1.7.11
-free-proxy==1.1.3

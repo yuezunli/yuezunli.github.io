@@ -16,8 +16,7 @@ jobs:
       - name: Run
         run: |
           cd ./google_scholar_crawler
-          pip3 install -r requirements.txt
-          echo hahahahahaha
+          python3 -m pip install -r requirements.txt
           python3 main.py
           cd ./results
           git init
@@ -28,3 +27,4 @@ jobs:
           git push "${remote_repo}" HEAD:google-scholar-stats --force
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
