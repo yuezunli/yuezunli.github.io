@@ -1,71 +1,73 @@
-      <div class="col-md-12">
-        <!-- <hr /> -->
-        <div class="tabs-pub">
-          <input type="radio" name="tab-pub" id="tab-pub1" checked />
-          <label for="tab-pub1" class="tab-pub-btn">Selected</label>
+<div class="container">
+  <!-- include: partials/header.html -->
+  <div class="col-md-12">
+    <!-- <hr /> -->
+    <div class="tabs-pub">
+      <input type="radio" name="tab-pub" id="tab-pub1" checked />
+      <label for="tab-pub1" class="tab-pub-btn">Selected</label>
 
-          <input type="radio" name="tab-pub" id="tab-pub2" />
-          <label for="tab-pub2" class="tab-pub-btn">All by date</label>
+      <input type="radio" name="tab-pub" id="tab-pub2" />
+      <label for="tab-pub2" class="tab-pub-btn">All by date</label>
 
-          <input type="radio" name="tab-pub" id="tab-pub3" />
-          <label for="tab-pub3" class="tab-pub-btn">Preprints</label>
+      <input type="radio" name="tab-pub" id="tab-pub3" />
+      <label for="tab-pub3" class="tab-pub-btn">Preprints</label>
 
-          <p class="author-note-center">
-            # Corresponding author · * Equal contribution
-          </p>
+      <p class="author-note-center">
+        # Corresponding author · * Equal contribution
+      </p>
 
-          <div class="tab-pub-content" id="content1">
-            <!-- <div id="papers-selected"></div> -->
-            <div
-              id="papers-selected"
-              data-json="./publications.json"
-              data-mode="selected"
-            ></div>
-          </div>
-          <div class="tab-pub-content" id="content2">
-            <div>
-              <select id="yearNav" onchange="jumpToYear(this.value)">
-                <option value="">Jump to Year</option>
-                <option value="year2026">2026</option>
-                <option value="year2025">2025</option>
-                <option value="year2024">2024</option>
-                <option value="year2023">2023</option>
-                <option value="year2022">2022</option>
-                <option value="year2021">2021</option>
-              </select>
-            </div>
-
-            <!-- <div id="papers-container"></div> -->
-            <div id="papers-container" data-json="./publications.json"></div>
-          </div>
-          <div class="tab-pub-content" id="content3">
-            <!-- <div id="papers-selected"></div> -->
-            <div id="papers-preprints" data-json="./preprints.json"></div>
-          </div>
+      <div class="tab-pub-content" id="content1">
+        <!-- <div id="papers-selected"></div> -->
+        <div
+          id="papers-selected"
+          data-json="./publications.json"
+          data-mode="selected"
+        ></div>
+      </div>
+      <div class="tab-pub-content" id="content2">
+        <div>
+          <select id="yearNav" onchange="jumpToYear(this.value)">
+            <option value="">Jump to Year</option>
+            <option value="year2026">2026</option>
+            <option value="year2025">2025</option>
+            <option value="year2024">2024</option>
+            <option value="year2023">2023</option>
+            <option value="year2022">2022</option>
+            <option value="year2021">2021</option>
+          </select>
         </div>
+
+        <!-- <div id="papers-container"></div> -->
+        <div id="papers-container" data-json="./publications.json"></div>
+      </div>
+      <div class="tab-pub-content" id="content3">
+        <!-- <div id="papers-selected"></div> -->
+        <div id="papers-preprints" data-json="./preprints.json"></div>
       </div>
     </div>
-    <hr />
-    <!-- <div id="site-footer"></div> -->
+  </div>
+</div>
+<hr />
+<!-- <div id="site-footer"></div> -->
 
-    <!-- JavaScript -->
-    <script src="js/loadcitations.js"></script>
-    <script src="js/publication.js"></script>
+<!-- JavaScript -->
+<script src="js/loadcitations.js"></script>
+<script src="js/publication.js"></script>
 
-    <script>
-      function jumpToYear(yearId) {
-        if (!yearId) return;
+<script>
+  function jumpToYear(yearId) {
+    if (!yearId) return;
 
-        const target = document.getElementById(yearId);
-        if (!target) return;
+    const target = document.getElementById(yearId);
+    if (!target) return;
 
-        const offset = 60; // ← 你的header高度
-        const elementPosition = target.getBoundingClientRect().top;
-        const offsetPosition = window.pageYOffset + elementPosition - offset;
+    const offset = 60; // ← 你的header高度
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = window.pageYOffset + elementPosition - offset;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    </script>
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+</script>
