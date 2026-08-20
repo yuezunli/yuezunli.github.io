@@ -4,6 +4,10 @@ This is a statically generated website. Edit shared markup in
 `templates/layout.html` and `templates/partials/header.html`, and edit page
 content in `templates/pages/`.
 
+Publication data is stored in `templates/pages/publications.json` and
+`templates/pages/preprints.json`. The build embeds it directly in
+`publications.html`; the browser does not request these JSON files.
+
 Format the editable HTML templates with Prettier:
 
 ```bash

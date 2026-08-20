@@ -17,12 +17,9 @@
       </p>
 
       <div class="tab-pub-content" id="content1">
-        <!-- <div id="papers-selected"></div> -->
-        <div
-          id="papers-selected"
-          data-json="./publications.json"
-          data-mode="selected"
-        ></div>
+        <div id="papers-selected">
+          <!-- include: selected-publications -->
+        </div>
       </div>
       <div class="tab-pub-content" id="content2">
         <div>
@@ -37,12 +34,14 @@
           </select>
         </div>
 
-        <!-- <div id="papers-container"></div> -->
-        <div id="papers-container" data-json="./publications.json"></div>
+        <div id="papers-container">
+          <!-- include: all-publications -->
+        </div>
       </div>
       <div class="tab-pub-content" id="content3">
-        <!-- <div id="papers-selected"></div> -->
-        <div id="papers-preprints" data-json="./preprints.json"></div>
+        <div id="papers-preprints">
+          <!-- include: preprints -->
+        </div>
       </div>
     </div>
   </div>
@@ -52,9 +51,10 @@
 
 <!-- JavaScript -->
 <script src="js/loadcitations.js"></script>
-<script src="js/publication.js"></script>
 
 <script>
+  document.addEventListener("DOMContentLoaded", loadCitations);
+
   function jumpToYear(yearId) {
     if (!yearId) return;
 
