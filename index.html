@@ -46,7 +46,7 @@
         </nav>
         <button class="nav-toggle" type="button" aria-label="Toggle Menu">☰</button>
       </header>
-      <div class="col-md-12" style="margin-bottom: -20px">
+      <div class="home-profile col-md-12">
         <div class="profile-sidebar col-md-offset-1x col-md-2">
           <div class="selfie">
             <img alt="profile photo" src="images/people_img/selfie2024.jpg" />
@@ -125,13 +125,10 @@
         </div>
       </div>
 
-      <div class="col-md-12" style="margin-top: -20px">
+      <div class="home-news-section col-md-12">
         <h4 class="subhead">News</h4>
-        <ul class="news-list" style="height: 400px; overflow-y: auto">
-          <li
-            class="pinned"
-            style="position: sticky; top: 0; background: rgb(255, 255, 255); z-index: 10"
-          >
+        <ul class="home-news-list news-list">
+          <li class="home-news-pinned pinned">
             [2025.07]: We have released
             <em
               ><a href="https://github.com/OUC-VAS/Celeb-DF-PP">Celeb-DF++ benchmark (preview)</a>, an
@@ -284,9 +281,8 @@
     </div>
     <hr />
 
-    <!-- <div id="site-footer"></div> -->
     <div class="container-fluid">
-      <div style="width: 180px; margin: 0 auto">
+      <div class="visitor-map">
         <script
           type="text/javascript"
           id="mapmyvisitors"
@@ -295,7 +291,6 @@
       </div>
     </div>
 
-    <!-- JavaScript -->
     <script src="js/loadcitations.js"></script>
     <script src="js/site.js"></script>
   </body>

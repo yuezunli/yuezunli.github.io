@@ -11,6 +11,9 @@ Publication data is stored in `templates/pages/publications.json` and
 The Lab page is split by tab. Edit the individual fragments under
 `templates/pages/lab/`; `build.py` combines them into the generated `lab.html`.
 
+Homepage news is maintained in `templates/pages/index/news.html` and embedded
+in `index.html` during the build.
+
 Format the editable HTML templates with Prettier:
 
 ```bash
