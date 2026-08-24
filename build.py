@@ -16,6 +16,7 @@ CONTENT_PLACEHOLDER = "<!-- include: page-content -->"
 SELECTED_PUBLICATIONS_PLACEHOLDER = "<!-- include: selected-publications -->"
 ALL_PUBLICATIONS_PLACEHOLDER = "<!-- include: all-publications -->"
 PREPRINTS_PLACEHOLDER = "<!-- include: preprints -->"
+LAB_TABS = ("home", "people", "gallery", "resources")
 
 PAGES = {
     "index.html": {},
@@ -142,6 +143,16 @@ def render_publications_page(content: str) -> str:
     )
 
 
+def render_lab_page(content: str) -> str:
+    for tab in LAB_TABS:
+        placeholder = f"<!-- include: lab/{tab}.html -->"
+        fragment = (TEMPLATES / "pages" / "lab" / f"{tab}.html").read_text(
+            encoding="utf-8"
+        )
+        content = replace_placeholder(content, placeholder, fragment)
+    return content
+
+
 def build_page(filename: str, options: dict[str, str]) -> str:
     layout = Template((TEMPLATES / "layout.html").read_text(encoding="utf-8"))
     header = (TEMPLATES / "partials" / "header.html").read_text(encoding="utf-8")
@@ -149,6 +160,8 @@ def build_page(filename: str, options: dict[str, str]) -> str:
 
     if filename == "publications.html":
         content = render_publications_page(content)
+    elif filename == "lab.html":
+        content = render_lab_page(content)
 
     content = replace_placeholder(content, HEADER_PLACEHOLDER, header)
     output = layout.substitute(
