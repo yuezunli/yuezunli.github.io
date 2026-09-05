@@ -1186,7 +1186,7 @@ table{table-layout:fixed;word-break:break-all;} */
   display: inline-block;
   flex: 0 0 auto;
   margin: 15px 0;
-  font-size: 28px;
+  font-size: 25px;
   color: #333;
   transition: all 0.25s ease;
 }
@@ -1389,7 +1389,7 @@ table{table-layout:fixed;word-break:break-all;} */
   cursor: pointer;
 
   border-bottom: 2px solid transparent;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
 /* Hover */
@@ -1415,9 +1415,15 @@ table{table-layout:fixed;word-break:break-all;} */
 }
 
 /* 显示对应内容 */
-#tab-pub1:checked ~ #content1 { display: block; }
-#tab-pub2:checked ~ #content2 { display: block; }
-#tab-pub3:checked ~ #content3 { display: block; }
+#tab-pub1:checked ~ #content1 {
+  display: block;
+}
+#tab-pub2:checked ~ #content2 {
+  display: block;
+}
+#tab-pub3:checked ~ #content3 {
+  display: block;
+}
 
 .paper-title {
   font-weight: normal;
