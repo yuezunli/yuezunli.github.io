@@ -27,7 +27,6 @@ PAGES = {
     "services.html": {},
     "talks.html": {},
     "lab.html": {"extra_styles": '<link href="css/lab.css" rel="stylesheet" />'},
-    "resources.html": {"extra_styles": '<link href="css/lab.css" rel="stylesheet" />'},
 }
 
 

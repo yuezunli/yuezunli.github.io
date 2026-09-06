@@ -90,6 +90,11 @@
   background-color: white;
 }
 
+.alumni-table-wrapper {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
 .alumni-name {
   width: 24%;
 }
@@ -120,6 +125,9 @@
 }
 
 .alumni th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: #f5f7fa;
   font-weight: bold;
   font-size: 16px;
