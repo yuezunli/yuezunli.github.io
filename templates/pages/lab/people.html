@@ -1,8 +1,5 @@
 <!-- Member -->
-<div class="tab-content" id="content2">
-  <!-- <div class="col-md-12">
-    <div id="site-lab-member"></div>
-  </div> -->
+<section class="lab-people" aria-label="People">
   <h4 class="subhead">PhD students</h4>
   <div class="gallery">
     <div class="person-card">
@@ -59,8 +56,6 @@
       </div>
     </div>
   </div>
-  <hr />
-
   <h4 class="subhead">Master students</h4>
   <div class="gallery">
     <div class="person-card">
@@ -360,19 +355,32 @@
       </div>
     </div>
   </div>
-  <hr />
-
   <h4 class="subhead">Alumni</h4>
 
-  <div>
+  <div
+    class="alumni-table-wrapper"
+    role="region"
+    aria-label="Alumni table"
+    tabindex="0"
+  >
     <table class="alumni">
-      <tr>
-        <th>Name</th>
-        <th>Grade</th>
-        <th>Program</th>
-        <th>First job</th>
-        <th>Achievements &nbsp;<br /></th>
-      </tr>
+      <colgroup>
+        <col class="alumni-name" />
+        <col class="alumni-period" />
+        <col class="alumni-degree" />
+        <col class="alumni-placement" />
+        <col class="alumni-achievements" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Period</th>
+          <th scope="col">Degree</th>
+          <th scope="col">Placement</th>
+          <th scope="col">Achievements</th>
+        </tr>
+      </thead>
+      <tbody>
 
       <tr>
         <td>Delong Zhu（朱德龙）</td>
@@ -482,6 +490,7 @@
         <td><del>青岛城市学院</del><br />山东大学（读博）</td>
         <td>TIFS*1, ICME*1</td>
       </tr>
+      </tbody>
     </table>
   </div>
-</div>
+</section>

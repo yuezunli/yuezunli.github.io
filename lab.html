@@ -5,7 +5,7 @@
     <meta name="author" content="Yuezun Li" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yuezun Li's Homepage</title>
-
+    <link rel="icon" href="data:," />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
@@ -27,7 +27,6 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="icon" type="image/png" href="images/src_img/logo.png" /> -->
   </head>
 
   <body>
@@ -43,132 +42,13 @@
           <a href="funds.html">Funds</a>
           <a href="services.html">Services</a>
           <a href="lab.html">Group</a>
+          <a href="resources.html">Resources</a>
         </nav>
         <button class="nav-toggle" type="button" aria-label="Toggle Menu">☰</button>
       </header>
-      <div class="tabs">
-        <input type="radio" name="tab" id="tab1" checked />
-        <label for="tab1" class="tab-btn">Home</label>
-
-        <input type="radio" name="tab" id="tab2" />
-        <label for="tab2" class="tab-btn">People</label>
-
-        <input type="radio" name="tab" id="tab4" />
-        <label for="tab4" class="tab-btn">Gallery</label>
-
-        <input type="radio" name="tab" id="tab5" />
-        <label for="tab5" class="tab-btn">Resources</label>
-
-        <!-- Overview -->
-        <div class="tab-content" id="content1">
-          <div class="col-md-12">
-            <!-- <div class="col-md-7" style="float: left; margin-right: 20px"> -->
-            <!-- <h4 style="display: flex; align-items: flex-end; gap: 8px">
-              <img
-                class="logo-img"
-                src="images/src_img/logo.png"
-                alt="Lab Logo"
-                style="height: 40px"
-              />
-
-              <span>Welcome to VASLab</span>
-              Advancing Trustworthy Visual Intelligence
-            </h4> -->
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                margin-bottom: 10px;
-              "
-            >
-              <!-- 左侧 Logo -->
-              <img
-                class="logo-img"
-                src="images/src_img/logo.png"
-                alt="Lab Logo"
-                style="height: 40px"
-              />
-
-              <!-- 右侧文字区域 -->
-              <div
-                style="display: flex; flex-direction: column; line-height: 1.2"
-              >
-                <span style="font-size: 1.2em; font-weight: 600">
-                  Welcome to VASLab
-                </span>
-
-                <span style="color: #888; font-size: 0.95em">
-                  Advancing Trustworthy Visual Intelligence
-                </span>
-              </div>
-            </div>
-
-            <p>
-              Visual Analysis &amp; Security (VAS) Lab conducts research on
-              Trustworthy Visual Intelligence, with particular interests in
-              multimedia forensics, vision security, and machine learning. Our
-              mission is to analyze, authenticate, and protect visual content
-              against manipulation, misinformation, and malicious misuse, while
-              advancing the theoretical foundations that improve the robustness,
-              security, and trustworthiness of modern AI-driven visual systems.
-              Our research is organized around three major directions:
-            </p>
-            <div>
-              <ul style="margin: 15px">
-                <li>
-                  <b>Multimedia Forensics.</b> Developing advanced forensic
-                  algorithms for images, videos, and audio to detect, localize,
-                  and analyze manipulated or AI-generated content, covering both
-                  passive and active defense in both general-purpose and
-                  face-centric scenarios.
-                </li>
-
-                <li>
-                  <b>Vision Algorithms.</b> Studying computer vision and machine
-                  learning algorithms for visual understanding and modeling,
-                  aiming to support the development of robust, reliable, and
-                  secure visual intelligence systems.
-                </li>
-
-                <li>
-                  <b>Vision Security.</b> Investigating the vulnerabilities of
-                  vision models, including adversarial and backdoor attacks,
-                  data security, and model privacy, as well as secure deployment
-                  in real-world applications, to improve the robustness,
-                  reliability, and security of visual intelligence systems.
-                </li>
-              </ul>
-            </div>
-            <!-- </div> -->
-          </div>
-          <!-- <div class="col-md-4" style="float: right">
-            <img src="images/src_img/lab-research.png" width="300px" />
-          </div> -->
-          <div class="col-md-12">
-            <p>
-              We are <b>always</b> looking for motivated students who are
-              passionate about research and emerging technologies, especially
-              those with strong interests in mathematics and programming, to
-              join our lab. If you are interested, please drop me an email with
-              your CV at <u>liyuezun [AT] ouc.edu.cn</u>.
-            </p>
-
-            <hr />
-            <!-- <img src="src_img/growing.gif" />-->
-            <blockquote class="header-quote">
-              🔉 Optimism is a happiness magnet — Mary Lou Retton
-            </blockquote>
-            <hr />
-            <!-- <div id="site-lab-collab"></div> -->
-          </div>
-        </div>
-
+      <main class="lab-page">
         <!-- Member -->
-        <div class="tab-content" id="content2">
-          <!-- <div class="col-md-12">
-            <div id="site-lab-member"></div>
-          </div> -->
+        <section class="lab-people" aria-label="People">
           <h4 class="subhead">PhD students</h4>
           <div class="gallery">
             <div class="person-card">
@@ -225,8 +105,6 @@
               </div>
             </div>
           </div>
-          <hr />
-
           <h4 class="subhead">Master students</h4>
           <div class="gallery">
             <div class="person-card">
@@ -526,19 +404,32 @@
               </div>
             </div>
           </div>
-          <hr />
-
           <h4 class="subhead">Alumni</h4>
 
-          <div>
+          <div
+            class="alumni-table-wrapper"
+            role="region"
+            aria-label="Alumni table"
+            tabindex="0"
+          >
             <table class="alumni">
-              <tr>
-                <th>Name</th>
-                <th>Grade</th>
-                <th>Program</th>
-                <th>First job</th>
-                <th>Achievements &nbsp;<br /></th>
-              </tr>
+              <colgroup>
+                <col class="alumni-name" />
+                <col class="alumni-period" />
+                <col class="alumni-degree" />
+                <col class="alumni-placement" />
+                <col class="alumni-achievements" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Period</th>
+                  <th scope="col">Degree</th>
+                  <th scope="col">Placement</th>
+                  <th scope="col">Achievements</th>
+                </tr>
+              </thead>
+              <tbody>
 
               <tr>
                 <td>Delong Zhu（朱德龙）</td>
@@ -648,17 +539,17 @@
                 <td><del>青岛城市学院</del><br />山东大学（读博）</td>
                 <td>TIFS*1, ICME*1</td>
               </tr>
+              </tbody>
             </table>
           </div>
-        </div>
+        </section>
 
         <!-- Gallery -->
-        <div class="tab-content" id="content4">
-          <!-- <div class="col-md-12">
-            <div id="site-lab-photo"></div>
-          </div> -->
-          <!-- <div style="height: 1500px; overflow-y: auto"> -->
-          <div>
+        <section class="lab-gallery" aria-labelledby="gallery-heading">
+          <h4 class="subhead" id="gallery-heading">Gallery</h4>
+          <div class="gallery-marquee">
+            <div class="gallery-track">
+              <div class="gallery-set">
             <div class="entergallery-section">
               <h4>2026</h4>
               <div class="entergallery">
@@ -807,409 +698,18 @@
                 </div>
               </div>
             </div>
+              </div>
+            </div>
           </div>
           <!-- 图片预览弹窗 -->
           <div class="modal" id="imageModal">
             <span class="close" onclick="closeModal()">&times;</span>
             <img id="modalImg" />
           </div>
-        </div>
-
-        <!-- Resources -->
-        <div class="tab-content" id="content5">
-          <!-- <div class="col-md-12">
-            <div id="site-lab-codebase"></div>
-          </div> -->
-          <h4>2026</h4>
-          <div class="gallery">
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/AVPF" target="_blank"
-                  >AVPF (Arxiv'26)</a
-                >
-              </h4>
-              <p>AVPF: Audio-Visual Pseudo-Fakes for Deepfake Detection.</p>
-              <p>
-                <img src="https://img.shields.io/github/stars/OUC-VAS/AVPF" />
-                <img src="https://img.shields.io/github/forks/OUC-VAS/AVPF" />
-              </p>
-            </div>
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/ReVi" target="_blank"
-                  >ReVi (Arxiv'26)</a
-                >
-              </h4>
-              <p>
-                Off-the-shelf Vision Models Benefit Image Manipulation
-                Localization.
-              </p>
-              <p>
-                <img src="https://img.shields.io/github/stars/OUC-VAS/ReVi" />
-                <img src="https://img.shields.io/github/forks/OUC-VAS/ReVi" />
-              </p>
-            </div>
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/DAF" target="_blank"
-                  >DAF (Arxiv'26)</a
-                >
-              </h4>
-              <p>
-                DAF: Detecting Diffusion-Generated Images via Dynamic Assembly
-                Forests.
-              </p>
-              <p>
-                <img src="https://img.shields.io/github/stars/OUC-VAS/DAF" />
-                <img src="https://img.shields.io/github/forks/OUC-VAS/DAF" />
-              </p>
-            </div>
-          </div>
-          <h4>2025</h4>
-          <div class="gallery">
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/Celeb-DF-PP" target="_blank"
-                  >Celeb-DF++ (Arxiv'25)</a
-                >
-              </h4>
-              <p>
-                Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark
-                for Generalizable Forensics.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/Celeb-DF-PP"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/Celeb-DF-PP"
-                />
-              </p>
-            </div>
-            <div class="code-card">
-              <h4>
-                <a
-                  href="https://github.com/OUC-VAS/ForensicsAdapter"
-                  target="_blank"
-                  >Forensics Adapter (CVPR'25)</a
-                >
-              </h4>
-              <p>
-                Forensics Adapter: Adapting CLIP for Generalizable Face Forgery
-                Detection.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/ForensicsAdapter"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/ForensicsAdapter"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/FacePoison" target="_blank"
-                  >FacePoison (TDSC'25)</a
-                >
-              </h4>
-              <p>
-                Hiding Faces in Plain Sight: Defending DeepFakes by Disrupting
-                Face Detection.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/FacePoison"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/FacePoison"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/TSOM" target="_blank"
-                  >TSOM (WACV'25)</a
-                >
-              </h4>
-              <p>
-                Texture, Shape, Order, and Relation Matter: A New Transformer
-                Design for Sequential DeepFake Detection.
-              </p>
-              <p>
-                <img src="https://img.shields.io/github/stars/OUC-VAS/TSOM" />
-                <img src="https://img.shields.io/github/forks/OUC-VAS/TSOM" />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/HRGR-IMD" target="_blank"
-                  >HRGR (ICME'25)</a
-                >
-              </h4>
-              <p>
-                HRGR: Enhancing Image Manipulation Detection via Hierarchical
-                Region-aware Graph Reasoning.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/HRGR-IMD"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/HRGR-IMD"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a
-                  href="https://github.com/stephenivy07/FakeTracer"
-                  target="_blank"
-                  >FakeTracer (TETC'25)</a
-                >
-              </h4>
-              <p>
-                FakeTracer: Catching Face-swap DeepFakes via Implanting Traces
-                in Training.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/stephenivy07/FakeTracer"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/stephenivy07/FakeTracer"
-                />
-              </p>
-            </div>
-          </div>
-          <h4>2024</h4>
-          <div class="gallery">
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/FreqBlender" target="_blank"
-                  >FreqBlender (NeurIPS'24)</a
-                >
-              </h4>
-              <p>
-                FreqBlender: Enhancing DeepFake Detection by Blending Frequency
-                Knowledge.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/FreqBlender"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/FreqBlender"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a
-                  href="https://github.com/OUC-VAS/DomainForensics"
-                  target="_blank"
-                  >DomainForensics (TIFS'24)</a
-                >
-              </h4>
-              <p>
-                DomainForensics: Exposing Face Forgery across Domains via
-                Bi-directional Adaptation.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/DomainForensics"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/DomainForensics"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a
-                  href="https://github.com/OUC-VAS/ForensicsForest"
-                  target="_blank"
-                  >ForensicsForest Family (TIFS'24)</a
-                >
-              </h4>
-              <p>
-                ForensicsForest Family: A Series of Multi-scale Hierarchical
-                Cascade Forests for Detecting GAN-generated Faces.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/ForensicsForest"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/ForensicsForest"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/zhangconghhh/COMICS" target="_blank"
-                  >COMICS (TCSVT'24)</a
-                >
-              </h4>
-              <p>
-                COMICS: End-to-end Bi-grained Contrastive Learning for
-                Multi-face Forgery Detection.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/zhangconghhh/COMICS"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/zhangconghhh/COMICS"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/Mumpy" target="_blank"
-                  >Mumpy (BMVC'24)</a
-                >
-              </h4>
-              <p>
-                Mumpy: Multilateral Temporal-view Pyramid Transformer for Video
-                Inpainting Detection.
-              </p>
-              <p>
-                <img src="https://img.shields.io/github/stars/OUC-VAS/Mumpy" />
-                <img src="https://img.shields.io/github/forks/OUC-VAS/Mumpy" />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/OUC-VAS/DPL" target="_blank"
-                  >DPL (ACCV'24)</a
-                >
-              </h4>
-              <p>
-                DPL: Cross-quality DeepFake Detection via Dual Progressive
-                Learning.
-              </p>
-              <p>
-                <img src="https://img.shields.io/github/stars/OUC-VAS/DPL" />
-                <img src="https://img.shields.io/github/forks/OUC-VAS/DPL" />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a
-                  href="https://github.com/OUC-VAS/FastForensics"
-                  target="_blank"
-                  >FastForensics (BMVC'24)</a
-                >
-              </h4>
-              <p>
-                FastForensics: Efficient Two-Stream Design for Real-Time Image
-                Manipulation Detection.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/OUC-VAS/FastForensics"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/OUC-VAS/FastForensics"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/zhangconghhh/AdaNI" target="_blank"
-                  >AdaNI (CVIU'24)</a
-                >
-              </h4>
-              <p>
-                AdaNI: Adaptive Noise Injection to improve adversarial
-                robustness.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/zhangconghhh/AdaNI"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/zhangconghhh/AdaNI"
-                />
-              </p>
-            </div>
-          </div>
-          <h4>Before 2024</h4>
-          <div class="gallery">
-            <div class="code-card">
-              <h4>
-                <a
-                  href="https://github.com/yuezunli/celeb-deepfakeforensics"
-                  target="_blank"
-                  >Celeb-DF (CVPR'20)</a
-                >
-              </h4>
-              <p>
-                Celeb-DF: A Large-scale Challenging Dataset for DeepFake
-                Forensics.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/yuezunli/celeb-deepfakeforensics"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/yuezunli/celeb-deepfakeforensics"
-                />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/yuezunli/ISSBA" target="_blank"
-                  >ISSBA (ICCV'21)</a
-                >
-              </h4>
-              <p>Invisible Backdoor Attack with Sample-Specific Triggers.</p>
-              <p>
-                <img src="https://img.shields.io/github/stars/yuezunli/ISSBA" />
-                <img src="https://img.shields.io/github/forks/yuezunli/ISSBA" />
-              </p>
-            </div>
-
-            <div class="code-card">
-              <h4>
-                <a href="https://github.com/XianglongHe/FMAA" target="_blank"
-                  >FMAA (CO &amp; SE'23)</a
-                >
-              </h4>
-              <p>
-                Improving Transferable Adversarial Attack via Feature-Momentum.
-              </p>
-              <p>
-                <img
-                  src="https://img.shields.io/github/stars/XianglongHe/FMAA"
-                />
-                <img
-                  src="https://img.shields.io/github/forks/XianglongHe/FMAA"
-                />
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
+        </section>
+      </main>
     </div>
-    <hr />
-    <!-- <div id="site-footer"></div> -->
 
-    <!-- JavaScript -->
     <script>
       function openModal(img) {
         document.getElementById("modalImg").src = img.src;
@@ -1219,6 +719,18 @@
       function closeModal() {
         document.getElementById("imageModal").style.display = "none";
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const track = document.querySelector(".gallery-track");
+        const gallerySet = track && track.querySelector(".gallery-set");
+
+        if (!track || !gallerySet) return;
+
+        const duplicate = gallerySet.cloneNode(true);
+        duplicate.setAttribute("aria-hidden", "true");
+        track.appendChild(duplicate);
+        track.classList.add("is-ready");
+      });
     </script>
     <script src="js/site.js"></script>
   </body>

@@ -85,26 +85,56 @@
 
 .alumni {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   background-color: white;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
+
+.alumni-name {
+  width: 24%;
+}
+
+.alumni-period {
+  width: 14%;
+}
+
+.alumni-degree {
+  width: 12%;
+}
+
+.alumni-placement {
+  width: 24%;
+}
+
+.alumni-achievements {
+  width: 26%;
+}
+
 .alumni th,
 .alumni td {
   border: none;
   border-bottom: 1px solid #ddd;
-  padding: 12px;
+  padding: 8px 10px;
   text-align: left;
+  vertical-align: top;
 }
+
 .alumni th {
-  /* background-color: rgba(0, 64, 128, 0.85);
-  color: white; */
+  background-color: #f5f7fa;
   font-weight: bold;
   font-size: 16px;
 }
-/* .alumni tr:nth-child(even) {
-  background-color: #f2f2f2;
-} */
+
+.alumni th:nth-child(2),
+.alumni th:nth-child(3),
+.alumni td:nth-child(2),
+.alumni td:nth-child(3) {
+  white-space: nowrap;
+}
+
+.alumni tbody tr:nth-child(even) {
+  background-color: #fafbfc;
+}
 
 .alumni img {
   width: 50px; /* 控制图片大小 */
@@ -112,6 +142,18 @@
   border-radius: 5px; /* 圆角，可选 */
   margin-left: -5px;
   margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .alumni-table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .alumni {
+    min-width: 760px;
+  }
 }
 
 .code-card {
@@ -123,75 +165,85 @@
   text-align: left; /* 左对齐文本 */
 }
 
-/*** Tab **/
-/* --- 容器 --- */
-.tabs {
-  width: 100%;
+.lab-page {
   margin-top: 20px;
 }
 
-/* 隐藏 radio */
-.tabs input[type="radio"] {
+.lab-gallery {
+  margin-top: 36px;
+}
+
+.gallery-marquee {
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.gallery-track.is-ready {
+  animation: gallery-scroll 65s linear infinite;
+}
+
+.gallery-set {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 14px;
+  padding-right: 14px;
+}
+
+.gallery-set .entergallery-section,
+.gallery-set .entergallery {
+  display: contents;
+}
+
+.gallery-set .entergallery-section > h4 {
   display: none;
 }
 
-/* --- Tab 样式 --- */
-.tab-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 3px 15px;
-  margin-right: 0px; /* 让标签无缝连接 */
-  /* font-size: 16px; */
-  background: #f7f7f7;
-  border: 1px solid #ddd;
-  border-bottom: none;
-  cursor: pointer;
-  color: #555;
-  /* border-radius: 5px 5px 0 0; */
-  transition: all 0.2s ease;
+.gallery-set .entergallery-item {
+  flex: 0 0 240px;
 }
 
-/* 悬停 */
-.tab-btn:hover {
-  background: #ececec;
+.gallery-set .overlay {
+  width: calc(100% - 16px);
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-/* --- 选中态 --- */
-#tab1:checked + label[for="tab1"],
-#tab2:checked + label[for="tab2"],
-#tab3:checked + label[for="tab3"],
-#tab4:checked + label[for="tab4"],
-#tab5:checked + label[for="tab5"] {
-  background: #ffffff;
-  color: #000;
-  font-weight: 600;
-  /* border-bottom: 3px solid #4c76ff; */
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.06);
-  /* transform: scale(1.1); */
+.gallery-marquee:hover .gallery-track,
+.gallery-marquee:focus-within .gallery-track {
+  animation-play-state: paused;
 }
 
-/* 内容区 */
-.tab-content {
-  display: none;
-  padding: 20px 0;
-  border-top: 1px solid #ddd;
-  margin-top: -1px; /* 与 tab 完美衔接 */
+.lab-people {
+  margin-top: 0;
 }
 
-/* --- 选中显示内容 --- */
-#tab1:checked ~ #content1 {
-  display: block;
+@keyframes gallery-scroll {
+  to {
+    transform: translateX(-50%);
+  }
 }
-#tab2:checked ~ #content2 {
-  display: block;
+
+@media (max-width: 600px) {
+  .gallery-set .entergallery-item {
+    flex-basis: 200px;
+  }
 }
-#tab3:checked ~ #content3 {
-  display: block;
-}
-#tab4:checked ~ #content4 {
-  display: block;
-}
-#tab5:checked ~ #content5 {
-  display: block;
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-marquee {
+    overflow-x: auto;
+  }
+
+  .gallery-track.is-ready {
+    animation: none;
+  }
 }

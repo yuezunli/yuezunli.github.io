@@ -18,7 +18,7 @@ CONTENT_PLACEHOLDER = "<!-- include: page-content -->"
 SELECTED_PUBLICATIONS_PLACEHOLDER = "<!-- include: selected-publications -->"
 ALL_PUBLICATIONS_PLACEHOLDER = "<!-- include: all-publications -->"
 PREPRINTS_PLACEHOLDER = "<!-- include: preprints -->"
-LAB_TABS = ("home", "people", "gallery", "resources")
+LAB_SECTIONS = ("people", "gallery")
 
 PAGES = {
     "index.html": {},
@@ -27,6 +27,7 @@ PAGES = {
     "services.html": {},
     "talks.html": {},
     "lab.html": {"extra_styles": '<link href="css/lab.css" rel="stylesheet" />'},
+    "resources.html": {"extra_styles": '<link href="css/lab.css" rel="stylesheet" />'},
 }
 
 
@@ -165,8 +166,7 @@ def build_page(filename: str, options: dict[str, str]) -> str:
     elif filename == "publications.html":
         content = render_publications_page(content)
     elif filename == "lab.html":
-        content = render_page_fragments(content, "lab", LAB_TABS)
-
+        content = render_page_fragments(content, "lab", LAB_SECTIONS)
     content = replace_placeholder(content, HEADER_PLACEHOLDER, header)
     output = layout.substitute(
         title=options.get("title", "Yuezun Li's Homepage"),

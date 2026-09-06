@@ -1,32 +1,12 @@
 <div class="container">
   <!-- include: partials/header.html -->
-  <div class="tabs">
-    <input type="radio" name="tab" id="tab1" checked />
-    <label for="tab1" class="tab-btn">Home</label>
-
-    <input type="radio" name="tab" id="tab2" />
-    <label for="tab2" class="tab-btn">People</label>
-
-    <input type="radio" name="tab" id="tab4" />
-    <label for="tab4" class="tab-btn">Gallery</label>
-
-    <input type="radio" name="tab" id="tab5" />
-    <label for="tab5" class="tab-btn">Resources</label>
-
-    <!-- include: lab/home.html -->
-
+  <main class="lab-page">
     <!-- include: lab/people.html -->
 
     <!-- include: lab/gallery.html -->
-
-    <!-- include: lab/resources.html -->
-
-  </div>
+  </main>
 </div>
-<hr />
-<!-- <div id="site-footer"></div> -->
 
-<!-- JavaScript -->
 <script>
   function openModal(img) {
     document.getElementById("modalImg").src = img.src;
@@ -36,6 +16,16 @@
   function closeModal() {
     document.getElementById("imageModal").style.display = "none";
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".gallery-track");
+    const gallerySet = track && track.querySelector(".gallery-set");
+
+    if (!track || !gallerySet) return;
+
+    const duplicate = gallerySet.cloneNode(true);
+    duplicate.setAttribute("aria-hidden", "true");
+    track.appendChild(duplicate);
+    track.classList.add("is-ready");
+  });
 </script>
-
-

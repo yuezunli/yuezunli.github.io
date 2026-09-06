@@ -1014,6 +1014,7 @@ table{table-layout:fixed;word-break:break-all;} */
   justify-content: space-between;
   align-items: center;
   padding: 15px 10px;
+  padding-left: 0;
   padding-bottom: 5px;
   margin-bottom: 15px;
   background-color: white;
@@ -1056,7 +1057,7 @@ table{table-layout:fixed;word-break:break-all;} */
   /* color: #0b5394; */
   letter-spacing: 1px;
   /* text-shadow: 1px 1px 3px rgba(14, 106, 255, 0.581); */
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .lab-img {
