@@ -27,5 +27,32 @@
     duplicate.setAttribute("aria-hidden", "true");
     track.appendChild(duplicate);
     track.classList.add("is-ready");
+
+    const gallery = track.closest(".lab-gallery");
+    const viewport = gallery.querySelector(".gallery-marquee");
+
+    function moveGallery(direction) {
+      const item = gallerySet.querySelector(".entergallery-item");
+      const step = item.getBoundingClientRect().width + parseFloat(getComputedStyle(gallerySet).gap);
+      const animation = track.getAnimations()[0];
+      if (animation) {
+        // Move the existing loop so manual navigation never resets its position.
+        const duration = animation.effect.getTiming().duration;
+        const time = (animation.currentTime || 0) + direction * step / gallerySet.getBoundingClientRect().width * duration;
+        animation.currentTime = ((time % duration) + duration) % duration;
+      } else {
+        // Reduced-motion users browse with native scrolling instead.
+        viewport.scrollBy({ left: direction * step, behavior: "auto" });
+      }
+    }
+
+    gallery.querySelector(".gallery-prev").addEventListener("click", function () { moveGallery(-1); });
+    gallery.querySelector(".gallery-next").addEventListener("click", function () { moveGallery(1); });
+    gallery.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        moveGallery(event.key === "ArrowLeft" ? -1 : 1);
+      }
+    });
   });
 </script>
