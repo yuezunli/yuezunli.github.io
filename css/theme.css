@@ -722,8 +722,8 @@ table{table-layout:fixed;word-break:break-all;} */
 
 .news-list {
   list-style: disc;
-  padding-left: 20px;
-  margin: 10px;
+  padding-left: 18px;
+  margin: 10px 10px 10px 0;
 }
 .news-list li {
   text-align: left;
@@ -1114,6 +1114,22 @@ table{table-layout:fixed;word-break:break-all;} */
 
 /* 手机端 */
 @media (max-width: 768px) {
+  body {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .container [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .lab-header {
     flex-wrap: wrap; /* 允许换行 */
   }
