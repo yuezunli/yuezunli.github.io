@@ -48,61 +48,7 @@
       <main class="lab-page">
         <!-- Member -->
         <section class="lab-people" aria-label="People">
-          <h4 class="subhead">PhD students</h4>
-          <div class="gallery">
-            <div class="person-card">
-              <div class="people-item-container">
-                <div class="people-item">
-                  <img src="images/people_img/jiangjinkun.jpg" />
-                  <div class="people-item-badge">TIP*1</div>
-                </div>
-                <div class="description">
-                  <p>Jinkun Jiang</p>
-                  <p>姜锦琨</p>
-                  <p>2025 PhD</p>
-
-                  <p>
-                    <a href="https://it.ouc.edu.cn/djy/main.htm">Prof. Dong</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="person-card">
-              <div class="people-item-container">
-                <div class="people-item">
-                  <img src="images/people_img/yuyang.jpg" />
-                  <div class="people-item-badge">TCSVT*1</div>
-                </div>
-                <div class="description">
-                  <p>Yang Yu</p>
-                  <p>于阳</p>
-                  <p>2025 PhD</p>
-
-                  <p>
-                    <a href="https://it.ouc.edu.cn/djy/main.htm">Prof. Dong</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="person-card">
-              <div class="people-item-container">
-                <div class="people-item">
-                  <img src="images/people_img/zhudelong.jpg" />
-                  <div class="people-item-badge">TDSC*1</div>
-                </div>
-                <div class="description">
-                  <p>Delong Zhu</p>
-                  <p>朱德龙</p>
-                  <p>2026 PhD</p>
-
-                  <p>Prof. Yu</p>
-                </div>
-              </div>
-            </div> -->
-          </div>
-          <h4 class="subhead">Master students</h4>
+          <h4 class="subhead">Lab Members</h4>
           <div class="gallery">
             <div class="person-card">
               <div class="people-item-container">
@@ -303,6 +249,72 @@
             <div class="person-card">
               <div class="people-item-container">
                 <div class="people-item">
+                  <img src="images/people_img/lijialin.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <div class="description">
+                  <p>Jialin Li</p>
+                  <p>李佳林</p>
+                  <p>2026 Master</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="people-item-container">
+                <div class="people-item">
+                  <img src="images/people_img/huangqianqian.jpg" />
+                  <div class="people-item-badge"></div>
+                </div>
+                <div class="description">
+                  <p>Qianqian Huang</p>
+                  <p>黄倩倩</p>
+                  <p>2026 Master</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="subhead">Co-supervised Students</h4>
+          <div class="gallery">
+            <div class="person-card">
+              <div class="people-item-container">
+                <div class="people-item">
+                  <img src="images/people_img/jiangjinkun.jpg" />
+                  <div class="people-item-badge">TIP*1</div>
+                </div>
+                <div class="description">
+                  <p>Jinkun Jiang</p>
+                  <p>姜锦琨</p>
+                  <p>2025 PhD</p>
+                  <p>
+                    <a href="https://it.ouc.edu.cn/djy/main.htm">Prof. Dong</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="people-item-container">
+                <div class="people-item">
+                  <img src="images/people_img/yuyang.jpg" />
+                  <div class="people-item-badge">TCSVT*1</div>
+                </div>
+                <div class="description">
+                  <p>Yang Yu</p>
+                  <p>于阳</p>
+                  <p>2025 PhD</p>
+
+                  <p>
+                    <a href="https://it.ouc.edu.cn/djy/main.htm">Prof. Dong</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="people-item-container">
+                <div class="people-item">
                   <img src="images/people_img/wanglei.jpg" />
                   <div class="people-item-badge"></div>
                 </div>
@@ -353,35 +365,8 @@
                 </div>
               </div>
             </div>
-
-            <div class="person-card">
-              <div class="people-item-container">
-                <div class="people-item">
-                  <img src="images/people_img/lijialin.jpg" />
-                  <div class="people-item-badge"></div>
-                </div>
-                <div class="description">
-                  <p>Jialin Li</p>
-                  <p>李佳林</p>
-                  <p>2026 Master</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="person-card">
-              <div class="people-item-container">
-                <div class="people-item">
-                  <img src="images/people_img/huangqianqian.jpg" />
-                  <div class="people-item-badge"></div>
-                </div>
-                <div class="description">
-                  <p>Qianqian Huang</p>
-                  <p>黄倩倩</p>
-                  <p>2026 Master</p>
-                </div>
-              </div>
-            </div>
           </div>
+
           <h4 class="subhead">Alumni</h4>
 
           <div
@@ -750,12 +735,17 @@
 
         function moveGallery(direction) {
           const item = gallerySet.querySelector(".entergallery-item");
-          const step = item.getBoundingClientRect().width + parseFloat(getComputedStyle(gallerySet).gap);
+          const step =
+            item.getBoundingClientRect().width +
+            parseFloat(getComputedStyle(gallerySet).gap);
           const animation = track.getAnimations()[0];
           if (animation) {
             // Move the existing loop so manual navigation never resets its position.
             const duration = animation.effect.getTiming().duration;
-            const time = (animation.currentTime || 0) + direction * step / gallerySet.getBoundingClientRect().width * duration;
+            const time =
+              (animation.currentTime || 0) +
+              ((direction * step) / gallerySet.getBoundingClientRect().width) *
+                duration;
             animation.currentTime = ((time % duration) + duration) % duration;
           } else {
             // Reduced-motion users browse with native scrolling instead.
@@ -763,8 +753,16 @@
           }
         }
 
-        gallery.querySelector(".gallery-prev").addEventListener("click", function () { moveGallery(-1); });
-        gallery.querySelector(".gallery-next").addEventListener("click", function () { moveGallery(1); });
+        gallery
+          .querySelector(".gallery-prev")
+          .addEventListener("click", function () {
+            moveGallery(-1);
+          });
+        gallery
+          .querySelector(".gallery-next")
+          .addEventListener("click", function () {
+            moveGallery(1);
+          });
         gallery.addEventListener("keydown", function (event) {
           if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
             event.preventDefault();
