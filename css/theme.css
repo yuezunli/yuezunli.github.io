@@ -1212,6 +1212,14 @@ table{table-layout:fixed;word-break:break-all;} */
   padding-top: 25px;
 }
 
+.lab-inline-logo {
+  display: inline-block;
+  width: auto;
+  height: 18px;
+  margin-left: 4px;
+  vertical-align: -4px;
+}
+
 @media (min-width: 993px) {
   .profile-intro {
     padding-left: 16px;
