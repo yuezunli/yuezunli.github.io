@@ -177,6 +177,42 @@
   margin-top: 20px;
 }
 
+.lab-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 28px;
+}
+
+.lab-brand-logo {
+  flex: 0 0 auto;
+  width: 110px;
+  height: auto;
+}
+
+.lab-brand h2 {
+  margin: 0;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+@media (max-width: 600px) {
+  .lab-brand {
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .lab-brand-logo {
+    width: 78px;
+  }
+
+  .lab-brand h2 {
+    font-size: 20px;
+  }
+}
+
 .lab-gallery {
   margin-top: 36px;
 }
