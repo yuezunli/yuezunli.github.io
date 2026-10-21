@@ -9,7 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
       .split("/")
       .pop();
 
-    link.classList.toggle("active", linkPage === currentPage);
+    const isCurrentPage = linkPage === currentPage;
+    link.classList.toggle("active", isCurrentPage);
+    if (isCurrentPage) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 
   const toggleButton = document.querySelector(".nav-toggle");

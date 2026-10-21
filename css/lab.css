@@ -178,7 +178,7 @@
 
 .lab-brand-logo {
   flex: 0 0 auto;
-  width: 110px;
+  width: 80px;
   height: auto;
 }
 
@@ -227,7 +227,9 @@
   background: transparent;
   color: #777;
   cursor: pointer;
-  transition: background-color 150ms, color 150ms;
+  transition:
+    background-color 150ms,
+    color 150ms;
 }
 
 .gallery-slider > button::before {
