@@ -56,16 +56,20 @@
 }
 
 .people-item-badge {
-  position: absolute;
-  bottom: 5px;
-  left: 2px;
+  align-self: flex-start;
+  max-width: 100%;
+  margin-top: 5px;
   background: rgba(0, 100, 250, 0.8);
   color: white;
   font-size: 0.85em;
   font-weight: bold;
   padding: 1px 3px;
   border-radius: 0px;
-  white-space: nowrap;
+  white-space: normal;
+}
+
+.people-item-badge:empty {
+  display: none;
 }
 
 .description {
