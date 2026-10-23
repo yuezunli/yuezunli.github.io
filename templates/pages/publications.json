@@ -30,7 +30,7 @@
         "image": "images/paper_img/tifs2026tsdf.png",
         "code": "https://github.com/vpsg-research/TSDF",
         "scholar": "v0Qt7BAAAAAJ:evX43VCCuoAC",
-        "selected": 1
+        "selected": 0
       },
 
       {
@@ -89,7 +89,7 @@
         "arxiv": "https://arxiv.org/abs/2410.21861",
         "code": "https://github.com/lqxisok/HRGR-IMD",
         "scholar": "v0Qt7BAAAAAJ:ZuybSZzF8UAC",
-        "selected": 1
+        "selected": 0
       },
 
       {
@@ -137,7 +137,7 @@
         "arxiv": "https://arxiv.org/abs/2407.00352",
         "code": "https://github.com/OUC-PVOA/PhyTracker",
         "scholar": "v0Qt7BAAAAAJ:LjlpjdlvIbIC",
-        "selected": 1
+        "selected": 0
       },
       {
         "title": "FreqBlender: Enhancing DeepFake Detection by Blending Frequency Knowledge",
@@ -157,7 +157,7 @@
         "arxiv": "https://arxiv.org/pdf/2410.07633",
         "code": "https://github.com/OUC-VAS/DPL",
         "scholar": "v0Qt7BAAAAAJ:VL0QpB8kHFEC",
-        "selected": 1
+        "selected": 0
       },
       {
         "title": "TPAM: Transferable Perceptual-constrained Adversarial Meshes",
@@ -176,7 +176,7 @@
         "arxiv": "https://arxiv.org/pdf/2408.16582",
         "code": "https://github.com/OUC-VAS/FastForensics",
         "scholar": "v0Qt7BAAAAAJ:WqliGbK-hY8C",
-        "selected": 1
+        "selected": 0
       },
       {
         "title": "Mumpy: Multilateral Temporal-view Pyramid Transformer for Video Inpainting Detection",
@@ -186,7 +186,7 @@
         "arxiv": "https://arxiv.org/pdf/2404.11054",
         "code": "https://github.com/OUC-VAS/Mumpy",
         "scholar": "v0Qt7BAAAAAJ:AXPGKjj_ei8C",
-        "selected": 1
+        "selected": 0
       },
       {
         "title": "DomainForensics: Exposing Face Forgery across Domains via Bi-directional Adaptation",
@@ -235,7 +235,7 @@
         "arxiv": "https://arxiv.org/html/2307.14593v2",
         "code": "https://github.com/OUC-VAS/ForensicsForest",
         "scholar": "v0Qt7BAAAAAJ:Mojj43d5GZwC",
-        "selected": 0
+        "selected": 1
       },
       {
         "title": "Dynamic Soft Labeling for Visual Semantic Embedding",
@@ -262,7 +262,7 @@
         "image": "images/paper_img/lmkbreaker2024cviu.png",
         "paper": "",
         "scholar": "v0Qt7BAAAAAJ:t6usbXjVLHcC",
-        "selected": 0
+        "selected": 1
       },
       {
         "title": "Enhancing Adversarial Robustness of DNNs via Weight Decorrelation in Training",
@@ -346,7 +346,7 @@
         "venue": "Pattern Recognition (<b>PR</b>), 2023.",
         "image": "images/paper_img/big2022pr.png",
         "scholar": "v0Qt7BAAAAAJ:vRqMK49ujn8C",
-        "selected": 1
+        "selected": 0
       }
     ]
   },
@@ -407,7 +407,7 @@
         "venue": "Computer Vision and Image Understanding (<b>CVIU</b>), 2021.",
         "image": "images/paper_img/transrpn2021cviu.jpg",
         "scholar": "v0Qt7BAAAAAJ:u9iWguZQMMsC",
-        "selected": 0
+        "selected": 1
       },
       {
         "title": "DFGC 2021: A DeepFake Game Competition",
@@ -440,7 +440,7 @@
         "image": "images/paper_img/specular2021icassp.png",
         "code": "https://cse.buffalo.edu/ubmdfl/projects/GAN_detect_iris/GAN_Iris.html",
         "scholar": "v0Qt7BAAAAAJ:abG-DnoFyZgC",
-        "selected": 1
+        "selected": 0
       },
       {
         "title": "Landmark Breaker: Obstructing DeepFake By Disturbing Landmark Extraction",
