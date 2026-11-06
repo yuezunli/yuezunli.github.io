@@ -62,7 +62,7 @@
       {
         "title": "Hiding Faces in Plain Sight: Defending DeepFakes by Disrupting Face Detection",
         "authors": "Delong Zhu, <b>Yuezun Li</b><sup>#</sup>, Baoyuan Wu, Jiaran Zhou, Zhibo Wang, Siwei Lyu",
-        "venue": "IEEE Transactions On Dependable and Secure Computing (<b>TDSC</b>), 2025. (Extended from ICME 2023)",
+        "venue": "IEEE Transactions On Dependable and Secure Computing (<b>TDSC</b>), 2025. (Extended from ICME 2023 | Preliminary version: Hiding Faces in Plain Sight: Disrupting AI Face Synthesis with Adversarial Perturbations, arXiv:1906.09288, 2019)",
         "image": "images/paper_img/faceposion2024arxiv.jpeg",
         "arxiv": "https://arxiv.org/pdf/2412.01101",
         "code": "https://github.com/OUC-VAS/FacePoison",
