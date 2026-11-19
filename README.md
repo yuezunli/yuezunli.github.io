@@ -8,6 +8,12 @@ Publication data is stored in `templates/pages/publications.json` and
 `templates/pages/preprints.json`. The build embeds it directly in
 `publications.html`; the browser does not request these JSON files.
 
+Each accepted publication has an official `link`, a venue/year `tag`, and one
+`area`: `Multimedia Forensics`, `Model Security`, or `Visual Analysis`.
+Use A/B suffixes for papers at the same venue in the same year, following their
+JSON order. The build displays tags and linked titles in the publication lists
+and groups all publication tags by area on the Research page (`research.html`).
+
 The Lab page is split by tab. Edit the individual fragments under
 `templates/pages/lab/`; `build.py` combines them into the generated `lab.html`.
 

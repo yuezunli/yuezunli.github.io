@@ -22,6 +22,7 @@ LAB_SECTIONS = ("people", "gallery")
 
 PAGES = {
     "index.html": {},
+    "research.html": {"title": "Research | Yuezun Li"},
     "publications.html": {},
     "funds.html": {},
     "services.html": {},
@@ -52,10 +53,10 @@ def replace_placeholder(source: str, placeholder: str, fragment: str) -> str:
 
 
 def formatted_text(value: object) -> str:
-    """Escape text while preserving the b/sup tags used by publication data."""
-    tokens = re.split(r"(</?(?:b|sup)>)", str(value or ""), flags=re.IGNORECASE)
+    """Escape text while preserving the b/sup/em tags used by publication data."""
+    tokens = re.split(r"(</?(?:b|sup|em)>)", str(value or ""), flags=re.IGNORECASE)
     return "".join(
-        token.lower() if re.fullmatch(r"</?(?:b|sup)>", token, re.IGNORECASE)
+        token.lower() if re.fullmatch(r"</?(?:b|sup|em)>", token, re.IGNORECASE)
         else html.escape(token)
         for token in tokens
     )
@@ -67,11 +68,21 @@ def external_url(value: object) -> str | None:
 
 
 def render_paper(paper: dict[str, object]) -> str:
+    title = html.escape(str(paper.get("title", "")))
+    link = external_url(paper.get("link"))
+    if link:
+        title = (
+            f'<a class="paper-title-link" href="{html.escape(link, quote=True)}" '
+            f'target="_blank" rel="noopener noreferrer">{title}</a>'
+        )
+    tag = paper.get("tag")
+    tag_markup = f'<strong class="paper-tag">[{html.escape(str(tag))}]</strong> ' if tag else ""
     parts = [
         '<div class="paper-item">',
         '  <div class="paper-info">',
         "    <p>",
-        f'      <span class="paper-title">{html.escape(str(paper.get("title", "")))}</span><br />',
+        f'      <span class="paper-title">{tag_markup}{title}</span>',
+        '      <span class="paper-details">',
         f'      {formatted_text(paper.get("authors"))}<br />',
         f'      {formatted_text(paper.get("venue"))}<br />',
     ]
@@ -98,7 +109,7 @@ def render_paper(paper: dict[str, object]) -> str:
             f'<span class="show_paper_citations" data-paper-id="{html.escape(scholar, quote=True)}"></span></span>'
         )
 
-    parts.extend(["    </p>", "  </div>", "</div>"])
+    parts.extend(['      </span>', "    </p>", "  </div>", "</div>"])
     return "\n".join(parts)
 
 
@@ -155,6 +166,29 @@ def render_page_fragments(content: str, directory: str, names: tuple[str, ...]) 
     return content
 
 
+def render_research_links(content: str) -> str:
+    publications = load_json("publications.json")
+    for area in ("Multimedia Forensics", "Model Security", "Visual Analysis"):
+        links = []
+        for section in publications:
+            for paper in section["papers"]:
+                if paper["area"] != area:
+                    continue
+                url = external_url(paper["link"])
+                if not url:
+                    raise ValueError(f'Missing official link: {paper["title"]}')
+                links.append(
+                    f'<a href="{html.escape(url, quote=True)}" '
+                    f'title="{html.escape(paper["title"], quote=True)}" target="_blank" '
+                    f'rel="noopener noreferrer">[{html.escape(paper["tag"])}]</a>'
+                )
+        content = replace_placeholder(
+            content, f"<!-- include: research/{area} -->",
+            '<div>publications:\n' + "\n".join(links) + '\n</div>',
+        )
+    return content
+
+
 def build_page(filename: str, options: dict[str, str]) -> str:
     layout = Template((TEMPLATES / "layout.html").read_text(encoding="utf-8"))
     header = (TEMPLATES / "partials" / "header.html").read_text(encoding="utf-8")
@@ -162,6 +196,8 @@ def build_page(filename: str, options: dict[str, str]) -> str:
 
     if filename == "index.html":
         content = render_page_fragments(content, "index", ("news",))
+    elif filename == "research.html":
+        content = render_research_links(content)
     elif filename == "publications.html":
         content = render_publications_page(content)
     elif filename == "lab.html":

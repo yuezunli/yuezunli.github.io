@@ -45,17 +45,17 @@ function fetchJSON(jsonPath) {
 */
 
 /**
- * 添加只允许 <b> 和 <sup> 的格式化文本。
+ * 添加只允许 <b>、<sup> 和 <em> 的格式化文本。
  * 其他标签会作为普通文本显示。
  */
 function appendFormattedText(parent, value) {
-  const tokens = String(value ?? "").split(/(<\/?(?:b|sup)>)/gi);
+  const tokens = String(value ?? "").split(/(<\/?(?:b|sup|em)>)/gi);
   const elementStack = [parent];
 
   tokens.forEach((token) => {
     const normalizedToken = token.toLowerCase();
 
-    if (normalizedToken === "<b>" || normalizedToken === "<sup>") {
+    if (["<b>", "<sup>", "<em>"].includes(normalizedToken)) {
       const tagName = normalizedToken.slice(1, -1);
       const element = document.createElement(tagName);
 
@@ -64,7 +64,7 @@ function appendFormattedText(parent, value) {
       return;
     }
 
-    if (normalizedToken === "</b>" || normalizedToken === "</sup>") {
+    if (["</b>", "</sup>", "</em>"].includes(normalizedToken)) {
       if (elementStack.length > 1) {
         elementStack.pop();
       }
@@ -116,18 +116,28 @@ function createPaperElement(paperData) {
   const paperInfo = document.createElement("div");
   const content = document.createElement("p");
   const title = document.createElement("span");
+  const titleLink = paperData.link
+    ? createExternalLink(paperData.link, "paper-title-link", paperData.title)
+    : null;
 
   paper.className = "paper-item";
   paperInfo.className = "paper-info";
   title.className = "paper-title";
-  title.textContent = paperData.title;
+  if (paperData.tag) {
+    const tag = document.createElement("strong");
+    tag.className = "paper-tag";
+    tag.textContent = `[${paperData.tag}]`;
+    title.append(tag, " ");
+  }
+  title.append(titleLink || document.createTextNode(paperData.title));
   content.appendChild(title);
 
-  appendLineBreak(content);
-  appendFormattedText(content, paperData.authors);
-  appendLineBreak(content);
-  appendFormattedText(content, paperData.venue);
-  appendLineBreak(content);
+  const details = document.createElement("span");
+  details.className = "paper-details";
+  appendFormattedText(details, paperData.authors);
+  appendLineBreak(details);
+  appendFormattedText(details, paperData.venue);
+  appendLineBreak(details);
 
   if (paperData.arxiv) {
     const arxivLink = createExternalLink(
@@ -142,7 +152,7 @@ function createPaperElement(paperData) {
     arxivLogo.alt = "arXiv";
     if (arxivLink) {
       arxivLink.appendChild(arxivLogo);
-      content.appendChild(arxivLink);
+      details.appendChild(arxivLink);
     }
   }
 
@@ -156,7 +166,7 @@ function createPaperElement(paperData) {
 
       githubIcon.className = "fa-brands fa-github";
       codeLink.append(githubIcon, " Code");
-      content.appendChild(codeLink);
+      details.appendChild(codeLink);
     }
   }
 
@@ -170,8 +180,10 @@ function createPaperElement(paperData) {
     citationCount.className = "show_paper_citations";
     citationCount.dataset.paperId = paperData.scholar;
     citationBadge.append(scholarIcon, " ", citationCount);
-    content.appendChild(citationBadge);
+    details.appendChild(citationBadge);
   }
+
+  content.appendChild(details);
 
   paperInfo.appendChild(content);
   paper.appendChild(paperInfo);
