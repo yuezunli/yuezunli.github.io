@@ -59,12 +59,7 @@
   align-self: flex-start;
   max-width: 100%;
   margin-top: 5px;
-  background: rgba(0, 100, 250, 0.8);
-  color: white;
-  font-size: 0.85em;
   font-weight: bold;
-  padding: 1px 3px;
-  border-radius: 0px;
   white-space: normal;
 }
 
@@ -182,7 +177,7 @@
 
 .lab-brand-logo {
   flex: 0 0 auto;
-  width: 80px;
+  width: 60px;
   height: auto;
 }
 
@@ -201,7 +196,7 @@
   }
 
   .lab-brand-logo {
-    width: 78px;
+    width: 54px;
   }
 
   .lab-brand h2 {

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Research and publications word cloud</title>
+  <desc id="desc">Key topics from the Research page and 62 publication and preprint titles, led by Deepfake Detection, Multimedia Forensics, Visual Analysis, and Model Security.</desc>
+  <rect width="1600" height="900" fill="#fff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle" font-weight="700">
+    <text x="800" y="92" fill="#607e90" font-size="37" letter-spacing="2">TRUSTWORTHY VISUAL INTELLIGENCE</text>
+    <text x="800" y="188" fill="#173d59" font-size="78">Multimedia Forensics</text>
+    <text x="285" y="267" fill="#43798d" font-size="33">Authenticity</text>
+    <text x="555" y="254" fill="#648596" font-size="28">Visual Content</text>
+    <text x="1010" y="258" fill="#a36449" font-size="32">Diffusion-generated Images</text>
+    <text x="1390" y="257" fill="#507589" font-size="26">Privacy</text>
+    <text x="340" y="352" fill="#a45844" font-size="59">Face Forgery</text>
+    <text x="803" y="342" fill="#417b85" font-size="39">Adversarial Attacks</text>
+    <text x="1265" y="352" fill="#1e5872" font-size="60">Model Security</text>
+    <text x="800" y="469" fill="#15384f" font-size="112">Deepfake Detection</text>
+    <text x="230" y="447" fill="#668c96" font-size="26" transform="rotate(-90 230 447)">Audio-Visual</text>
+    <text x="1365" y="461" fill="#65818e" font-size="29" transform="rotate(90 1365 461)">Robustness</text>
+    <text x="260" y="548" fill="#6d8794" font-size="30">CLIP</text>
+    <text x="430" y="540" fill="#926b58" font-size="33">Manipulation</text>
+    <text x="800" y="578" fill="#22637b" font-size="72">Visual Analysis</text>
+    <text x="1160" y="547" fill="#567c8c" font-size="32">Generalization</text>
+    <text x="1430" y="552" fill="#a16b55" font-size="28">Defense</text>
+    <text x="306" y="644" fill="#46798a" font-size="31">Domain Adaptation</text>
+    <text x="682" y="653" fill="#a66349" font-size="40">Image Manipulation</text>
+    <text x="1115" y="649" fill="#345e79" font-size="41">Localization</text>
+    <text x="1425" y="652" fill="#597d8d" font-size="28">Segmentation</text>
+    <text x="215" y="737" fill="#648393" font-size="27">Optical Flow</text>
+    <text x="545" y="745" fill="#4a7587" font-size="34">Face Detection</text>
+    <text x="925" y="746" fill="#926a56" font-size="31">Model Robustness</text>
+    <text x="1285" y="744" fill="#47788a" font-size="31">Computer Vision</text>
+    <text x="360" y="824" fill="#8c7880" font-size="25">Graph Learning</text>
+    <text x="715" y="824" fill="#668796" font-size="24">Representation</text>
+    <text x="1020" y="824" fill="#a37561" font-size="25">Synthetic Media</text>
+    <text x="1345" y="824" fill="#698594" font-size="24">Secure AI</text>
+  </g>
+</svg>
