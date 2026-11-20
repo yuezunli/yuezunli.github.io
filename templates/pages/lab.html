@@ -11,6 +11,13 @@
       <h2 id="lab-brand-title">Visual Analysis &amp; Security (VAS) Lab</h2>
     </header>
 
+    <nav class="lab-section-nav" aria-label="Group sections">
+      <a href="#members">Members</a>
+      <a href="#co-supervised">Co-supervised</a>
+      <a href="#alumni">Alumni</a>
+      <a href="#gallery-heading">Gallery</a>
+    </nav>
+
     <!-- include: lab/people.html -->
 
     <!-- include: lab/gallery.html -->
@@ -40,6 +47,14 @@
 
     const gallery = track.closest(".lab-gallery");
     const viewport = gallery.querySelector(".gallery-marquee");
+    const toggle = gallery.querySelector(".gallery-toggle");
+
+    toggle.addEventListener("click", function () {
+      const paused = track.classList.toggle("is-paused");
+      toggle.textContent = paused ? "Play" : "Pause";
+      toggle.setAttribute("aria-label", paused ? "Play gallery" : "Pause gallery");
+      toggle.setAttribute("aria-pressed", String(paused));
+    });
 
     function moveGallery(direction) {
       const item = gallerySet.querySelector(".entergallery-item");
