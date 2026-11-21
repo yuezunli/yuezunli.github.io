@@ -766,6 +766,11 @@ table{table-layout:fixed;word-break:break-all;} */
   overflow-y: auto;
 }
 
+.home-news-list.has-more {
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 48px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 48px), transparent);
+}
+
 .home-news-pinned {
   position: sticky;
   top: 0;

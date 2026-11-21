@@ -1,6 +1,33 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
+  function initializeScrollFade(scrollArea, hint = null) {
+    if (!scrollArea) return;
+
+    const updateScrollFade = () => {
+      const hasMore =
+        scrollArea.scrollHeight - scrollArea.clientHeight - scrollArea.scrollTop > 2;
+      scrollArea.classList.toggle("has-more", hasMore);
+      if (hint) hint.hidden = !hasMore;
+    };
+
+    scrollArea.addEventListener("scroll", updateScrollFade, { passive: true });
+    window.addEventListener("resize", updateScrollFade);
+    if (typeof ResizeObserver !== "undefined") {
+      const observer = new ResizeObserver(updateScrollFade);
+      observer.observe(scrollArea);
+      Array.from(scrollArea.children).forEach((child) => observer.observe(child));
+    }
+    if (document.fonts) document.fonts.ready.then(updateScrollFade);
+    updateScrollFade();
+  }
+
+  initializeScrollFade(
+    document.querySelector(".alumni-scroll"),
+    document.querySelector(".alumni-scroll-hint"),
+  );
+  initializeScrollFade(document.querySelector(".home-news-list"));
+
   const currentPage =
     new URL(window.location.href).pathname.split("/").pop() || "index.html";
 

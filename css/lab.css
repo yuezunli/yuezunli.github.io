@@ -30,13 +30,43 @@
   display: inline-block;
   margin: 5px;
   border: 1px solid #f0f0f0;
-  padding: 5px;
+  padding: 10px;
+}
+
+.lab-people .member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.member-grid > .person-card {
+  min-width: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.member-grid .description {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+}
+
+@media (max-width: 992px) {
+  .lab-people .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .lab-people .member-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .people-item-container {
   display: flex;
   align-items: center; /* 垂直居中 */
-  gap: 10px; /* 图片和文字的间距，可以自己调 */
+  gap: 16px; /* 图片和文字的间距 */
 }
 
 .people-item {
@@ -58,7 +88,10 @@
 .people-item-badge {
   align-self: flex-start;
   max-width: 100%;
-  margin-top: 5px;
+  margin-top: auto;
+  padding-top: 5px;
+  font-size: 13px;
+  line-height: 18px;
   font-weight: bold;
   white-space: normal;
 }
@@ -70,7 +103,8 @@
 .description {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 垂直居中对齐图片 */
+  justify-content: flex-start;
+  min-height: 120px;
   width: 150px; /* 固定宽度 */
   margin: 0; /* 去掉默认 margin */
   padding-left: 0; /* 防止额外间距 */
@@ -82,76 +116,105 @@
   margin: 1px 0;
 }
 
-.alumni {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
+.description .member-name {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
 }
 
-.alumni-table-wrapper {
-  max-height: 700px;
+.description .member-name-cn {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.description .member-degree {
+  color: #777;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.alumni-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.alumni-scroll-hint {
+  color: #777;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.alumni-scroll-hint[hidden] {
+  display: none;
+}
+
+.alumni-scroll {
+  max-height: 600px;
   overflow-y: auto;
+  scrollbar-gutter: stable;
+  padding-right: 6px;
 }
 
-.alumni-name {
-  width: 24%;
+.alumni-scroll.has-more {
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 48px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 48px), transparent);
 }
 
-.alumni-period {
-  width: 14%;
+.alumni-scroll:focus-visible {
+  outline: 2px solid #234b8e;
+  outline-offset: 3px;
 }
 
-.alumni-degree {
-  width: 12%;
+.alumni-year {
+  margin: 20px 0 10px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.alumni-destination {
-  width: 24%;
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.alumni-list .alumni-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  margin: 0;
+  background: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  overflow-wrap: break-word;
+}
+
+.alumni-meta {
+  color: #777;
+  font-size: 14px;
 }
 
 .alumni-achievements {
-  width: 26%;
+  margin-top: auto;
+  padding-top: 4px;
 }
 
-.alumni th,
-.alumni td {
-  border: none;
-  border-bottom: 1px solid #ddd;
-  padding: 8px 10px;
-  text-align: left;
-  vertical-align: top;
-}
-
-.alumni th {
-  border-top: 1px solid #ddd;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.alumni th:nth-child(2),
-.alumni th:nth-child(3),
-.alumni td:nth-child(2),
-.alumni td:nth-child(3) {
-  white-space: nowrap;
-}
-
-.alumni img {
-  width: 50px; /* 控制图片大小 */
-  height: 50px;
-  border-radius: 5px; /* 圆角，可选 */
-  margin-left: -5px;
-  margin-right: 10px;
-}
-
-@media (max-width: 600px) {
-  .alumni-table-wrapper {
-    max-width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+@media (max-width: 800px) {
+  .alumni-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .alumni {
-    min-width: 760px;
+@media (max-width: 560px) {
+  .alumni-list {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -291,7 +354,11 @@
 }
 
 .gallery-set .entergallery-item {
-  flex: 0 0 240px;
+  flex: 0 0 320px;
+}
+
+.gallery-set .entergallery-item img {
+  height: 240px;
 }
 
 .gallery-set .overlay {
@@ -319,7 +386,11 @@
 
 @media (max-width: 600px) {
   .gallery-set .entergallery-item {
-    flex-basis: 200px;
+    flex-basis: 260px;
+  }
+
+  .gallery-set .entergallery-item img {
+    height: 195px;
   }
 }
 
